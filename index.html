@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <title>International Congress - AI, Technology, Engineering & Design</title>
+    <style>
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-sizing: border-box;
+      }
+
+      /* Navbar styles*/
+      .nav-link:hover {
+        color: rgb(228, 51, 51) !important;
+      }
+      #menu .nav-item {
+        display: flex;
+        border-right: 1px solid #ffffff;
+        padding-right: 10px;
+        font-size: 10px;
+      }
+
+      #menu .nav-item:last-child {
+        border-right: none;
+      }
+
+      #menu .nav-link {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+
+      /*Timer*/
+      /* Cụm nhóm (Ngày, Giờ, Phút, Giây) */
+      :root {
+        --card-bg: #5f5c5c;
+        --card-radius: 6px;
+        --text-color: #ffffff;
+        --flip-speed: 0.5s;
+      }
+
+      .flip-clock-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px;
+      }
+
+      .flip-clock-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+      }
+
+      /* Khung chứa 2 ô số (hàng chục và hàng đơn vị) */
+      .flip-clock-cards {
+        display: flex;
+        gap: 3px;
+      }
+
+      /* Cấu trúc 1 ô số độc lập (tương đương thẻ <ul> trong thư viện gốc) */
+      .flip-card {
+        position: relative;
+        width: 45px;
+        height: 65px;
+        font-size: 45px;
+        font-weight: bold;
+        color: var(--text-color);
+        perspective: 300px; /* Tạo độ sâu không gian 3D */
+      }
+
+      /* Định hình nửa trên và nửa dưới của tấm thẻ */
+      .card-half {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+        background-color: var(--card-bg);
+        backface-visibility: hidden; /* Giấu mặt sau khi lật 3D */
+        box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.1);
+        box-sizing: border-box;
+      }
+
+      /* Dùng thuộc tính attr để đưa số từ HTML vào nội dung hiển thị */
+      .card-half::after {
+        content: attr(data-num);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 200%;
+        text-align: center;
+              display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Thiết lập cho nửa trên */
+      .top {
+        top: 0;
+        border-top-left-radius: var(--card-radius);
+        border-top-right-radius: var(--card-radius);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.622); /* Đường rãnh cắt ngang màu đen ở giữa */
+      }
+
+      .top::after {
+        top: 0;
+        left: 0;
+        line-height: 1; /* Khớp tỉ lệ hiển thị */
+      }
+
+      /* Thiết lập cho nửa dưới */
+      .bottom {
+        bottom: 0;
+        border-bottom-left-radius: var(--card-radius);
+        border-bottom-right-radius: var(--card-radius);
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .bottom::after {
+        bottom: 0;
+        left: 0;
+        line-height: 1;
+      }
+
+      /* --- HIỆU ỨNG DIỄN HOẠT LẬT (ANIMATION KEYFRAMES) --- */
+      .flip-card .top-flip {
+        transform-origin: bottom;
+        animation: flipTop var(--flip-speed) ease-in forwards;
+      }
+
+      .flip-card .bottom-flip {
+        transform-origin: top;
+        transform: rotateX(90deg);
+        animation: flipBottom var(--flip-speed) ease-out var(--flip-speed)
+          forwards;
+      }
+
+      @keyframes flipTop {
+        100% {
+          transform: rotateX(-90deg);
+        }
+      }
+
+      @keyframes flipBottom {
+        100% {
+          transform: rotateX(0deg);
+        }
+      }
+
+      /* Nhãn chữ phân loại (Days, Hours, Minutes, Seconds) */
+      .flip-clock-label {
+        font-size: 10px;
+        font-weight: bold;
+        color: #94a3b8;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        position: absolute;
+        top: -30%;
+        left: 95%;
+        transform: translateX(-90%);
+        color: white;
+      }
+
+      /* Dấu hai chấm ngăn cách */
+      .flip-clock-colon {
+        font-size: 30px;
+        font-weight: bold;
+        color: #475569;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="container-fluid px-0">
+      <img
+        src="images/logo.png"
+        alt="Logo"
+        class="mx-auto py-2"
+        style="width: auto; height: 80px; display: block"
+      />
+      <nav
+        class="navbar navbar-expand-lg w-max"
+        style="width: 100%; background-color: #b5e3f9"
+      >
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="menu"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link fw-bold" style="color: black" href="#"
+                  >INTRODUCTION</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link fw-bold" style="color: black" href="#"
+                  >THEMES & SPEAKER</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link fw-bold" style="color: black" href="#"
+                  >THE ORGANIZING COMMITTEE</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link fw-bold" style="color: black" href="#"
+                  >REGISTRATION</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link fw-bold" style="color: black" href="#"
+                  >ACCOMMODATION</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Banner -->
+    <banner class="container-fluid px-0" style="position: relative">
+      <div
+        style="
+          background-image: url(images/banner.jpg);
+          height: 380px;
+          background-size: cover;
+          background-position: top;
+        "
+      >
+        <h2 class="text-white text-center pt-2 my-0" style="font-size: 18px">
+          SAIGON TECHNOLOGY UNIVERSITY (STU)
+        </h2>
+        <h1
+          class="text-white text-center py-0 my-0 fw-bold"
+          style="font-size: 22px; text-shadow: -1px -1px 4px blue"
+        >
+          INTERNATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE,
+        </h1>
+        <h1
+          class="text-white text-center py-0 my-0 fw-bold"
+          style="font-size: 22px; text-shadow: -1px -1px 4px blue"
+        >
+          TECHNOLOGY, ENGINEERING AND DESIGN (ATED 2026)
+        </h1>
+
+        <!--Timer-->
+        <div
+          class="flip-clock-wrapper"
+          style="
+            position: absolute;
+            bottom: -10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.628);
+            margin-bottom: 10px;
+          "
+        >
+          <div class="flip-clock-group">
+            <div class="flip-clock-cards">
+              <div class="flip-card" id="d-tens">
+                <div class="card-half top" data-num="0"></div>
+                <div class="card-half bottom" data-num="0"></div>
+              </div>
+              <div class="flip-card" id="d-ones">
+                <div class="card-half top" data-num="0"></div>
+                <div class="card-half bottom" data-num="0"></div>
+              </div>
+            </div>
+            <span class="flip-clock-label">Days</span>
+          </div>
+
+          <div class="flip-clock-colon">:</div>
+
+          <div class="flip-clock-group">
+            <div class="flip-clock-cards">
+              <div class="flip-card" id="h-tens">
+                <div class="card-half top" data-num="0"></div>
+                <div class="card-half bottom" data-num="0"></div>
+              </div>
+              <div class="flip-card" id="h-ones">
+                <div class="card-half top" data-num="0"></div>
+                <div class="card-half bottom" data-num="0"></div>
+              </div>
+            </div>
+            <span class="flip-clock-label">Hours</span>
+          </div>
+
+          <div class="flip-clock-colon">:</div>
+
+          <div class="flip-clock-group">
+            <div class="flip-clock-cards">
+              <div class="flip-card" id="m-tens">
+                <div class="card-half top" data-num="0"></div>
+                <div class="card-half bottom" data-num="0"></div>
+              </div>
+              <div class="flip-card" id="m-ones">
+                <div class="card-half top" data-num="0"></div>
+                <div class="card-half bottom" data-num="0"></div>
+              </div>
+            </div>
+            <span class="flip-clock-label">Minutes</span>
+          </div>
+
+          <div class="flip-clock-colon">:</div>
+
+          <div class="flip-clock-group">
+            <div class="flip-clock-cards">
+              <div class="flip-card" id="s-tens">
+                <div class="card-half top" data-num="0"></div>
+                <div class="card-half bottom" data-num="0"></div>
+              </div>
+              <div class="flip-card" id="s-ones">
+                <div class="card-half top" data-num="0"></div>
+                <div class="card-half bottom" data-num="0"></div>
+              </div>
+            </div>
+            <span class="flip-clock-label">Seconds</span>
+          </div>
+        </div>
+      </div>
+    </banner>
+    <!-- Main Content -->
+    <main></main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // 1. Đặt thời gian đích đếm ngược (Ví dụ: Đếm ngược 55 ngày giống ảnh mẫu của trường)
+      const TARGET_DATE = new Date();
+      TARGET_DATE.setDate(TARGET_DATE.getDate() + 55);
+
+      function executeFlip(cardElement, newNumber) {
+        const topHalf = cardElement.querySelector(".top");
+        const bottomHalf = cardElement.querySelector(".bottom");
+        const currentNumber = topHalf.getAttribute("data-num");
+
+        // Nếu số không đổi (ví dụ hàng chục của phút) thì bỏ qua không tạo hiệu ứng lật
+        if (currentNumber === String(newNumber)) return;
+
+        // Tạo 2 mảnh giấy hiệu ứng lật đè lên trên
+        const topFlip = document.createElement("div");
+        topFlip.classList.add("card-half", "top", "top-flip");
+        topFlip.setAttribute("data-num", currentNumber);
+
+        const bottomFlip = document.createElement("div");
+        bottomFlip.classList.add("card-half", "bottom", "bottom-flip");
+        bottomFlip.setAttribute("data-num", newNumber);
+
+        // Cập nhật giá trị số mới cho mảnh giấy gốc ẩn phía sau
+        topHalf.setAttribute("data-num", newNumber);
+
+        bottomFlip.addEventListener("animationend", () => {
+          bottomHalf.setAttribute("data-num", newNumber);
+          bottomFlip.remove();
+        });
+
+        cardElement.appendChild(topFlip);
+        cardElement.appendChild(bottomFlip);
+
+        setTimeout(() => {
+          topFlip.remove();
+        }, 500);
+      }
+
+      function updateSegment(tensId, onesId, totalValue) {
+        const tensValue = Math.floor(totalValue / 10);
+        const onesValue = totalValue % 10;
+
+        executeFlip(document.getElementById(tensId), tensValue);
+        executeFlip(document.getElementById(onesId), onesValue);
+      }
+
+      function runTimer() {
+        const now = new Date().getTime();
+        const remainTime = TARGET_DATE - now;
+
+        if (remainTime <= 0) {
+          clearInterval(timerInterval);
+          return;
+        }
+
+        // Trích xuất toán học ngày, giờ, phút, giây
+        const days = Math.floor(remainTime / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (remainTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+        );
+        const minutes = Math.floor(
+          (remainTime % (1000 * 60 * 60)) / (1000 * 60),
+        );
+        const seconds = Math.floor((remainTime % (1000 * 60)) / 1000);
+
+        // Đẩy số vào các hàm xử lý lật
+        updateSegment("d-tens", "d-ones", days);
+        updateSegment("h-tens", "h-ones", hours);
+        updateSegment("m-tens", "m-ones", minutes);
+        updateSegment("s-tens", "s-ones", seconds);
+      }
+
+      // Khởi chạy vòng lặp cập nhật mỗi 1 giây
+      const timerInterval = setInterval(runTimer, 1000);
+      runTimer(); // Chạy ngay lập tức lần đầu khi load trang
+    </script>
+  </body>
+</html>
