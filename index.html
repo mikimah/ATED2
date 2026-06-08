@@ -299,7 +299,7 @@
               </div>
               <div class="flip-card" id="s-ones">
                 <div class="card-half top" data-num="0"></div>
-                class="card-half bottom" data-num="0"></div>
+                <div class="card-half bottom" data-num="0"></div>
               </div>
             </div>
             <span class="flip-clock-label">Seconds</span>
@@ -364,7 +364,9 @@
       function runTimer() {
         // Lấy thời gian hiện tại theo giờ Việt Nam
         const now = new Date();
-        const vietnamTime = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Ho_Chi_Minh' }));
+        const vietnamTime = new Date(
+          now.toLocaleString("en-US", { timeZone: "Asia/Ho_Chi_Minh" }),
+        );
         const remainTime = TARGET_DATE - vietnamTime.getTime();
 
         if (remainTime <= 0) {
