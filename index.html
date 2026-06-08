@@ -16,6 +16,7 @@
         min-height: 100vh;
         margin: 0;
         display: flex;
+        justify-content: center;
         flex-direction: column;
         background-color: white;
         box-sizing: border-box;
@@ -103,7 +104,7 @@
         width: 100%;
         height: 200%;
         text-align: center;
-              display: flex;
+        display: flex;
         align-items: center;
         justify-content: center;
       }
@@ -187,65 +188,7 @@
   </head>
   <body>
     <!--Header-->
-    <header class="container-fluid px-0">
-      <img
-        src="images/logo.png"
-        alt="Logo"
-        class="mx-auto py-2"
-        style="width: auto; height: 80px; display: block"
-      />
-      <nav
-        class="navbar navbar-expand-lg w-max"
-        style="width: 100%; background-color: #b5e3f9"
-      >
-        <div class="container">
-          <button
-            class="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#menu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="menu"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link fw-bold" style="color: black" href="#"
-                  >INTRODUCTION</a
-                >
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link fw-bold" style="color: black" href="#"
-                  >THEMES & SPEAKER</a
-                >
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link fw-bold" style="color: black" href="#"
-                  >THE ORGANIZING COMMITTEE</a
-                >
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link fw-bold" style="color: black" href="#"
-                  >REGISTRATION</a
-                >
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link fw-bold" style="color: black" href="#"
-                  >ACCOMMODATION</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
     <!-- Banner -->
     <banner class="container-fluid px-0" style="position: relative">
       <div
@@ -284,6 +227,22 @@
             margin-bottom: 10px;
           "
         >
+          <div class="flip-clock-group">
+            <div class="flip-clock-cards">
+              <div class="flip-card" id="w-tens">
+                <div class="card-half top" data-num="0"></div>
+                <div class="card-half bottom" data-num="0"></div>
+              </div>
+              <div class="flip-card" id="w-ones">
+                <div class="card-half top" data-num="0"></div>
+                <div class="card-half bottom" data-num="0"></div>
+              </div>
+            </div>
+            <span class="flip-clock-label">Weeks</span>
+          </div>
+
+          <div class="flip-clock-colon">:</div>
+
           <div class="flip-clock-group">
             <div class="flip-clock-cards">
               <div class="flip-card" id="d-tens">
@@ -340,7 +299,7 @@
               </div>
               <div class="flip-card" id="s-ones">
                 <div class="card-half top" data-num="0"></div>
-                <div class="card-half bottom" data-num="0"></div>
+                class="card-half bottom" data-num="0"></div>
               </div>
             </div>
             <span class="flip-clock-label">Seconds</span>
@@ -350,15 +309,16 @@
     </banner>
     <!-- Main Content -->
     <main></main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
     <script>
-      // 1. Đặt thời gian đích đếm ngược (Ví dụ: Đếm ngược 55 ngày giống ảnh mẫu của trường)
-      const TARGET_DATE = new Date();
-      TARGET_DATE.setDate(TARGET_DATE.getDate() + 55);
+      // 1. Đặt thời gian đích đếm ngược theo giờ Việt Nam (UTC+7)
+      const targetDateTime = new Date("2026-10-29T00:00:00+07:00");
+      const TARGET_DATE = targetDateTime.getTime();
 
       function executeFlip(cardElement, newNumber) {
         const topHalf = cardElement.querySelector(".top");
@@ -402,16 +362,26 @@
       }
 
       function runTimer() {
-        const now = new Date().getTime();
-        const remainTime = TARGET_DATE - now;
+        // Lấy thời gian hiện tại theo giờ Việt Nam
+        const now = new Date();
+        const vietnamTime = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Ho_Chi_Minh' }));
+        const remainTime = TARGET_DATE - vietnamTime.getTime();
 
         if (remainTime <= 0) {
+          updateSegment("w-tens", "w-ones", 0);
+          updateSegment("d-tens", "d-ones", 0);
+          updateSegment("h-tens", "h-ones", 0);
+          updateSegment("m-tens", "m-ones", 0);
+          updateSegment("s-tens", "s-ones", 0);
           clearInterval(timerInterval);
           return;
         }
 
-        // Trích xuất toán học ngày, giờ, phút, giây
-        const days = Math.floor(remainTime / (1000 * 60 * 60 * 24));
+        // Trích xuất toán học tuần, ngày, giờ, phút, giây
+        const weeks = Math.floor(remainTime / (1000 * 60 * 60 * 24 * 7));
+        const days = Math.floor(
+          (remainTime % (1000 * 60 * 60 * 24 * 7)) / (1000 * 60 * 60 * 24),
+        );
         const hours = Math.floor(
           (remainTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
         );
@@ -421,6 +391,7 @@
         const seconds = Math.floor((remainTime % (1000 * 60)) / 1000);
 
         // Đẩy số vào các hàm xử lý lật
+        updateSegment("w-tens", "w-ones", weeks);
         updateSegment("d-tens", "d-ones", days);
         updateSegment("h-tens", "h-ones", hours);
         updateSegment("m-tens", "m-ones", minutes);
