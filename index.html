@@ -9,186 +9,71 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="images/logo.png" />
     <title>International Congress - AI, Technology, Engineering & Design</title>
-    <style>
-      body {
-        min-height: 100vh;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        background-color: white;
-        box-sizing: border-box;
-      }
-
-      /* Navbar styles*/
-      .nav-link:hover {
-        color: rgb(228, 51, 51) !important;
-      }
-      #menu .nav-item {
-        display: flex;
-        border-right: 1px solid #ffffff;
-        padding-right: 10px;
-        font-size: 10px;
-      }
-
-      #menu .nav-item:last-child {
-        border-right: none;
-      }
-
-      #menu .nav-link {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-      }
-
-      /*Timer*/
-      /* Cụm nhóm (Ngày, Giờ, Phút, Giây) */
-      :root {
-        --card-bg: #5f5c5c;
-        --card-radius: 6px;
-        --text-color: #ffffff;
-        --flip-speed: 0.5s;
-      }
-
-      .flip-clock-wrapper {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 5px;
-      }
-
-      .flip-clock-group {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        position: relative;
-      }
-
-      /* Khung chứa 2 ô số (hàng chục và hàng đơn vị) */
-      .flip-clock-cards {
-        display: flex;
-        gap: 3px;
-      }
-
-      /* Cấu trúc 1 ô số độc lập (tương đương thẻ <ul> trong thư viện gốc) */
-      .flip-card {
-        position: relative;
-        width: 45px;
-        height: 65px;
-        font-size: 45px;
-        font-weight: bold;
-        color: var(--text-color);
-        perspective: 300px; /* Tạo độ sâu không gian 3D */
-      }
-
-      /* Định hình nửa trên và nửa dưới của tấm thẻ */
-      .card-half {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 50%;
-        overflow: hidden;
-        background-color: var(--card-bg);
-        backface-visibility: hidden; /* Giấu mặt sau khi lật 3D */
-        box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.1);
-        box-sizing: border-box;
-      }
-
-      /* Dùng thuộc tính attr để đưa số từ HTML vào nội dung hiển thị */
-      .card-half::after {
-        content: attr(data-num);
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 200%;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      /* Thiết lập cho nửa trên */
-      .top {
-        top: 0;
-        border-top-left-radius: var(--card-radius);
-        border-top-right-radius: var(--card-radius);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.622); /* Đường rãnh cắt ngang màu đen ở giữa */
-      }
-
-      .top::after {
-        top: 0;
-        left: 0;
-        line-height: 1; /* Khớp tỉ lệ hiển thị */
-      }
-
-      /* Thiết lập cho nửa dưới */
-      .bottom {
-        bottom: 0;
-        border-bottom-left-radius: var(--card-radius);
-        border-bottom-right-radius: var(--card-radius);
-        display: flex;
-        align-items: flex-end;
-      }
-
-      .bottom::after {
-        bottom: 0;
-        left: 0;
-        line-height: 1;
-      }
-
-      /* --- HIỆU ỨNG DIỄN HOẠT LẬT (ANIMATION KEYFRAMES) --- */
-      .flip-card .top-flip {
-        transform-origin: bottom;
-        animation: flipTop var(--flip-speed) ease-in forwards;
-      }
-
-      .flip-card .bottom-flip {
-        transform-origin: top;
-        transform: rotateX(90deg);
-        animation: flipBottom var(--flip-speed) ease-out var(--flip-speed)
-          forwards;
-      }
-
-      @keyframes flipTop {
-        100% {
-          transform: rotateX(-90deg);
-        }
-      }
-
-      @keyframes flipBottom {
-        100% {
-          transform: rotateX(0deg);
-        }
-      }
-
-      /* Nhãn chữ phân loại (Days, Hours, Minutes, Seconds) */
-      .flip-clock-label {
-        font-size: 10px;
-        font-weight: bold;
-        color: #94a3b8;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        position: absolute;
-        top: -30%;
-        left: 95%;
-        transform: translateX(-90%);
-        color: white;
-      }
-
-      /* Dấu hai chấm ngăn cách */
-      .flip-clock-colon {
-        font-size: 30px;
-        font-weight: bold;
-        color: #475569;
-        margin-bottom: 10px;
-      }
-    </style>
   </head>
   <body>
     <!--Header-->
+<header class="container-fluid px-0">
+      <img
+        src="images/logo.png"
+        alt="Logo"
+        class="mx-auto py-2"
+        style="width: auto; height: 80px; display: block"
+      />
+      <nav
+        class="navbar navbar-expand-lg w-max"
+        style="width: 100%; background-color: #b5e3f9"
+      >
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="menu"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link fw-bold" style="color: black" href="#"
+                  >INTRODUCTION</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link fw-bold" style="color: black" href="#"
+                  >THEMES & SPEAKER</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link fw-bold" style="color: black" href="#"
+                  >THE ORGANIZING COMMITTEE</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link fw-bold" style="color: black" href="#"
+                  >REGISTRATION</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link fw-bold" style="color: black" href="#"
+                  >ACCOMMODATION</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- Banner -->
     <banner class="container-fluid px-0" style="position: relative">
       <div
@@ -308,101 +193,246 @@
       </div>
     </banner>
     <!-- Main Content -->
-    <main></main>
+       <main>
+      <!--Overview-->
+      <div class="container py-4 row mx-auto gx-5 px-4 bg-primary mx-2">
+        <!--Left-->
+        <div class="col-md-6 bg-danger px-4 mx-4">
+          <h5 class="mb-3 fw-bold">CONFERENCE OVERVIEW</h5>
+          <p style="line-height: 1.1; text-align: justify">
+            In the context of rapid advancements in Artificial Intelligence
+            (AI), interdisciplinary collaboration and practical applications
+            have become extremely important. The international conference with
+            the theme “Shaping the Future with AI: Innovation, Integration and
+            Impact” is organized by Saigon Technology University (STU) in
+            collaboration with domestic and international partners. The event,
+            titled the International Conference on Artificial Intelligence,
+            Technology, Engineering and Design, is scheduled to take place from
+            October 29 to October 31, 2026. The conference will gather
+            scientists, experts, and practitioners to exchange knowledge, share
+            experiences, and promote collaboration in AI, technology,
+            engineering, and design. The organizers cordially invite scholars,
+            experts, and enterprises to submit papers and participate in shaping
+            the future with AI for sustainable development and societal value.
+          </p>
+        </div>
+        <!--Right-->
+        <div class="col-md-4 bg-secondary mx-5">
+          <img src="images/school.jpg" alt="a" class="img-fluid" />
+          <div class="d-flex align-items-start gap-2 mt-3">
+            <img
+              src="images/marker.png"
+              alt="location"
+              class="me-3"
+              style="width: 40px; height: 40px"
+            />
+            <p class="mb-0" style="line-height: 1.1">
+              Sai Gon Technology University (STU), 180 Cao Lo street, Chanh Hung
+              Ward, Ho Chi Minh City, VietNam
+            </p>
+          </div>
+          <div class="d-flex align-items-start mt-3">
+            <img
+              src="images/calendar.png"
+              alt="calendar"
+              class="me-3"
+              style="width: 40px; height: 40px"
+            />
+            <p class="mb-0 py-2 px-2">29-30 October, 2026</p>
+          </div>
+        </div>
+      </div>
+      <!--Themes-->
+      <section class="container py-4 bg-danger">
+        <!--Tổng-->
+        <div class="rounded-4 py-2 mx-5 bg-secondary">
+          <h3 class="mb-3 fw-bold text-center">THEMES</h3>
+          <div class="row gy-4">
+            <!--AI-->
+            <div
+              class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center"
+            >
+              <div
+                class="bg-white rounded-circle mb-3 shadow-sm"
+                style="
+                  width: 150px;
+                  height: 150px;
+                  border: 6px solid #fff;
+                  overflow: hidden;
+                "
+              >
+                <img
+                  src="images/idk.jpg"
+                  alt="Theme Icon"
+                  class="img-fluid"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <h7 class="fw-bold mb-3 text-center">Artificial Intelligence</h7>
+              <ul class="w-100 px-4" style="line-height: 1.4; font-size: 13px">
+                <li>Neural Network applications</li>
+                <li>Machine Learning</li>
+                <li>Computer Vision</li>
+                <li>Chatbot</li>
+                <li>AI applications</li>
+                <li>NLP</li>
+              </ul>
+            </div>
+            <!--M-E-->
+            <div
+              class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center"
+            >
+              <div
+                class="bg-white rounded-circle mb-3 shadow-sm"
+                style="
+                  width: 150px;
+                  height: 150px;
+                  border: 6px solid #fff;
+                  overflow: hidden;
+                "
+              >
+                <img
+                  src="images/dog.jpg"
+                  alt="Theme Icon"
+                  class="img-fluid"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <h7 class="fw-bold mb-3 text-center">Mechanical Engineering</h7>
+              <ul class="w-100 px-4" style="line-height: 1.4; font-size: 13px">
+                <li>Mechanical manufacturing</li>
+                <li>AI & 3D printer and additive engineering</li>
+                <li>Mechatronics & cybernetics in mechanical Engineering</li>
+                <li>Applications of AI in manufacture of cycloid gears</li>
+                <li>ISF technology in forming SUS304</li>
+              </ul>
+            </div>
+            <!--Electrical-->
+            <div
+              class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center"
+            >
+              <div
+                class="bg-white rounded-circle mb-3 shadow-sm"
+                style="
+                  width: 150px;
+                  height: 150px;
+                  border: 6px solid #fff;
+                  overflow: hidden;
+                "
+              >
+                <img
+                  src="images/nhincc.jpg"
+                  alt="Theme Icon"
+                  class="img-fluid"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <h7 class="fw-bold mb-3 text-center"
+                >Electrical and Electronics Engineering</h7
+              >
+              <ul class="w-100 px-4" style="line-height: 1.4; font-size: 13px">
+                <li>Smart grid</li>
+                <li>IOT, communication</li>
+                <li>Robotic</li>
+                <li>Chatbot</li>
+                <li>IC Design, Embedded System</li>
+                <li>Power systems</li>
+                <li>Signal processing, voice, image processing</li>
+              </ul>
+            </div>
+            <!--Civil-E-->
+            <div
+              class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center"
+            >
+              <div
+                class="bg-white rounded-circle mb-3 shadow-sm"
+                style="
+                  width: 150px;
+                  height: 150px;
+                  border: 6px solid #fff;
+                  overflow: hidden;
+                "
+              >
+                <img
+                  src="images/weirdo.jpg"
+                  alt="Theme Icon"
+                  class="img-fluid"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <h7 class="fw-bold mb-3 text-center">Civil Engineering</h7>
+              <ul class="w-100 px-4" style="line-height: 1.4; font-size: 13px">
+                <li>Numerical Methods and Applications in Civil Engineering</li>
+                <li>Mechanics of Structures and Materials</li>
+                <li>Structural Reliability & Stability</li>
+                <li>Structural Health Monitoring</li>
+                <li>Sustainable Trends in Architecture and Urban Planning</li>
+                <li>BIM in Engineering and Construction Management</li>
+                <li>
+                  Applications of AI and Machine Learning in Civil Engineering
+                </li>
+              </ul>
+            </div>
+            <!--AI Design-->
+            <div
+              class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center"
+            >
+              <div
+                class="bg-white rounded-circle mb-3 shadow-sm"
+                style="
+                  width: 150px;
+                  height: 150px;
+                  border: 6px solid #fff;
+                  overflow: hidden;
+                "
+              >
+                <img
+                  src="images/mugshot.jpg"
+                  alt="Theme Icon"
+                  class="img-fluid"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <h7 class="fw-bold mb-3 text-center">AI Design</h7>
+              <ul class="w-100 px-4" style="line-height: 1.4; font-size: 13px">
+                <li>
+                  AI in Design Practice and Creative Innovation: Generative AI,
+                  AI-assisted ideation, human-AI collaboration
+                </li>
+                <li>
+                  Design Education and Future Creative Competencies:
+                  I-integrated curricula, studio learning, future designer
+                  skills
+                </li>
+                <li>
+                  Cultural Heritage, Identity and Digital Design: Heritage
+                  preservation, VR/AR applications, local identity in design
+                </li>
+                <li>
+                  Human-Centered, Ethical and Inclusive Design: Human-AI
+                  interaction, ethical AI, socially responsible design
+                </li>
+                <li>
+                  Smart, Sustainable and Future Living Design: Smart
+                  architecture/ interiors, sustainable materials,
+                  energy-efficient environments
+                </li>
+                <li>
+                  Digital Experience and Interactive Media Design: UX/UI,
+                  AR/VR/XR, immersive and interactive storytelling
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script>
-      // 1. Đặt thời gian đích đếm ngược theo giờ Việt Nam (UTC+7)
-      const targetDateTime = new Date("2026-10-29T00:00:00+07:00");
-      const TARGET_DATE = targetDateTime.getTime();
-
-      function executeFlip(cardElement, newNumber) {
-        const topHalf = cardElement.querySelector(".top");
-        const bottomHalf = cardElement.querySelector(".bottom");
-        const currentNumber = topHalf.getAttribute("data-num");
-
-        // Nếu số không đổi (ví dụ hàng chục của phút) thì bỏ qua không tạo hiệu ứng lật
-        if (currentNumber === String(newNumber)) return;
-
-        // Tạo 2 mảnh giấy hiệu ứng lật đè lên trên
-        const topFlip = document.createElement("div");
-        topFlip.classList.add("card-half", "top", "top-flip");
-        topFlip.setAttribute("data-num", currentNumber);
-
-        const bottomFlip = document.createElement("div");
-        bottomFlip.classList.add("card-half", "bottom", "bottom-flip");
-        bottomFlip.setAttribute("data-num", newNumber);
-
-        // Cập nhật giá trị số mới cho mảnh giấy gốc ẩn phía sau
-        topHalf.setAttribute("data-num", newNumber);
-
-        bottomFlip.addEventListener("animationend", () => {
-          bottomHalf.setAttribute("data-num", newNumber);
-          bottomFlip.remove();
-        });
-
-        cardElement.appendChild(topFlip);
-        cardElement.appendChild(bottomFlip);
-
-        setTimeout(() => {
-          topFlip.remove();
-        }, 500);
-      }
-
-      function updateSegment(tensId, onesId, totalValue) {
-        const tensValue = Math.floor(totalValue / 10);
-        const onesValue = totalValue % 10;
-
-        executeFlip(document.getElementById(tensId), tensValue);
-        executeFlip(document.getElementById(onesId), onesValue);
-      }
-
-      function runTimer() {
-        // Lấy thời gian hiện tại theo giờ Việt Nam
-        const now = new Date();
-        const vietnamTime = new Date(
-          now.toLocaleString("en-US", { timeZone: "Asia/Ho_Chi_Minh" }),
-        );
-        const remainTime = TARGET_DATE - vietnamTime.getTime();
-
-        if (remainTime <= 0) {
-          updateSegment("w-tens", "w-ones", 0);
-          updateSegment("d-tens", "d-ones", 0);
-          updateSegment("h-tens", "h-ones", 0);
-          updateSegment("m-tens", "m-ones", 0);
-          updateSegment("s-tens", "s-ones", 0);
-          clearInterval(timerInterval);
-          return;
-        }
-
-        // Trích xuất toán học tuần, ngày, giờ, phút, giây
-        const weeks = Math.floor(remainTime / (1000 * 60 * 60 * 24 * 7));
-        const days = Math.floor(
-          (remainTime % (1000 * 60 * 60 * 24 * 7)) / (1000 * 60 * 60 * 24),
-        );
-        const hours = Math.floor(
-          (remainTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-        );
-        const minutes = Math.floor(
-          (remainTime % (1000 * 60 * 60)) / (1000 * 60),
-        );
-        const seconds = Math.floor((remainTime % (1000 * 60)) / 1000);
-
-        // Đẩy số vào các hàm xử lý lật
-        updateSegment("w-tens", "w-ones", weeks);
-        updateSegment("d-tens", "d-ones", days);
-        updateSegment("h-tens", "h-ones", hours);
-        updateSegment("m-tens", "m-ones", minutes);
-        updateSegment("s-tens", "s-ones", seconds);
-      }
-
-      // Khởi chạy vòng lặp cập nhật mỗi 1 giây
-      const timerInterval = setInterval(runTimer, 1000);
-      runTimer(); // Chạy ngay lập tức lần đầu khi load trang
-    </script>
+    <script src="timer.js"></script>
   </body>
 </html>

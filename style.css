@@ -1,0 +1,172 @@
+    body {
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-sizing: border-box;
+        overflow-x: hidden;
+      }
+
+      /* Navbar styles*/
+      .nav-link:hover {
+        color: rgb(228, 51, 51) !important;
+      }
+      #menu .nav-item {
+        display: flex;
+        border-right: 1px solid #ffffff;
+        padding-right: 10px;
+        font-size: 10px;
+      }
+
+      #menu .nav-item:last-child {
+        border-right: none;
+      }
+
+      #menu .nav-link {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+
+      /*Timer*/
+      /* Cụm nhóm (Ngày, Giờ, Phút, Giây) */
+      :root {
+        --card-bg: #5f5c5c;
+        --card-radius: 6px;
+        --text-color: #ffffff;
+        --flip-speed: 0.5s;
+      }
+
+      .flip-clock-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px;
+      }
+
+      .flip-clock-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+      }
+
+      /* Khung chứa 2 ô số (hàng chục và hàng đơn vị) */
+      .flip-clock-cards {
+        display: flex;
+        gap: 3px;
+      }
+
+      /* Cấu trúc 1 ô số độc lập (tương đương thẻ <ul> trong thư viện gốc) */
+      .flip-card {
+        position: relative;
+        width: 45px;
+        height: 65px;
+        font-size: 45px;
+        font-weight: bold;
+        color: var(--text-color);
+        perspective: 300px; /* Tạo độ sâu không gian 3D */
+      }
+
+      /* Định hình nửa trên và nửa dưới của tấm thẻ */
+      .card-half {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+        background-color: var(--card-bg);
+        backface-visibility: hidden; /* Giấu mặt sau khi lật 3D */
+        box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.1);
+        box-sizing: border-box;
+      }
+
+      /* Dùng thuộc tính attr để đưa số từ HTML vào nội dung hiển thị */
+      .card-half::after {
+        content: attr(data-num);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 200%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Thiết lập cho nửa trên */
+      .top {
+        top: 0;
+        border-top-left-radius: var(--card-radius);
+        border-top-right-radius: var(--card-radius);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.622); /* Đường rãnh cắt ngang màu đen ở giữa */
+      }
+
+      .top::after {
+        top: 0;
+        left: 0;
+        line-height: 1; /* Khớp tỉ lệ hiển thị */
+      }
+
+      /* Thiết lập cho nửa dưới */
+      .bottom {
+        bottom: 0;
+        border-bottom-left-radius: var(--card-radius);
+        border-bottom-right-radius: var(--card-radius);
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .bottom::after {
+        bottom: 0;
+        left: 0;
+        line-height: 1;
+      }
+
+      /* --- HIỆU ỨNG DIỄN HOẠT LẬT (ANIMATION KEYFRAMES) --- */
+      .flip-card .top-flip {
+        transform-origin: bottom;
+        animation: flipTop var(--flip-speed) ease-in forwards;
+      }
+
+      .flip-card .bottom-flip {
+        transform-origin: top;
+        transform: rotateX(90deg);
+        animation: flipBottom var(--flip-speed) ease-out var(--flip-speed)
+          forwards;
+      }
+
+      @keyframes flipTop {
+        100% {
+          transform: rotateX(-90deg);
+        }
+      }
+
+      @keyframes flipBottom {
+        100% {
+          transform: rotateX(0deg);
+        }
+      }
+
+      /* Nhãn chữ phân loại (Days, Hours, Minutes, Seconds) */
+      .flip-clock-label {
+        font-size: 10px;
+        font-weight: bold;
+        color: #94a3b8;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        position: absolute;
+        top: -30%;
+        left: 95%;
+        transform: translateX(-90%);
+        color: white;
+      }
+
+      /* Dấu hai chấm ngăn cách */
+      .flip-clock-colon {
+        font-size: 30px;
+        font-weight: bold;
+        color: #475569;
+        margin-bottom: 10px;
+      }
