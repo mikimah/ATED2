@@ -129,74 +129,9 @@ body {
 /**********************************************************/
 
 
-/* important */
-
-.important-contact {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 6rem;
-  margin-top: -15px;
-  border-radius: 8px;
-  padding: 10px 20px;
-  line-height: 1;
-}
-
-.contact-label {
-  color: #5fa3c8;
-  font-size: 14px;
-  white-space: nowrap;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  margin-left: 3rem;
-}
-
-.contact-email {
-  font-size: 14px;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-}
-
-.contact-email a {
-  color: #5fa3c8;
-  text-decoration: none;
-}
-
-.contact-email a:hover {
-  text-decoration: underline;
-}
-
-.important-contact p {
-  color: #4f87a8;
-  margin-bottom: 5px;
-}
-
-.important-contact a {
-  color: #4f87a8;
-  text-decoration: none;
-}
-
-.important-contact a:hover {
-  text-decoration: underline;
-}
-
 section.container {
   padding-left: 15px !important;
   padding-right: 15px !important;
-}
-
-.col-lg-5 img.img-fluid {
-  width: 100% !important;
-  height: auto !important;
-}
-
-.important-contact {
-  flex-direction: column;
-  gap: 6px;
-  text-align: center;
 }
 
 .mainContent {
