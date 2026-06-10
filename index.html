@@ -75,90 +75,90 @@
       </h1>
 
       <!--Timer-->
-      <div class="flip-clock-wrapper" style="
-            position: absolute;
+      <div class="flip-clock-wrapper d-flex align-items-center position-absolute" style="
+            gap: 8px;
+            padding: 5px;
             bottom: -10%;
             left: 50%;
-            transform: translate(-50%, -50%);
             background-color: rgba(255, 255, 255, 0.628);
             margin-bottom: 10px;
           ">
-        <div class="flip-clock-group">
-          <div class="flip-clock-cards">
-            <div class="flip-card" id="w-tens">
+        <div class="flip-clock-group d-flex flex-column align-items-center position-relative" style="gap: 10px;">
+          <div class="flip-clock-cards d-flex"  style="gap:3px;">
+            <div class="flip-card position-relative fw-bold" id="w-tens" style="width: 45px; height: 65px;font-size: 45px;color: var(--text-color);perspective: 300px;">
               <div class="card-half top" data-num="0"></div>
               <div class="card-half bottom" data-num="0"></div>
             </div>
-            <div class="flip-card" id="w-ones">
+            <div class="flip-card position-relative fw-bold" id="w-ones" style="width: 45px; height: 65px;font-size: 45px;color: var(--text-color);perspective: 300px;">
               <div class="card-half top" data-num="0"></div>
               <div class="card-half bottom" data-num="0"></div>
             </div>
           </div>
-          <span class="flip-clock-label">Weeks</span>
+          <span class="flip-clock-label fw-bold text-uppercase position-absolute text-white" style="font-size: 10px;letter-spacing: 0.05em;top: -30%;left: 95%;transform: translateX(-90%);">Weeks</span>
         </div>
 
-        <div class="flip-clock-colon">:</div>
+        <div class="flip-clock-colon fw-bold" style="font-size: 30px; color: #475569;margin-bottom: 10px;">:</div>
 
-        <div class="flip-clock-group">
-          <div class="flip-clock-cards">
-            <div class="flip-card" id="d-tens">
+        <div class="flip-clock-group d-flex flex-column align-items-center position-relative" style="gap: 10px;">
+          <div class="flip-clock-cards d-flex" style="gap:3px;">
+            <div class="flip-card position-relative fw-bold" id="d-tens" style="width: 45px; height: 65px;font-size: 45px;color: var(--text-color);perspective: 300px;">
               <div class="card-half top" data-num="0"></div>
               <div class="card-half bottom" data-num="0"></div>
             </div>
-            <div class="flip-card" id="d-ones">
+            <div class="flip-card position-relative fw-bold" id="d-ones" style="width: 45px; height: 65px;font-size: 45px;color: var(--text-color);perspective: 300px;">
               <div class="card-half top" data-num="0"></div>
               <div class="card-half bottom" data-num="0"></div>
             </div>
           </div>
-          <span class="flip-clock-label">Days</span>
+          <span class="flip-clock-label fw-bold text-uppercase position-absolute text-white" style="font-size: 10px;letter-spacing: 0.05em;top: -30%;left: 95%;transform: translateX(-90%);">Days</span>
         </div>
 
-        <div class="flip-clock-colon">:</div>
+        <div class="flip-clock-colon fw-bold" style="font-size: 30px; color: #475569;margin-bottom: 10px;">:</div>
 
-        <div class="flip-clock-group">
-          <div class="flip-clock-cards">
-            <div class="flip-card" id="h-tens">
+         <div class="flip-clock-group d-flex flex-column align-items-center position-relative" style="gap: 10px;">
+         <div class="flip-clock-cards d-flex"  style="gap:3px;">
+            <div class="flip-card position-relative fw-bold" id="h-tens" style="width: 45px; height: 65px;font-size: 45px;color: var(--text-color);perspective: 300px;">
               <div class="card-half top" data-num="0"></div>
               <div class="card-half bottom" data-num="0"></div>
             </div>
-            <div class="flip-card" id="h-ones">
+            <div class="flip-card position-relative fw-bold" id="h-ones" style="width: 45px; height: 65px;font-size: 45px;color: var(--text-color);perspective: 300px;">
               <div class="card-half top" data-num="0"></div>
               <div class="card-half bottom" data-num="0"></div>
             </div>
           </div>
-          <span class="flip-clock-label">Hours</span>
+          <span class="flip-clock-label fw-bold text-uppercase position-absolute text-white" style="font-size: 10px;letter-spacing: 0.05em;top: -30%;left: 95%;transform: translateX(-90%);">Hours</span>
         </div>
 
-        <div class="flip-clock-colon">:</div>
+        <div class="flip-clock-colon fw-bold" style="font-size: 30px; color: #475569;margin-bottom: 10px;">:</div>
 
-        <div class="flip-clock-group">
-          <div class="flip-clock-cards">
-            <div class="flip-card" id="m-tens">
+        <div class="flip-clock-group d-flex flex-column align-items-center position-relative" style="gap: 10px;">
+          <div class="flip-clock-cards d-flex" style="gap:3px;">
+            <div class="flip-card position-relative fw-bold" id="m-tens" style="width: 45px; height: 65px;font-size: 45px;color: var(--text-color);perspective: 300px;">
               <div class="card-half top" data-num="0"></div>
               <div class="card-half bottom" data-num="0"></div>
             </div>
-            <div class="flip-card" id="m-ones">
+            <div class="flip-card position-relative fw-bold" id="m-ones" style="width: 45px; height: 65px;font-size: 45px;color: var(--text-color);perspective: 300px;">
               <div class="card-half top" data-num="0"></div>
               <div class="card-half bottom" data-num="0"></div>
             </div>
           </div>
-          <span class="flip-clock-label">Minutes</span>
+          <span class="flip-clock-label fw-bold text-uppercase position-absolute text-white" style="font-size: 10px;letter-spacing: 0.05em;top: -30%;left: 95%;transform: translateX(-90%);">Minutes</span>
         </div>
 
-        <div class="flip-clock-colon">:</div>
+        <div class="flip-clock-colon fw-bold" style="font-size: 30px; color: #475569;margin-bottom: 10px;">:</div>
 
-        <div class="flip-clock-group">
-          <div class="flip-clock-cards">
-            <div class="flip-card" id="s-tens">
+        <div class="flip-clock-group d-flex flex-column align-items-center position-relative" style="gap: 10px;">
+          <div class="flip-clock-cards d-flex" style="gap:3px;">
+            <div class="flip-card position-relative fw-bold" id="s-tens" style="width: 45px; height: 65px;font-size: 45px;color: var(--text-color);perspective: 300px;">
               <div class="card-half top" data-num="0"></div>
               <div class="card-half bottom" data-num="0"></div>
             </div>
-            <div class="flip-card" id="s-ones">
+            <div class="flip-card position-relative fw-bold" id="s-ones" style="width: 45px; height: 65px;font-size: 45px;color: var(--text-color);perspective: 300px;">
               <div class="card-half top" data-num="0"></div>
               <div class="card-half bottom" data-num="0"></div>
             </div>
           </div>
-          <span class="flip-clock-label">Seconds</span>
+          <span class="flip-clock-label fw-bold text-uppercase position-absolute text-white" style="font-size: 10px;letter-spacing: 0.05em;top: -30%;left: 95%;transform: translateX(-90%);">Seconds</span>
         </div>
       </div>
     </div>
