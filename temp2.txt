@@ -1,0 +1,190 @@
+    <!-- KEYNOTE SPEAKERS -->
+    <section class="container py-4" style="padding-left:5cm;padding-right:5cm;">
+
+      <h2 class="text-center fw-bold mb-4" style="font-size:22px;">
+        KEYNOTE SPEAKERS
+      </h2>
+
+      <div class="row justify-content-center g-4">
+
+        <!-- Speaker 1 -->
+        <div class="col-12 col-sm-6 col-md-4 text-center">
+
+          <img src="images/Prof__M_B__Srinivas_1.webp" class="rounded-circle"
+            style="width:130px;height:130px;object-fit:cover;object-position:center top;" alt="Prof. M.B. Srinivas">
+
+          <div class="mx-auto mt-3 text-center"
+            style="max-width:230px;width:100%;background:#f2f2f2;padding-bottom:6px;">
+
+            <div class="position-relative pt-2" data-bs-toggle="collapse" data-bs-target="#speaker1"
+              style="cursor:pointer;">
+
+              <span class="fw-semibold" style="font-size:12px;">
+                Prof. M.B. Srinivas
+              </span>
+
+              <i class="bi bi-chevron-down position-absolute"
+                style=" right:10px;top:50%;transform:translateY(-50%); color:#0a78a7;font-size:12px;">
+              </i>
+            </div>
+
+            <div id="speaker1" class="collapse">
+              <div class="pb-1" style="font-size:12px;color:#707070;">
+                Vice Chancellor
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Speaker 2 -->
+        <div class="col-12 col-sm-6 col-md-4 text-center">
+
+          <img src="images/Dr. Daniel.png" class="rounded-circle"
+            style="width:130px;height:130px;object-fit:cover;object-position:center top;" alt="Dr. Daniel Koh Kian Wei">
+
+          <div class="mx-auto mt-3 text-center"
+            style="max-width:230px;width:100%;background:#f2f2f2;padding-bottom:6px;">
+
+            <div class="position-relative pt-2" data-bs-toggle="collapse" data-bs-target="#speaker2"
+              style="cursor:pointer;">
+
+              <span class="fw-semibold" style="font-size:12px;">
+                Dr. Daniel Koh Kian Wei
+              </span>
+              <i class="bi bi-chevron-down position-absolute"
+                style=" right:10px;top:50%;transform:translateY(-50%);color:#0a78a7;font-size:12px;">
+              </i>
+            </div>
+
+            <div id="speaker2" class="collapse">
+              <div class="pb-1" style="font-size:12px;color:#707070;">
+                AI Scientist, Managing Director<br>
+                Data Crafters (Singapore)
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Speaker 3 -->
+        <div class="col-12 col-sm-6 col-md-4 text-center">
+
+          <img src="images/Dr. Zul.png" class="rounded-circle"
+            style="width:130px;height:130px;object-fit:cover;object-position:center top;" alt="Dr. Zulhilmi Ismail">
+
+          <div class="mx-auto mt-3 text-center"
+            style="max-width:230px;width:100%;background:#f2f2f2;padding-bottom:6px;">
+
+            <div class="position-relative pt-2" data-bs-toggle="collapse" data-bs-target="#speaker3"
+              style="cursor:pointer;">
+
+              <span class="fw-semibold" style="font-size:12px;">
+                Dr. Zulhilmi Ismail
+              </span>
+
+              <i class="bi bi-chevron-down position-absolute"
+                style=" right:10px;top:50%; transform:translateY(-50%); color:#0a78a7; font-size:12px;">
+              </i>
+            </div>
+
+            <div id="speaker3" class="collapse">
+              <div class="pb-1" style="font-size:12px;color:#707070;">
+                Cybersecurity Lecturer<br>
+                Industry Practitioner
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Speaker 4 -->
+        <div class="col-12 col-sm-6 col-md-4 text-center">
+
+          <img src="images/nanana.jpg" class="rounded-circle"
+            style="width:130px;height:130px;object-fit:cover;object-position:center top;" alt="">
+
+          <div class="mx-auto mt-3 text-center"
+            style="max-width:230px;width:100%;background:#f2f2f2;padding-bottom:6px;">
+
+            <div class="position-relative pt-2">
+
+              <span class="fw-semibold" style="font-size:12px;">
+                Prof.0 Do
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Speaker 5 -->
+        <div class="col-12 col-sm-6 col-md-4 text-center">
+
+          <img src="images/default-speaker.png" class="rounded-circle"
+            style="width:130px;height:130px;object-fit:cover;object-position:center top;" alt="">
+
+          <div class="mx-auto mt-3 text-center"
+            style="max-width:230px;width:100%;background:#f2f2f2;padding-bottom:6px;">
+
+            <div class="position-relative pt-2">
+
+              <span class="fw-semibold" style="font-size:12px;">
+                &nbsp;
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Speaker 6 -->
+        <div class="col-12 col-sm-6 col-md-4 text-center">
+
+          <img src="images/default-speaker.png" class="rounded-circle"
+            style="width:130px;height:130px;object-fit:cover;object-position:center top;" alt="">
+
+          <div class="mx-auto mt-3 text-center"
+            style="max-width:230px;width:100%;background:#f2f2f2;padding-bottom:6px;">
+
+            <div class="position-relative pt-2">
+
+              <span class="fw-semibold" style="font-size:12px;">
+                &nbsp;
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Speaker 7 -->
+        <div class="col-12 col-sm-6 col-md-4 text-center">
+
+          <img src="images/default-speaker.png" class="rounded-circle"
+            style="width:130px;height:130px;object-fit:cover;object-position:center top;" alt="">
+
+          <div class="mx-auto mt-3 text-center"
+            style="max-width:230px;width:100%;background:#f2f2f2;padding-bottom:6px;">
+
+            <div class="position-relative pt-2">
+
+              <span class="fw-semibold" style="font-size:12px;">
+                &nbsp;
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+    </section>

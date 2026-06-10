@@ -41,9 +41,8 @@ body {
 }
 
 .flip-clock-wrapper {
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.5);
 }
-
 
 /* Định hình nửa trên và nửa dưới của tấm thẻ */
 .card-half {
@@ -127,18 +126,8 @@ body {
   }
 }
 
-
-
 /**********************************************************/
-/* KEYNOTE SPEAKERS  */
-.speaker-row {
-  justify-content: center;
-}
 
-/* KEYNOTE SPEAKERS */
-.speaker-row {
-  justify-content: center;
-}
 
 /* important */
 
@@ -194,3 +183,31 @@ body {
   text-decoration: underline;
 }
 
+section.container {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.col-lg-5 img.img-fluid {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.important-contact {
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+}
+
+.mainContent {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .flip-clock-wrapper {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  .mainContent {
+    width: 70%;
+  }
+}
