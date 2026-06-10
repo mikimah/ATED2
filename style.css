@@ -7,11 +7,22 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 
+/**********************************************************/
 /* Navbar styles*/
 .nav-link:hover {
   color: rgb(228, 51, 51) !important;
 }
+
 #menu .nav-item {
   display: flex;
   border-right: 1px solid #ffffff;
@@ -28,6 +39,7 @@ body {
   padding-right: 20px !important;
 }
 
+/**********************************************************/
 /*Timer*/
 /* Cụm nhóm (Ngày, Giờ, Phút, Giây) */
 :root {
@@ -38,41 +50,7 @@ body {
 }
 
 .flip-clock-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 5px;
-  position: absolute;
-  bottom: -10%;
-  left: 50%;
   transform: translate(-50%, -50%) scale(0.5);
-  background-color: rgba(255, 255, 255, 0.628);
-  margin-bottom: 10px;
-}
-
-.flip-clock-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  position: relative;
-}
-
-/* Khung chứa 2 ô số (hàng chục và hàng đơn vị) */
-.flip-clock-cards {
-  display: flex;
-  gap: 3px;
-}
-
-/* Cấu trúc 1 ô số độc lập (tương đương thẻ <ul> trong thư viện gốc) */
-.flip-card {
-  position: relative;
-  width: 45px;
-  height: 65px;
-  font-size: 45px;
-  font-weight: bold;
-  color: var(--text-color);
-  perspective: 300px; /* Tạo độ sâu không gian 3D */
 }
 
 /* Định hình nửa trên và nửa dưới của tấm thẻ */
@@ -83,7 +61,8 @@ body {
   height: 50%;
   overflow: hidden;
   background-color: var(--card-bg);
-  backface-visibility: hidden; /* Giấu mặt sau khi lật 3D */
+  backface-visibility: hidden;
+  /* Giấu mặt sau khi lật 3D */
   box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
 }
@@ -106,13 +85,15 @@ body {
   top: 0;
   border-top-left-radius: var(--card-radius);
   border-top-right-radius: var(--card-radius);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.622); /* Đường rãnh cắt ngang màu đen ở giữa */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.622);
+  /* Đường rãnh cắt ngang màu đen ở giữa */
 }
 
 .top::after {
   top: 0;
   left: 0;
-  line-height: 1; /* Khớp tỉ lệ hiển thị */
+  line-height: 1;
+  /* Khớp tỉ lệ hiển thị */
 }
 
 /* Thiết lập cho nửa dưới */
@@ -154,26 +135,12 @@ body {
   }
 }
 
-/* Nhãn chữ phân loại (Days, Hours, Minutes, Seconds) */
-.flip-clock-label {
-  font-size: 10px;
-  font-weight: bold;
-  color: #94a3b8;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  position: absolute;
-  top: -30%;
-  left: 95%;
-  transform: translateX(-90%);
-  color: white;
-}
+/**********************************************************/
 
-/* Dấu hai chấm ngăn cách */
-.flip-clock-colon {
-  font-size: 30px;
-  font-weight: bold;
-  color: #475569;
-  margin-bottom: 10px;
+
+section.container {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
 }
 
 .mainContent {
@@ -182,16 +149,7 @@ body {
 
 @media (min-width: 768px) {
   .flip-clock-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 5px;
-    position: absolute;
-    bottom: -10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.628);
-    margin-bottom: 10px;
+    transform: translate(-50%, -50%) scale(0.9);
   }
   .mainContent {
     width: 70%;

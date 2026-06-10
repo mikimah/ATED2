@@ -15,10 +15,15 @@
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="images/logo.png" />
     <title>International Congress - AI, Technology, Engineering & Design</title>
   </head>
+
   <body>
     <!--Header-->
     <header class="container-fluid px-0">
@@ -65,19 +70,25 @@
 
               <li class="nav-item">
                 <a class="nav-link fw-bold" style="color: black" href="#"
+                  >COMMITTEE</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link fw-bold" style="color: black" href="#"
                   >PUBLICATION AND REGISTRATION</a
                 >
               </li>
 
               <li class="nav-item">
                 <a class="nav-link fw-bold" style="color: black" href="#"
-                  >TRAVELER INFORMATION</a
-                >
+                  >TRAVELER INFORMATION
+                </a>
               </li>
 
               <li class="nav-item">
                 <a class="nav-link fw-bold" style="color: black" href="#"
-                  >ABSTRACT SUBMISSION</a
+                  >ABSTRACT SUBMITION</a
                 >
               </li>
             </ul>
@@ -95,107 +106,302 @@
           background-position: top;
         "
       >
-        <h2 class="text-white text-center pt-2 my-0" style="font-size: 18px">
+        <h2 class="text-white text-center pt-2 my-0 mb-2 fs-md-5 fs-6">
           SAIGON TECHNOLOGY UNIVERSITY (STU)
         </h2>
         <h1
-          class="text-white text-center py-0 my-0 fw-bold"
-          style="font-size: 22px; text-shadow: -1px -1px 4px blue"
+          class="text-white text-center py-0 my-0 fw-bold fs-5"
+          style="text-shadow: -1px -1px 4px blue"
         >
           INTERNATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE,
         </h1>
         <h1
-          class="text-white text-center py-0 my-0 fw-bold"
-          style="font-size: 22px; text-shadow: -1px -1px 4px blue"
+          class="text-white text-center py-0 my-0 fw-bold fs-5"
+          style="text-shadow: -1px -1px 4px blue"
         >
           TECHNOLOGY, ENGINEERING AND DESIGN (ATED 2026)
         </h1>
 
         <!--Timer-->
-        <div class="flip-clock-wrapper">
-          <div class="flip-clock-group">
-            <div class="flip-clock-cards">
-              <div class="flip-card" id="w-tens">
+        <div
+          class="flip-clock-wrapper d-flex align-items-center position-absolute"
+          style="
+            gap: 8px;
+            padding: 5px;
+            bottom: -10%;
+            left: 50%;
+            background-color: rgba(255, 255, 255, 0.628);
+            margin-bottom: 10px;
+          "
+        >
+          <div
+            class="flip-clock-group d-flex flex-column align-items-center position-relative"
+            style="gap: 10px"
+          >
+            <div class="flip-clock-cards d-flex" style="gap: 3px">
+              <div
+                class="flip-card position-relative fw-bold"
+                id="w-tens"
+                style="
+                  width: 45px;
+                  height: 65px;
+                  font-size: 45px;
+                  color: var(--text-color);
+                  perspective: 300px;
+                "
+              >
                 <div class="card-half top" data-num="0"></div>
                 <div class="card-half bottom" data-num="0"></div>
               </div>
-              <div class="flip-card" id="w-ones">
+              <div
+                class="flip-card position-relative fw-bold"
+                id="w-ones"
+                style="
+                  width: 45px;
+                  height: 65px;
+                  font-size: 45px;
+                  color: var(--text-color);
+                  perspective: 300px;
+                "
+              >
                 <div class="card-half top" data-num="0"></div>
                 <div class="card-half bottom" data-num="0"></div>
               </div>
             </div>
-            <span class="flip-clock-label">Weeks</span>
+            <span
+              class="flip-clock-label fw-bold text-uppercase position-absolute text-white"
+              style="
+                font-size: 10px;
+                letter-spacing: 0.05em;
+                top: -30%;
+                left: 95%;
+                transform: translateX(-90%);
+              "
+              >Weeks</span
+            >
           </div>
 
-          <div class="flip-clock-colon">:</div>
-
-          <div class="flip-clock-group">
-            <div class="flip-clock-cards">
-              <div class="flip-card" id="d-tens">
-                <div class="card-half top" data-num="0"></div>
-                <div class="card-half bottom" data-num="0"></div>
-              </div>
-              <div class="flip-card" id="d-ones">
-                <div class="card-half top" data-num="0"></div>
-                <div class="card-half bottom" data-num="0"></div>
-              </div>
-            </div>
-            <span class="flip-clock-label">Days</span>
+          <div
+            class="flip-clock-colon fw-bold"
+            style="font-size: 30px; color: #475569; margin-bottom: 10px"
+          >
+            :
           </div>
 
-          <div class="flip-clock-colon">:</div>
-
-          <div class="flip-clock-group">
-            <div class="flip-clock-cards">
-              <div class="flip-card" id="h-tens">
+          <div
+            class="flip-clock-group d-flex flex-column align-items-center position-relative"
+            style="gap: 10px"
+          >
+            <div class="flip-clock-cards d-flex" style="gap: 3px">
+              <div
+                class="flip-card position-relative fw-bold"
+                id="d-tens"
+                style="
+                  width: 45px;
+                  height: 65px;
+                  font-size: 45px;
+                  color: var(--text-color);
+                  perspective: 300px;
+                "
+              >
                 <div class="card-half top" data-num="0"></div>
                 <div class="card-half bottom" data-num="0"></div>
               </div>
-              <div class="flip-card" id="h-ones">
+              <div
+                class="flip-card position-relative fw-bold"
+                id="d-ones"
+                style="
+                  width: 45px;
+                  height: 65px;
+                  font-size: 45px;
+                  color: var(--text-color);
+                  perspective: 300px;
+                "
+              >
                 <div class="card-half top" data-num="0"></div>
                 <div class="card-half bottom" data-num="0"></div>
               </div>
             </div>
-            <span class="flip-clock-label">Hours</span>
+            <span
+              class="flip-clock-label fw-bold text-uppercase position-absolute text-white"
+              style="
+                font-size: 10px;
+                letter-spacing: 0.05em;
+                top: -30%;
+                left: 95%;
+                transform: translateX(-90%);
+              "
+              >Days</span
+            >
           </div>
 
-          <div class="flip-clock-colon">:</div>
-
-          <div class="flip-clock-group">
-            <div class="flip-clock-cards">
-              <div class="flip-card" id="m-tens">
-                <div class="card-half top" data-num="0"></div>
-                <div class="card-half bottom" data-num="0"></div>
-              </div>
-              <div class="flip-card" id="m-ones">
-                <div class="card-half top" data-num="0"></div>
-                <div class="card-half bottom" data-num="0"></div>
-              </div>
-            </div>
-            <span class="flip-clock-label">Minutes</span>
+          <div
+            class="flip-clock-colon fw-bold"
+            style="font-size: 30px; color: #475569; margin-bottom: 10px"
+          >
+            :
           </div>
 
-          <div class="flip-clock-colon">:</div>
-
-          <div class="flip-clock-group">
-            <div class="flip-clock-cards">
-              <div class="flip-card" id="s-tens">
+          <div
+            class="flip-clock-group d-flex flex-column align-items-center position-relative"
+            style="gap: 10px"
+          >
+            <div class="flip-clock-cards d-flex" style="gap: 3px">
+              <div
+                class="flip-card position-relative fw-bold"
+                id="h-tens"
+                style="
+                  width: 45px;
+                  height: 65px;
+                  font-size: 45px;
+                  color: var(--text-color);
+                  perspective: 300px;
+                "
+              >
                 <div class="card-half top" data-num="0"></div>
                 <div class="card-half bottom" data-num="0"></div>
               </div>
-              <div class="flip-card" id="s-ones">
+              <div
+                class="flip-card position-relative fw-bold"
+                id="h-ones"
+                style="
+                  width: 45px;
+                  height: 65px;
+                  font-size: 45px;
+                  color: var(--text-color);
+                  perspective: 300px;
+                "
+              >
                 <div class="card-half top" data-num="0"></div>
                 <div class="card-half bottom" data-num="0"></div>
               </div>
             </div>
-            <span class="flip-clock-label">Seconds</span>
+            <span
+              class="flip-clock-label fw-bold text-uppercase position-absolute text-white"
+              style="
+                font-size: 10px;
+                letter-spacing: 0.05em;
+                top: -30%;
+                left: 95%;
+                transform: translateX(-90%);
+              "
+              >Hours</span
+            >
+          </div>
+
+          <div
+            class="flip-clock-colon fw-bold"
+            style="font-size: 30px; color: #475569; margin-bottom: 10px"
+          >
+            :
+          </div>
+
+          <div
+            class="flip-clock-group d-flex flex-column align-items-center position-relative"
+            style="gap: 10px"
+          >
+            <div class="flip-clock-cards d-flex" style="gap: 3px">
+              <div
+                class="flip-card position-relative fw-bold"
+                id="m-tens"
+                style="
+                  width: 45px;
+                  height: 65px;
+                  font-size: 45px;
+                  color: var(--text-color);
+                  perspective: 300px;
+                "
+              >
+                <div class="card-half top" data-num="0"></div>
+                <div class="card-half bottom" data-num="0"></div>
+              </div>
+              <div
+                class="flip-card position-relative fw-bold"
+                id="m-ones"
+                style="
+                  width: 45px;
+                  height: 65px;
+                  font-size: 45px;
+                  color: var(--text-color);
+                  perspective: 300px;
+                "
+              >
+                <div class="card-half top" data-num="0"></div>
+                <div class="card-half bottom" data-num="0"></div>
+              </div>
+            </div>
+            <span
+              class="flip-clock-label fw-bold text-uppercase position-absolute text-white"
+              style="
+                font-size: 10px;
+                letter-spacing: 0.05em;
+                top: -30%;
+                left: 95%;
+                transform: translateX(-90%);
+              "
+              >Minutes</span
+            >
+          </div>
+
+          <div
+            class="flip-clock-colon fw-bold"
+            style="font-size: 30px; color: #475569; margin-bottom: 10px"
+          >
+            :
+          </div>
+
+          <div
+            class="flip-clock-group d-flex flex-column align-items-center position-relative"
+            style="gap: 10px"
+          >
+            <div class="flip-clock-cards d-flex" style="gap: 3px">
+              <div
+                class="flip-card position-relative fw-bold"
+                id="s-tens"
+                style="
+                  width: 45px;
+                  height: 65px;
+                  font-size: 45px;
+                  color: var(--text-color);
+                  perspective: 300px;
+                "
+              >
+                <div class="card-half top" data-num="0"></div>
+                <div class="card-half bottom" data-num="0"></div>
+              </div>
+              <div
+                class="flip-card position-relative fw-bold"
+                id="s-ones"
+                style="
+                  width: 45px;
+                  height: 65px;
+                  font-size: 45px;
+                  color: var(--text-color);
+                  perspective: 300px;
+                "
+              >
+                <div class="card-half top" data-num="0"></div>
+                <div class="card-half bottom" data-num="0"></div>
+              </div>
+            </div>
+            <span
+              class="flip-clock-label fw-bold text-uppercase position-absolute text-white"
+              style="
+                font-size: 10px;
+                letter-spacing: 0.05em;
+                top: -30%;
+                left: 95%;
+                transform: translateX(-90%);
+              "
+              >Seconds</span
+            >
           </div>
         </div>
       </div>
     </banner>
     <!-- Main Content -->
-    <main class="mainContent m-auto">
-      <!--Overview-->
+    <main class="mainContent mx-auto">
+      <!-- CONFERENCE OVERVIEW -->
       <section
         class="container-fluid w-100 p-4 mx-auto d-flex flex-md-row flex-column justify-content-center align-items-md-start align-items-center gap-md-5"
         style="
@@ -205,78 +411,103 @@
       >
         <!--Left-->
         <div class="col-md-5">
-          <h5 class="mb-3" style="font-weight: 1000">CONFERENCE OVERVIEW</h5>
+          <h1 class="mb-2 fs-4" style="font-weight: 900">
+            CONFERENCE OVERVIEW
+          </h1>
           <p
             class="fw-lighter"
             style="line-height: 1.1; text-align: justify; font-size: 14px"
           >
             In the context of rapid advancements in Artificial Intelligence
-            (AI), interdisciplinary collaboration and practical applications
-            have become extremely important. The international conference with
-            the theme “<span class="fw-medium"
-              >Shaping the Future with AI: Innovation, Integration and
-              Impact</span
-            >” is organized by
-            <span class="fw-medium">Saigon Technology University (STU)</span> in
-            collaboration with domestic and international partners. The event,
-            titled the
-            <span class="fw-medium"
-              >International Conference on Artificial Intelligence, Technology,
-              Engineering and Design</span
-            >, is scheduled to take place from
-            <span class="fw-medium">October 29 to October 31, 2026</span>. The
-            conference will gather scientists, experts, and practitioners to
-            exchange knowledge, share experiences, and promote collaboration in
-            AI, technology, engineering, and design. The organizers cordially
+            (AI), which has become a core driver of global innovation, the
+            connection of knowledge, enhancement of interdisciplinary
+            collaboration, and promotion of AI applications in practice are
+            increasingly essential. Under the theme
+            <strong>
+              “Shaping the Future with AI: Innovation, Integration and Impact” </strong
+            >, the conference aims to establish an academic and practical forum
+            for sharing cutting-edge research, fostering technology transfer,
+            and generating positive societal impacts.
+
+            <strong>Saigon Technology University (STU)</strong>, in
+            collaboration with domestic and international partners, is pleased
+            to organize the
+
+            <strong>
+              International Conference on Artificial Intelligence, Technology,
+              Engineering and Design,
+            </strong>
+
+            scheduled to take place from
+
+            <strong> October 29 to October 31, 2026. </strong>
+
+            The conference will bring together scientists, experts, and
+            practitioners to exchange academic knowledge, share practical
+            experiences, and promote collaboration in the fields of artificial
+            intelligence, technology, engineering, and design. We cordially
             invite scholars, experts, and enterprises to submit papers and
-            participate in shaping the future with AI for sustainable
-            development and societal value.
+            participate in the conference, contributing to shaping the future
+            with AI towards sustainable development and meaningful societal
+            values.
           </p>
         </div>
         <!--Right-->
         <div class="col-md-5" style="font-size: 14px">
-          <div class="w-100 d-flex justify-content-center">
+          <div class="w-100 d-flex flex-column justify-content-center mb-3">
             <img
               src="images/school.jpg"
-              alt="a"
-              class="img-fluid"
-              style="max-height: 200px; width: auto"
+              class="img-fluid d-block mb-1"
+              style="width: 100%; height: 210px; object-fit: cover"
+              alt=""
             />
+            <p class="fw-lighter text-center m-0">Conference Venue</p>
           </div>
 
-          <div class="d-flex align-items-start gap-2 mt-3">
-            <img
-              src="images/icon-location.png"
-              alt="location"
-              style="width: 35px; height: 35px"
-            />
+          <div
+            class="d-flex align-items-center justify-content-start gap-2 mt-3"
+          >
+            <i class="bi bi-geo-alt-fill fs-4"></i>
             <p class="mb-0 fw-lighter" style="line-height: 1.1">
               Sai Gon Technology University (STU), 180 Cao Lo street, Chanh Hung
               Ward, Ho Chi Minh City, VietNam
             </p>
           </div>
-          <div class="d-flex align-items-start mt-3">
-            <img
-              src="images/icon-calendar.png"
-              alt="calendar"
-              style="width: 35px; height: 35px"
-            />
+          <div
+            class="d-flex align-items-center justify-content-start gap-1 mt-3"
+          >
+            <i class="bi bi-calendar3 fs-4"></i>
             <p class="mb-0 py-2 px-2 fw-lighter">29-30 October, 2026</p>
           </div>
         </div>
       </section>
+
       <!--Themes-->
-      <section class="container py-4 bg-danger">
+      <section
+        class="container py-4"
+        style=" color: black"
+      >
         <!--Tổng-->
-        <div class="rounded-4 py-2 mx-5 bg-secondary">
-          <h3 class="mb-3 fw-bold text-center">THEMES</h3>
-          <div class="row gy-4">
+        <div class="rounded-4 p-4" style="background: #ededed">
+          <h1
+            class="mb-3 text-center fs-4"
+            style="
+              font-weight: 900;
+              font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
+            "
+          >
+            THEMES
+          </h1>
+          <div
+            class="row gy-4"
+            style="font-family: Arial, Helvetica, sans-serif"
+          >
             <!--AI-->
             <div
               class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center"
             >
               <div
-                class="bg-white rounded-circle mb-3 shadow-sm"
+                class="rounded-circle mb-3 shadow-sm"
                 style="
                   width: 150px;
                   height: 150px;
@@ -285,7 +516,7 @@
                 "
               >
                 <img
-                  src="images/idk.jpg"
+                  src="images/AI.png"
                   alt="Theme Icon"
                   class="img-fluid"
                   style="width: 100%; height: 100%; object-fit: cover"
@@ -293,12 +524,12 @@
               </div>
               <h7 class="fw-bold mb-3 text-center">Artificial Intelligence</h7>
               <ul class="w-100 px-4" style="line-height: 1.4; font-size: 13px">
-                <li>Neural Network applications</li>
-                <li>Machine Learning</li>
-                <li>Computer Vision</li>
-                <li>Chatbot</li>
-                <li>AI applications</li>
-                <li>NLP</li>
+                <li style="padding-left: 20px">Neural Network applications</li>
+                <li style="padding-left: 20px">Machine Learning</li>
+                <li style="padding-left: 20px">Computer Vision</li>
+                <li style="padding-left: 20px">Chatbot</li>
+                <li style="padding-left: 20px">AI applications</li>
+                <li style="padding-left: 20px">NLP</li>
               </ul>
             </div>
             <!--M-E-->
@@ -306,7 +537,7 @@
               class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center"
             >
               <div
-                class="bg-white rounded-circle mb-3 shadow-sm"
+                class="rounded-circle mb-3 shadow-sm"
                 style="
                   width: 150px;
                   height: 150px;
@@ -315,7 +546,7 @@
                 "
               >
                 <img
-                  src="images/dog.jpg"
+                  src="images/ME.png"
                   alt="Theme Icon"
                   class="img-fluid"
                   style="width: 100%; height: 100%; object-fit: cover"
@@ -323,11 +554,19 @@
               </div>
               <h7 class="fw-bold mb-3 text-center">Mechanical Engineering</h7>
               <ul class="w-100 px-4" style="line-height: 1.4; font-size: 13px">
-                <li>Mechanical manufacturing</li>
-                <li>AI & 3D printer and additive engineering</li>
-                <li>Mechatronics & cybernetics in mechanical Engineering</li>
-                <li>Applications of AI in manufacture of cycloid gears</li>
-                <li>ISF technology in forming SUS304</li>
+                <li style="padding-left: 20px">Mechanical manufacturing</li>
+                <li style="padding-left: 20px">
+                  AI & 3D printer and additive engineering
+                </li>
+                <li style="padding-left: 20px">
+                  Mechatronics & cybernetics in mechanical Engineering
+                </li>
+                <li style="padding-left: 20px">
+                  Applications of AI in manufacture of cycloid gears
+                </li>
+                <li style="padding-left: 20px">
+                  ISF technology in forming SUS304
+                </li>
               </ul>
             </div>
             <!--Electrical-->
@@ -335,7 +574,7 @@
               class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center"
             >
               <div
-                class="bg-white rounded-circle mb-3 shadow-sm"
+                class="rounded-circle mb-3 shadow-sm"
                 style="
                   width: 150px;
                   height: 150px;
@@ -344,7 +583,7 @@
                 "
               >
                 <img
-                  src="images/nhincc.jpg"
+                  src="images/EaE.jpg"
                   alt="Theme Icon"
                   class="img-fluid"
                   style="width: 100%; height: 100%; object-fit: cover"
@@ -354,13 +593,15 @@
                 >Electrical and Electronics Engineering</h7
               >
               <ul class="w-100 px-4" style="line-height: 1.4; font-size: 13px">
-                <li>Smart grid</li>
-                <li>IOT, communication</li>
-                <li>Robotic</li>
-                <li>Chatbot</li>
-                <li>IC Design, Embedded System</li>
-                <li>Power systems</li>
-                <li>Signal processing, voice, image processing</li>
+                <li style="padding-left: 20px">Smart grid</li>
+                <li style="padding-left: 20px">IOT, communication</li>
+                <li style="padding-left: 20px">Robotic</li>
+                <li style="padding-left: 20px">Chatbot</li>
+                <li style="padding-left: 20px">IC Design, Embedded System</li>
+                <li style="padding-left: 20px">Power systems</li>
+                <li style="padding-left: 20px">
+                  Signal processing, voice, image processing
+                </li>
               </ul>
             </div>
             <!--Civil-E-->
@@ -368,7 +609,7 @@
               class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center"
             >
               <div
-                class="bg-white rounded-circle mb-3 shadow-sm"
+                class="rounded-circle mb-3 shadow-sm"
                 style="
                   width: 150px;
                   height: 150px;
@@ -377,7 +618,7 @@
                 "
               >
                 <img
-                  src="images/weirdo.jpg"
+                  src="images/CE.png"
                   alt="Theme Icon"
                   class="img-fluid"
                   style="width: 100%; height: 100%; object-fit: cover"
@@ -385,13 +626,23 @@
               </div>
               <h7 class="fw-bold mb-3 text-center">Civil Engineering</h7>
               <ul class="w-100 px-4" style="line-height: 1.4; font-size: 13px">
-                <li>Numerical Methods and Applications in Civil Engineering</li>
-                <li>Mechanics of Structures and Materials</li>
-                <li>Structural Reliability & Stability</li>
-                <li>Structural Health Monitoring</li>
-                <li>Sustainable Trends in Architecture and Urban Planning</li>
-                <li>BIM in Engineering and Construction Management</li>
-                <li>
+                <li style="padding-left: 20px">
+                  Numerical Methods and Applications in Civil Engineering
+                </li>
+                <li style="padding-left: 20px">
+                  Mechanics of Structures and Materials
+                </li>
+                <li style="padding-left: 20px">
+                  Structural Reliability & Stability
+                </li>
+                <li style="padding-left: 20px">Structural Health Monitoring</li>
+                <li style="padding-left: 20px">
+                  Sustainable Trends in Architecture and Urban Planning
+                </li>
+                <li style="padding-left: 20px">
+                  BIM in Engineering and Construction Management
+                </li>
+                <li style="padding-left: 20px">
                   Applications of AI and Machine Learning in Civil Engineering
                 </li>
               </ul>
@@ -401,7 +652,7 @@
               class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center"
             >
               <div
-                class="bg-white rounded-circle mb-3 shadow-sm"
+                class="rounded-circle mb-3 shadow-sm"
                 style="
                   width: 150px;
                   height: 150px;
@@ -410,7 +661,7 @@
                 "
               >
                 <img
-                  src="images/mugshot.jpg"
+                  src="images/AID.png"
                   alt="Theme Icon"
                   class="img-fluid"
                   style="width: 100%; height: 100%; object-fit: cover"
@@ -418,29 +669,29 @@
               </div>
               <h7 class="fw-bold mb-3 text-center">AI Design</h7>
               <ul class="w-100 px-4" style="line-height: 1.4; font-size: 13px">
-                <li>
+                <li style="padding-left: 20px">
                   AI in Design Practice and Creative Innovation: Generative AI,
                   AI-assisted ideation, human-AI collaboration
                 </li>
-                <li>
+                <li style="padding-left: 20px">
                   Design Education and Future Creative Competencies:
                   I-integrated curricula, studio learning, future designer
                   skills
                 </li>
-                <li>
+                <li style="padding-left: 20px">
                   Cultural Heritage, Identity and Digital Design: Heritage
                   preservation, VR/AR applications, local identity in design
                 </li>
-                <li>
+                <li style="padding-left: 20px">
                   Human-Centered, Ethical and Inclusive Design: Human-AI
                   interaction, ethical AI, socially responsible design
                 </li>
-                <li>
+                <li style="padding-left: 20px">
                   Smart, Sustainable and Future Living Design: Smart
                   architecture/ interiors, sustainable materials,
                   energy-efficient environments
                 </li>
-                <li>
+                <li style="padding-left: 20px">
                   Digital Experience and Interactive Media Design: UX/UI,
                   AR/VR/XR, immersive and interactive storytelling
                 </li>
@@ -449,51 +700,857 @@
           </div>
         </div>
       </section>
-      <!--Committee-->
+
+      <!-- IMPORTANT DATES -->
       <section
-        class="container-fluid w-100 p-4"
-        style="
-          color: black;
-          font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
-        "
+        class="container py-4"
+        style="padding-left: 5cm; padding-right: 5cm"
       >
-        <h3 class="mb-3 text-center" style="font-weight: 900">COMMITTEE</h3>
-        <div
-          class="container-fluid d-flex flex-md-row flex-column flex-wrap justify-content-center align-items-md-center align-items-start p-0"
-          style="border: 1px solid black;"
+        <h1
+          class="text-center fw-bold mb-4 fs-4"
+          style="
+            color: black;
+            font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
+            font-weight: 900;
+          "
         >
-          <div
-            class="col-md-5 col-12 order-md-2 mx-md-4"
-            style="border: 1px solid red"
-          >
-            <div>
-              <h5 style="font-size: 18px">CHAIR OF THE CONFERENCE</h5>
+          IMPORTANT DATES
+        </h1>
+
+        <div class="row text-center">
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
+            <h5 class="fw-semibold mb-1" style="font-size: 16px">
+              July 31, 2026
+            </h5>
+            <p class="mb-0" style="font-size: 14px; color: #666">
+              Abstract submission
+            </p>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
+            <h5 class="fw-semibold mb-1" style="font-size: 16px">
+              August 15, 2026
+            </h5>
+            <p class="mb-0" style="font-size: 14px; color: #666">
+              Notification of Abstract acceptance
+            </p>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
+            <h5 class="fw-semibold mb-1" style="font-size: 16px">
+              September 30, 2026
+            </h5>
+            <p class="mb-0" style="font-size: 14px; color: #666">
+              Full paper submission
+            </p>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
+            <h5 class="fw-semibold mb-1" style="font-size: 16px">
+              September 01, 2026
+            </h5>
+            <p class="mb-0" style="font-size: 14px; color: #666">
+              Registration online
+            </p>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
+            <h5 class="fw-semibold mb-1" style="font-size: 16px">
+              October 31, 2026
+            </h5>
+            <p class="mb-0" style="font-size: 14px; color: #666">
+              Technical and Social tour
+            </p>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
+            <h5 class="fw-semibold mb-1" style="font-size: 16px">
+              October 29, 2026
+            </h5>
+            <p class="mb-0" style="font-size: 14px; color: #666">
+              Welcome reception
+            </p>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
+            <h5 class="fw-semibold mb-1" style="font-size: 16px">
+              October 29 - 30, 2026
+            </h5>
+            <p class="mb-0" style="font-size: 14px; color: #666">
+              ATED 2026 Conference
+            </p>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
+            <h5 class="fw-semibold mb-1" style="font-size: 16px">
+              October 30, 2026
+            </h5>
+            <p class="mb-0" style="font-size: 14px; color: #666">Gala Dinner</p>
+          </div>
+        </div>
+
+        <div class=" d-flex flex-md-row flex-column align-items-center justify-content-around"  >
+          <p class="text-primary col-md-5 text-end" >Further Information:</p>
+          <p class=" text-primary col-md-5">
+            <a href="mailto:ATED@stu.edu.vn" style="text-decoration: none;">ATED@stu.edu.vn</a> &nbsp;/&nbsp;
+            <a href="mailto:htqt@stu.edu.vn" style="text-decoration: none;">htqt@stu.edu.vn</a>
+          </p>
+        </div>
+
+      </section>
+
+      <!-- KEYNOTE SPEAKERS -->
+      <section
+        class="container py-4"
+        style="padding-left: 5cm; padding-right: 5cm"
+      >
+        <h1 class="text-center mb-4 fs-4" style="color: black;font-family: &quot;Bricolage Grotesque&quot;, sans-serif; font-weight: 900;">
+          KEYNOTE SPEAKERS
+        </h1>
+
+        <div class="row justify-content-center g-4">
+          <!-- Speaker 1 -->
+          <div class="col-12 col-sm-6 col-md-4 text-center">
+            <img
+              src="images/Prof__M_B__Srinivas_1.webp"
+              class="rounded-circle"
+              style="
+                width: 130px;
+                height: 130px;
+                object-fit: cover;
+                object-position: center top;
+              "
+              alt="Prof. M.B. Srinivas"
+            />
+
+            <div
+              class="mx-auto mt-3 text-center"
+              style="
+                max-width: 230px;
+                width: 100%;
+                background: #f2f2f2;
+                padding-bottom: 6px;
+              "
+            >
+              <div
+                class="position-relative pt-2"
+                data-bs-toggle="collapse"
+                data-bs-target="#speaker1"
+                style="cursor: pointer"
+              >
+                <span class="fw-semibold" style="font-size: 12px">
+                  Prof. M.B. Srinivas
+                </span>
+
+                <i
+                  class="bi bi-chevron-down position-absolute"
+                  style="
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #0a78a7;
+                    font-size: 12px;
+                  "
+                >
+                </i>
+              </div>
+
+              <div id="speaker1" class="collapse">
+                <div class="pb-1" style="font-size: 12px; color: #707070">
+                  Vice Chancellor<br />
+                  Aditya University, India
+                </div>
+              </div>
             </div>
           </div>
-          <div
-            class="col-md-5 col-12 order-md-3 mx-md-4"
-            style="border: 1px solid blue"
-          >
-            <div>
-              <h5 style="font-size: 18px">ORGANIZING COMMITTEE</h5>
+
+          <!-- Speaker 2 -->
+          <div class="col-12 col-sm-6 col-md-4 text-center">
+            <img
+              src="images/Dr. Daniel.png"
+              class="rounded-circle"
+              style="
+                width: 130px;
+                height: 130px;
+                object-fit: cover;
+                object-position: center top;
+              "
+              alt="Dr. Daniel Koh Kian Wei"
+            />
+
+            <div
+              class="mx-auto mt-3 text-center"
+              style="
+                max-width: 230px;
+                width: 100%;
+                background: #f2f2f2;
+                padding-bottom: 6px;
+              "
+            >
+              <div
+                class="position-relative pt-2"
+                data-bs-toggle="collapse"
+                data-bs-target="#speaker2"
+                style="cursor: pointer"
+              >
+                <span class="fw-semibold" style="font-size: 12px">
+                  Dr. Daniel Koh Kian Wei
+                </span>
+                <i
+                  class="bi bi-chevron-down position-absolute"
+                  style="
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #0a78a7;
+                    font-size: 12px;
+                  "
+                >
+                </i>
+              </div>
+
+              <div id="speaker2" class="collapse">
+                <div class="pb-1" style="font-size: 12px; color: #707070">
+                  AI Scientist, Managing Director<br />
+                  Data Crafters (Singapore)
+                </div>
+              </div>
             </div>
           </div>
-          <div
-            class="col-md-5 col-12 order-md-4 mx-md-4"
-            style="border: 1px solid green"
-          >
-            <div>
-              <h5 style="font-size: 18px">SCIENTIFIC COMMITTEE</h5>
+
+          <!-- Speaker 3 -->
+          <div class="col-12 col-sm-6 col-md-4 text-center">
+            <img
+              src="images/Dr. Zul.png"
+              class="rounded-circle"
+              style="
+                width: 130px;
+                height: 130px;
+                object-fit: cover;
+                object-position: center top;
+              "
+              alt="Dr. Zulhilmi Ismail"
+            />
+
+            <div
+              class="mx-auto mt-3 text-center"
+              style="
+                max-width: 230px;
+                width: 100%;
+                background: #f2f2f2;
+                padding-bottom: 6px;
+              "
+            >
+              <div
+                class="position-relative pt-2"
+                data-bs-toggle="collapse"
+                data-bs-target="#speaker3"
+                style="cursor: pointer"
+              >
+                <span class="fw-semibold" style="font-size: 12px">
+                  Dr. Zulhilmi Ismail
+                </span>
+
+                <i
+                  class="bi bi-chevron-down position-absolute"
+                  style="
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #0a78a7;
+                    font-size: 12px;
+                  "
+                >
+                </i>
+              </div>
+
+              <div id="speaker3" class="collapse">
+                <div class="pb-1" style="font-size: 12px; color: #707070">
+                  Cybersecurity Lecturer<br />
+                  Industry Practitioner
+                </div>
+              </div>
             </div>
           </div>
-          <div
-            class="col-md-5 col-12 order-md-1 mx-md-4"
-            style="border: 1px solid yellow"
-          >
-            <div>
-              <h5 style="font-size: 18px">INTERNATIONAL CO-ORGANIZIERS</h5>
+          <!-- Speaker 4 -->
+          <div class="col-12 col-sm-6 col-md-4 text-center">
+            <img
+              src="images/default-speaker.png"
+              class="rounded-circle"
+              style="
+                width: 130px;
+                height: 130px;
+                object-fit: cover;
+                object-position: center top;
+              "
+              alt=""
+            />
+
+            <div
+              class="mx-auto mt-3 text-center"
+              style="
+                max-width: 230px;
+                width: 100%;
+                background: #f2f2f2;
+                padding-bottom: 6px;
+              "
+            >
+              <div class="position-relative pt-2">
+                <span class="fw-semibold" style="font-size: 12px">
+                  &nbsp;
+                </span>
+              </div>
             </div>
           </div>
+
+          <!-- Speaker 5 -->
+          <div class="col-12 col-sm-6 col-md-4 text-center">
+            <img
+              src="images/default-speaker.png"
+              class="rounded-circle"
+              style="
+                width: 130px;
+                height: 130px;
+                object-fit: cover;
+                object-position: center top;
+              "
+              alt=""
+            />
+
+            <div
+              class="mx-auto mt-3 text-center"
+              style="
+                max-width: 230px;
+                width: 100%;
+                background: #f2f2f2;
+                padding-bottom: 6px;
+              "
+            >
+              <div class="position-relative pt-2">
+                <span class="fw-semibold" style="font-size: 12px">
+                  &nbsp;
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Speaker 6 -->
+          <div class="col-12 col-sm-6 col-md-4 text-center">
+            <img
+              src="images/default-speaker.png"
+              class="rounded-circle"
+              style="
+                width: 130px;
+                height: 130px;
+                object-fit: cover;
+                object-position: center top;
+              "
+              alt=""
+            />
+
+            <div
+              class="mx-auto mt-3 text-center"
+              style="
+                max-width: 230px;
+                width: 100%;
+                background: #f2f2f2;
+                padding-bottom: 6px;
+              "
+            >
+              <div class="position-relative pt-2">
+                <span class="fw-semibold" style="font-size: 12px">
+                  &nbsp;
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Speaker 7 -->
+          <div class="col-12 col-sm-6 col-md-4 text-center">
+            <img
+              src="images/default-speaker.png"
+              class="rounded-circle"
+              style="
+                width: 130px;
+                height: 130px;
+                object-fit: cover;
+                object-position: center top;
+              "
+              alt=""
+            />
+
+            <div
+              class="mx-auto mt-3 text-center"
+              style="
+                max-width: 230px;
+                width: 100%;
+                background: #f2f2f2;
+                padding-bottom: 6px;
+              "
+            >
+              <div class="position-relative pt-2">
+                <span class="fw-semibold" style="font-size: 12px">
+                  &nbsp;
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMITTEE -->
+      <section
+        class="container py-4"
+        style="padding-left: 5cm; padding-right: 5cm"
+      >
+        <h1
+          class="text-center mb-4 fs-4"
+          style=" color: black;font-family: &quot;Bricolage Grotesque&quot;, sans-serif; font-weight: 900;"
+        >
+          COMMITTEE
+        </h1>
+
+        <div class="row gx-4 gy-1">
+          <!-- INTERNATIONAL CO-ORGANIZERS -->
+          <div class="col-12 col-md-6 order-4 order-md-1">
+            <div class="border border-secondary-subtle">
+              <div
+                class="d-flex justify-content-between align-items-center px-3 py-3"
+                data-bs-toggle="collapse"
+                data-bs-target="#coorganizer"
+                style="cursor: pointer"
+              >
+                <span class="fw-bold" style="font-size: 14px; color: #444">
+                  INTERNATIONAL CO-ORGANIZERS
+                </span>
+
+                <i class="bi bi-chevron-down text-info"></i>
+              </div>
+
+              <div id="coorganizer" class="collapse">
+                <div
+                  class="px-3 pb-3"
+                  style="font-size: 14px; line-height: 1.3; color: #666"
+                >
+                  <p class="mb-1">
+                    Singapore Management University - SMU, Singapore
+                  </p>
+
+                  <p class="mb-1">Hong Kong University - HKU, China</p>
+
+                  <p class="mb-1">
+                    Singapore University of Social Science - SUSS, Singapore
+                  </p>
+
+                  <p class="mb-1">Ngee Ann Polytechnic - NP, Singapore</p>
+
+                  <p class="mb-1">
+                    Vellore Institute of Technology - Andhra Pradesh, VIT-AP
+                    University, India
+                  </p>
+
+                  <p class="mb-1">Aditya University, India</p>
+
+                  <p class="mb-1">SR University - SRU, India</p>
+
+                  <p class="mb-1">Thomson River University - TRU, Canada</p>
+
+                  <p class="mb-1">Troy University, USA</p>
+
+                  <p class="mb-1">
+                    Soegijapranata Catholic University - SCU, Indonesia
+                  </p>
+
+                  <p class="mb-0">
+                    Swiss School of Business and Management - SSBM
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CHAIR OF THE CONFERENCE -->
+          <div class="col-12 col-md-6 order-1 order-md-2">
+            <div class="border border-secondary-subtle">
+              <div
+                class="d-flex justify-content-between align-items-center px-3 py-3"
+                data-bs-toggle="collapse"
+                data-bs-target="#chair"
+                style="cursor: pointer"
+              >
+                <span class="fw-bold" style="font-size: 14px; color: #444">
+                  CHAIR OF THE CONFERENCE
+                </span>
+
+                <i class="bi bi-chevron-down text-info"></i>
+              </div>
+
+              <div id="chair" class="collapse">
+                <div
+                  class="px-3 pb-3"
+                  style="font-size: 14px; line-height: 1.3; color: #666"
+                >
+                  <p class="mb-0">
+                    Assoc. Prof. Dr. Cao Hao Thi - President of Saigon
+                    Technology University (STU)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ORGANIZING COMMITTEE -->
+          <div class="col-12 col-md-6 order-2 order-md-3">
+            <div class="border border-secondary-subtle">
+              <div
+                class="d-flex justify-content-between align-items-center px-3 py-3"
+                data-bs-toggle="collapse"
+                data-bs-target="#organizing"
+                style="cursor: pointer"
+              >
+                <span class="fw-bold" style="font-size: 14px; color: #444">
+                  ORGANIZING COMMITTEE
+                </span>
+
+                <i class="bi bi-chevron-down text-info"></i>
+              </div>
+
+              <div id="organizing" class="collapse">
+                <div
+                  class="px-3 pb-3"
+                  style="font-size: 14px; line-height: 1.5; color: #666"
+                >
+                  <ol class="mb-2">
+                    <li>
+                      Assoc. Prof. Dr. Hoang Kim Anh - Vice President of Saigon
+                      Technology University, Chair of the Organizing Committee
+                    </li>
+
+                    <li>
+                      Dr. Hoang Trung Tien - Head of the Department of
+                      Scientific Management and Postgraduates Affairs, STU,
+                      Vietnam
+                    </li>
+
+                    <li>
+                      MA. Phung Ba Dong - Vice Dean, Faculty of Design, STU,
+                      Vietnam
+                    </li>
+
+                    <li>
+                      MA. Nguyen Kieu Oanh, Vice Dean, Faculty of Design, STU,
+                      Vietnam
+                    </li>
+
+                    <li>
+                      MA. Vu Dinh Hai - Vice Dean, Faculty of Mechanical
+                      Engineering, STU, Vietnam
+                    </li>
+
+                    <li>
+                      MA. Le Phuoc Lam - Vice Dean, Faculty of Electrical &
+                      Electronics Engineering, STU, Vietnam
+                    </li>
+
+                    <li>
+                      MA. Ngo Thanh Duc - Vice Dean, Faculty of Civil
+                      Engineering, STU, Vietnam
+                    </li>
+
+                    <li>Representatives of the Co-organizers:</li>
+                  </ol>
+
+                  <div
+                    class="ms-4"
+                    style="color: #bdbdbd; font-style: italic; line-height: 1.3"
+                  >
+                    <p class="mb-1">
+                      Singapore Management University - SMU, Singapore
+                    </p>
+
+                    <p class="mb-1">Hong Kong University - HKU, China</p>
+
+                    <p class="mb-1">
+                      Singapore University of Social Science - SUSS, Singapore
+                    </p>
+
+                    <p class="mb-1">Ngee Ann Polytechnic - NP, Singapore</p>
+
+                    <p class="mb-1">
+                      Vellore Institute of Technology - Andhra Pradesh, VIT-AP
+                      University, India
+                    </p>
+
+                    <p class="mb-1">Aditya University, India</p>
+
+                    <p class="mb-1">SR University - SRU, India</p>
+
+                    <p class="mb-1">Thomson River University - TRU, Canada</p>
+
+                    <p class="mb-1">Troy University, USA</p>
+
+                    <p class="mb-1">
+                      Soegijapranata Catholic University - SCU, Indonesia
+                    </p>
+
+                    <p class="mb-0">
+                      Swiss School of Business and Management - SSBM
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SCIENTIFIC COMMITTEE -->
+          <div class="col-12 col-md-6 order-3 order-md-4">
+            <div class="border border-secondary-subtle">
+              <div
+                class="d-flex justify-content-between align-items-center px-3 py-3"
+                data-bs-toggle="collapse"
+                data-bs-target="#scientific"
+                style="cursor: pointer"
+              >
+                <span class="fw-bold" style="font-size: 14px; color: #444">
+                  SCIENTIFIC COMMITTEE
+                </span>
+
+                <i class="bi bi-chevron-down text-info"></i>
+              </div>
+
+              <div id="scientific" class="collapse">
+                <div
+                  class="px-3 pb-3"
+                  style="font-size: 14px; line-height: 1.5; color: #666"
+                >
+                  <ol class="mb-2">
+                    <li>
+                      Assoc. Prof. Dr. Cao Hao Thi - President of Saigon
+                      Technology University (STU), Chair of the Scientific
+                      Committee
+                    </li>
+
+                    <li>
+                      Assoc. Prof. Dr. Le Khanh Dien - Dean, Faculty of
+                      Mechanical Engineering, STU, Vietnam
+                    </li>
+
+                    <li>
+                      Dr. Nguyen Tung Lam - Director of International Training
+                      Program Center (ITPC), STU, Vietnam
+                    </li>
+
+                    <li>
+                      Dr. Luong An Vinh - Dean, Faculty of Information
+                      Technology, STU, Vietnam
+                    </li>
+
+                    <li>
+                      Dr. Tang Van To - Dean, Faculty of Electrical &
+                      Electronics Engineering, STU, Vietnam
+                    </li>
+
+                    <li>
+                      Dr. Le Duc Tuan - Dean, Faculty of Civil Engineering, STU,
+                      Vietnam
+                    </li>
+
+                    <li>
+                      Assoc. Prof. Dr. Do Lenh Hung Tu - Dean, Faculty of
+                      Design, STU, Vietnam
+                    </li>
+
+                    <li>Representatives of Co-organizers:</li>
+                  </ol>
+
+                  <div
+                    class="ms-4"
+                    style="color: #bdbdbd; font-style: italic; line-height: 1.3"
+                  >
+                    <p class="mb-1">
+                      Singapore Management University - SMU, Singapore
+                    </p>
+
+                    <p class="mb-1">Hong Kong University - HKU, China</p>
+
+                    <p class="mb-1">
+                      Singapore University of Social Science - SUSS, Singapore
+                    </p>
+
+                    <p class="mb-1">Ngee Ann Polytechnic - NP, Singapore</p>
+
+                    <p class="mb-1">
+                      Vellore Institute of Technology - Andhra Pradesh, VIT-AP
+                      University, India
+                    </p>
+
+                    <p class="mb-1">Aditya University, India</p>
+
+                    <p class="mb-1">SR University - SRU, India</p>
+
+                    <p class="mb-1">Thomson River University - TRU, Canada</p>
+
+                    <p class="mb-1">Troy University, USA</p>
+
+                    <p class="mb-1">
+                      Soegijapranata Catholic University - SCU, Indonesia
+                    </p>
+
+                    <p class="mb-0">
+                      Swiss School of Business and Management - SSBM
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- REGISTRATION -->
+      <section
+        class="container py-4"
+        style="padding-left: 5cm; padding-right: 5cm"
+      >
+        <h1
+          class="text-center fs-4 mb-4"
+          style="color: black; font-family: &quot;Bricolage Grotesque&quot;, sans-serif; font-weight: 900;"
+        >
+          REGISTRATION
+        </h1>
+        <h6
+          class="text-center fw-bold mb-3"
+          style="font-size: 15px; color: #666"
+        >
+          INTERNATIONAL DELEGATES
+        </h6>
+        <!--table International delegates-->
+        <div class="table-responsive mb-4">
+          <table
+            class="table table-bordered text-center align-middle"
+            style="font-size: 14px; border-color: #000"
+          >
+            <thead>
+              <tr>
+                <th scope="col">Full registration (two days)</th>
+                <td>Early bird before 01 October 2026 (USD)</td>
+                <td>Full rate from 01 October 2026 (USD)</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align: left">Academic/ Researcher</td>
+                <td>150</td>
+                <td>200</td>
+              </tr>
+              <tr>
+                <td style="text-align: left">Industry Professional</td>
+                <td>200</td>
+                <td>250</td>
+              </tr>
+              <tr>
+                <td style="text-align: left">*Student</td>
+                <td>50</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td style="text-align: left">**Company/Group registration</td>
+                <td>10% discount</td>
+                <td>10% discount</td>
+              </tr>
+              <tr>
+                <td style="text-align: left">Technical and Social tour</td>
+                <td>50-100</td>
+                <td>50-100</td>
+              </tr>
+            </tbody>
+          </table>
+          <h6
+            class="text-center fw-bold mb-3"
+            style="font-size: 15px; color: #666"
+          >
+            LOCAL DELEGATES
+          </h6>
+        </div>
+        <!--table Local Delegates-->
+        <div class="table-responsive mb-4">
+          <table
+            class="table table-bordered text-center align-middle"
+            style="font-size: 14px; border-color: #000"
+          >
+            <thead>
+              <tr>
+                <th scope="col">Full registration (two days)</th>
+                <td>Early bird before 01 October 2026 (VND)</td>
+                <td>Full rate from 01 October 2026 (VND)</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align: left">Academic/ Researcher</td>
+                <td>1.000.000</td>
+                <td>1.500.000</td>
+              </tr>
+              <tr>
+                <td style="text-align: left">Industry Professional</td>
+                <td>1.500.000</td>
+                <td>2.000.000</td>
+              </tr>
+              <tr>
+                <td style="text-align: left">*Student</td>
+                <td>500.000</td>
+                <td>750.000</td>
+              </tr>
+              <tr>
+                <td style="text-align: left">**Company/Group registration</td>
+                <td>10% discount</td>
+                <td>10% discount</td>
+              </tr>
+              <tr>
+                <td style="text-align: left">Technical and Social tour</td>
+                <td>500.000 - 1.500.000</td>
+                <td>500.000 - 1.500.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!--Note-->
+        <div
+          class="mb-4 mx-auto pt-4 w-50"
+          style="font-size: 12px; color: #333"
+        >
+          <p class="mb-2 fst-italic">
+            For the authors who have difficulty to pay in US Dollars, VND
+            currency is accepted.
+          </p>
+
+          <p class="mb-2 fst-italic" style="color: red">
+            Registration fees will be waived for all participants from Saigon
+            Technology University (STU) and the co-organizing universities.
+          </p>
+
+          <p class="mb-2 fst-italic">
+            (*) Students must provide a certificate issued by their
+            institutions.
+          </p>
+
+          <p class="mb-0 fst-italic">
+            (**) Company/Group Registration: Applicable for groups of three or
+            more participants
+          </p>
+        </div>
+
+        <!--Registration and Banking transfer-->
+        <div class="text-center">
+          <h6 class="fw-bold" style="color: #064e6d; font-size: 10px">
+            Registration and Banking transfer:
+          </h6>
+          <p style="color: #0a78a7; font-size: 13px">
+            following link:
+            <a href="" class="text-decoration-none" style="color: #0a78a7">
+              LINK GOOGLEFORM
+            </a>
+          </p>
         </div>
       </section>
     </main>
