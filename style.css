@@ -137,6 +137,10 @@ body {
 
 /**********************************************************/
 
+.cusTable{
+  width: 100%;
+  font-size: 10px;
+}
 
 section.container {
   padding-left: 15px !important;
@@ -153,5 +157,9 @@ section.container {
   }
   .mainContent {
     width: 70%;
+  }
+  .cusTable {
+    width: 80%;
+    font-size: 14px;
   }
 }
