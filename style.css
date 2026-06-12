@@ -151,6 +151,10 @@ section.container {
   width: 100%;
 }
 
+#goToTopBtn {
+  scale: 0.6;
+}
+
 @media (min-width: 768px) {
   .flip-clock-wrapper {
     transform: translate(-50%, -50%) scale(0.9);
@@ -162,4 +166,100 @@ section.container {
     width: 80%;
     font-size: 14px;
   }
+  #goToTopBtn {
+    scale: 1;
+  }
+}
+
+/**********************************************************/
+@keyframes moveUp1{
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft1 {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes appear1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  
+}
+
+.up-animation.no1.show {
+  animation: moveUp1 0.5s ease-out 0.5s forwards;
+}
+.up-animation.no2.show {
+  animation: moveUp1 0.5s ease-out .75s forwards;
+}
+.up-animation.no3.show {
+  animation: moveUp1 0.5s ease-out 1.0s forwards;
+}
+.up-animation.no4.show {
+  animation: moveUp1 0.5s ease-out 1.25s forwards;
+}
+.up-animation.no5.show {
+  animation: moveUp1 0.5s ease-out 1.5s forwards;
+}
+.up-animation.no6.show {
+  animation: moveUp1 0.5s ease-out 1.75s forwards;
+}
+.up-animation.no7.show {
+  animation: moveUp1 0.5s ease-out 2.0s forwards;
+}
+.up-animation.no8.show {
+  animation: moveUp1 0.5s ease-out 2.25s forwards;
+}
+
+.slideLeft-animation.no1.show {
+  animation: slideInLeft1 0.5s ease-out 1.5s forwards;
+}
+.slideLeft-animation.no2.show {
+  animation: slideInLeft1 0.5s ease-out 1.75s forwards;
+}
+.slideLeft-animation.no3.show {
+  animation: slideInLeft1 0.5s ease-out 2.0s forwards;
+}
+.slideLeft-animation.no4.show {
+  animation: slideInLeft1 0.5s ease-out 2.25s forwards;
+}
+.slideLeft-animation.no5.show {
+  animation: slideInLeft1 0.5s ease-out 2.5s forwards;
+}
+.slideLeft-animation.no9.show {
+  animation: slideInLeft1 0.5s ease-out 2.75s forwards;
+}
+
+.appear-animation.no1.show {
+  animation: appear1 0.5s ease-out 2.5s forwards;
+}
+.appear-animation.no2.show {
+  animation: appear1 0.5s ease-out 2.75s forwards;
+}
+.appear-animation.no3.show {
+  animation: appear1 0.5s ease-out 3.0s forwards;
+}
+.appear-animation.no4.show {
+  animation: appear1 0.5s ease-out 3.25s forwards;
+}
+.appear-animation.no5.show {
+  animation: appear1 0.5s ease-out 3.5s forwards;
 }

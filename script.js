@@ -102,3 +102,25 @@ window.addEventListener("scroll", function () {
 // Khởi chạy vòng lặp cập nhật mỗi 1 giây
 const timerInterval = setInterval(runTimer, 1000);
 runTimer(); // Chạy ngay lập tức lần đầu khi load trang
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      // 🛠️ Dùng querySelectorAll để lấy TẤT CẢ thẻ con có class .animation
+      const children = entry.target.querySelectorAll('.animation');
+
+      if (entry.isIntersecting) {
+        // Duyệt qua từng thẻ con để vứt class "show" vào
+        children.forEach((child) => {
+          child.classList.add('show');
+        });
+      } else {
+        // Cuộn lên thì ẩn đi (Tùy chọn)
+        // children.forEach((child) => {
+        //   child.classList.remove('show');
+        // });
+      }
+    });
+  }, { threshold: 0.1 });
+
+  // Theo dõi các thẻ cha
+  document.querySelectorAll('.parent-box').forEach((box) => observer.observe(box));
