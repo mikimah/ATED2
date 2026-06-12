@@ -26,7 +26,7 @@
 
   <body>
     <!--Header-->
-    <header class="container-fluid px-0">
+    <header class="container-fluid px-0" id="header">
       <nav
         class="navbar navbar-expand-lg w-max"
         style="width: 100%; background-color: #b5e3f9"
@@ -46,37 +46,37 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link fw-bold" style="color: black" href="#"
+                <a class="nav-link fw-bold" style="color: black;cursor: pointer;" href="#"
                   >INTRODUCTION</a
                 >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link fw-bold" style="color: black" href="#"
+                <a class="nav-link fw-bold" style="color: black;cursor: pointer;" onclick="scrollToSection('themes')"
                   >THEMES & SPEAKER</a
                 >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link fw-bold" style="color: black" href="#"
+                <a class="nav-link fw-bold" style="color: black;cursor: pointer;" onclick="scrollToSection('committee')"
                   >COMMITTEE</a
                 >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link fw-bold" style="color: black" href="#"
+                <a class="nav-link fw-bold" style="color: black;cursor: pointer;" onclick="scrollToSection('registration')"
                   >PUBLICATION AND REGISTRATION</a
                 >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link fw-bold" style="color: black" href="#"
+                <a class="nav-link fw-bold" style="color: black;cursor: pointer;" onclick="scrollToSection('accommodation')"
                   >TRAVELER INFORMATION
                 </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link fw-bold" style="color: black" href="#"
+                <a class="nav-link fw-bold" style="color: black;cursor: pointer;" onclick="scrollToSection('abstract')"
                   >ABSTRACT SUBMITION</a
                 >
               </li>
@@ -103,13 +103,13 @@
         />
         <h2
           class="text-white text-center mb-2 fs-md-5 fs-6 position-relative"
-          style="z-index: 2; padding-top: 2em;"
+          style="z-index: 2; padding-top: 2em"
         >
           SAIGON TECHNOLOGY UNIVERSITY (STU)
         </h2>
         <h1
           class="text-white text-center position-relative py-0 my-0 fw-bold fs-5"
-          style="text-shadow: -1px -1px 4px blue; z-index: 2;"
+          style="text-shadow: -1px -1px 4px blue; z-index: 2"
         >
           INTERNATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE,
         </h1>
@@ -481,7 +481,7 @@
       </section>
 
       <!--Themes-->
-      <section class="container py-4" style="color: black">
+      <section class="container py-4" id="themes" style="color: black">
         <!--Tổng-->
         <div class="rounded-4 p-4" style="background: #ededed">
           <h1
@@ -1108,7 +1108,7 @@
 
       <!-- COMMITTEE -->
       <section
-        class="container py-4"
+        class="container py-4" id="committee"
         style="padding-left: 5cm; padding-right: 5cm"
       >
         <h1
@@ -1419,7 +1419,7 @@
       </section>
 
       <!-- REGISTRATION -->
-      <section class="container py-4">
+      <section class="container py-4" id="registration">
         <h1
           class="text-center fs-3"
           style="
@@ -1642,7 +1642,7 @@
         </div>
       </section>
       <!--ABSTRACT SUBMISSION-->
-      <section class="container py-4">
+      <section class="container py-4" id="abstract">
         <h1
           class="text-center fs-3 mb-2"
           style="
@@ -1663,7 +1663,7 @@
 
       <!--ACCOMMODATION-->
       <section
-        class="container py-4"
+        class="container py-4" id="accommodation"
         style="padding-left: 5cm; padding-right: 5cm"
       >
         <h1
@@ -1947,6 +1947,23 @@
           </div>
         </div>
       </section>
+      <!--go to top button -->
+      <button
+        id="goToTopBtn"
+        onclick="scrollToSection('header')"
+        class="btn btn-primary "
+        style="
+          position: fixed;
+          bottom: 15px;
+          display: none;
+          right: 15px;
+          z-index: 999;
+          width: 40px;
+          height: 40px;
+        "
+      >
+        <i class="bi bi-arrow-up position-absolute fs-4" style="width:100%;height: 100%;left: 50%;top: 50%;transform: translate(-50%, -50%);"></i>
+      </button>
     </main>
 
     <script
@@ -1954,6 +1971,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script src="timer.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
