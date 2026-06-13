@@ -137,7 +137,7 @@ body {
 
 /**********************************************************/
 
-.cusTable{
+.cusTable {
   width: 100%;
   font-size: 10px;
 }
@@ -172,7 +172,7 @@ section.container {
 }
 
 /**********************************************************/
-@keyframes moveUp1{
+@keyframes moveUp1 {
   0% {
     transform: translateY(30px);
     opacity: 0;
@@ -201,17 +201,16 @@ section.container {
   100% {
     opacity: 1;
   }
-  
 }
 
 .up-animation.no1.show {
   animation: moveUp1 0.5s ease-out 0.5s forwards;
 }
 .up-animation.no2.show {
-  animation: moveUp1 0.5s ease-out .75s forwards;
+  animation: moveUp1 0.5s ease-out 0.75s forwards;
 }
 .up-animation.no3.show {
-  animation: moveUp1 0.5s ease-out 1.0s forwards;
+  animation: moveUp1 0.5s ease-out 1s forwards;
 }
 .up-animation.no4.show {
   animation: moveUp1 0.5s ease-out 1.25s forwards;
@@ -223,43 +222,121 @@ section.container {
   animation: moveUp1 0.5s ease-out 1.75s forwards;
 }
 .up-animation.no7.show {
-  animation: moveUp1 0.5s ease-out 2.0s forwards;
+  animation: moveUp1 0.5s ease-out 2s forwards;
 }
 .up-animation.no8.show {
   animation: moveUp1 0.5s ease-out 2.25s forwards;
 }
+.up-animation.no9.show {
+  animation: moveUp1 0.5s ease-out 2.5s forwards;
+}
+.up-animation.no10.show {
+  animation: moveUp1 0.5s ease-out 2.75s forwards;
+}
+.up-animation.no11.show {
+  animation: moveUp1 0.5s ease-out 3s forwards;
+}
+.up-animation.no12.show {
+  animation: moveUp1 0.5s ease-out 3.25s forwards;
+}
+.up-animation.no13.show {
+  animation: moveUp1 0.5s ease-out 3.5s forwards;
+}
+.up-animation.no14.show {
+  animation: moveUp1 0.5s ease-out 3.75s forwards;
+}
+.up-animation.no15.show {
+  animation: moveUp1 0.5s ease-out 4s forwards;
+}
 
 .slideLeft-animation.no1.show {
-  animation: slideInLeft1 0.5s ease-out 1.5s forwards;
+  animation: slideInLeft1 0.5s ease-out 0.5s forwards;
 }
 .slideLeft-animation.no2.show {
-  animation: slideInLeft1 0.5s ease-out 1.75s forwards;
+  animation: slideInLeft1 0.5s ease-out 0.75s forwards;
 }
 .slideLeft-animation.no3.show {
-  animation: slideInLeft1 0.5s ease-out 2.0s forwards;
+  animation: slideInLeft1 0.5s ease-out 1s forwards;
 }
 .slideLeft-animation.no4.show {
-  animation: slideInLeft1 0.5s ease-out 2.25s forwards;
+  animation: slideInLeft1 0.5s ease-out 1.25s forwards;
 }
 .slideLeft-animation.no5.show {
-  animation: slideInLeft1 0.5s ease-out 2.5s forwards;
+  animation: slideInLeft1 0.5s ease-out 1.5s forwards;
+}
+.slideLeft-animation.no6.show {
+  animation: slideInLeft1 0.5s ease-out 1.75s forwards;
+}
+.slideLeft-animation.no7.show {
+  animation: slideInLeft1 0.5s ease-out 2s forwards;
+}
+.slideLeft-animation.no8.show {
+  animation: slideInLeft1 0.5s ease-out 2.25s forwards;
 }
 .slideLeft-animation.no9.show {
+  animation: slideInLeft1 0.5s ease-out 2.5s forwards;
+}
+.slideLeft-animation.no10.show {
   animation: slideInLeft1 0.5s ease-out 2.75s forwards;
+}
+.slideLeft-animation.no11.show {
+  animation: slideInLeft1 0.5s ease-out 3s forwards;
+}
+.slideLeft-animation.no12.show {
+  animation: slideInLeft1 0.5s ease-out 3.25s forwards;
+}
+.slideLeft-animation.no13.show {
+  animation: slideInLeft1 0.5s ease-out 3.5s forwards;
+}
+.slideLeft-animation.no14.show {
+  animation: slideInLeft1 0.5s ease-out 3.75s forwards;
+}
+.slideLeft-animation.no15.show {
+  animation: slideInLeft1 0.5s ease-out 4s forwards;
 }
 
 .appear-animation.no1.show {
-  animation: appear1 0.5s ease-out 2.5s forwards;
+  animation: appear1 0.5s ease-out 0.5s forwards;
 }
 .appear-animation.no2.show {
-  animation: appear1 0.5s ease-out 2.75s forwards;
+  animation: appear1 0.5s ease-out 0.75s forwards;
 }
 .appear-animation.no3.show {
-  animation: appear1 0.5s ease-out 3.0s forwards;
+  animation: appear1 0.5s ease-out 1s forwards;
 }
 .appear-animation.no4.show {
-  animation: appear1 0.5s ease-out 3.25s forwards;
+  animation: appear1 0.5s ease-out 1.25s forwards;
 }
 .appear-animation.no5.show {
+  animation: appear1 0.5s ease-out 1.5s forwards;
+}
+.appear-animation.no6.show {
+  animation: appear1 0.5s ease-out 1.75s forwards;
+}
+.appear-animation.no7.show {
+  animation: appear1 0.5s ease-out 2s forwards;
+}
+.appear-animation.no8.show {
+  animation: appear1 0.5s ease-out 2.25s forwards;
+}
+.appear-animation.no9.show {
+  animation: appear1 0.5s ease-out 2.5s forwards;
+}
+.appear-animation.no10.show {
+  animation: appear1 0.5s ease-out 2.75s forwards;
+}
+.appear-animation.no11.show {
+  animation: appear1 0.5s ease-out 3s forwards;
+}
+.appear-animation.no12.show {
+  animation: appear1 0.5s ease-out 3.25s forwards;
+}
+.appear-animation.no13.show {
   animation: appear1 0.5s ease-out 3.5s forwards;
+}
+.appear-animation.no14.show {
+  animation: appear1 0.5s ease-out 3.75s forwards;
+}
+.appear-animation.no15.show {
+  animation: appear1 0.5s ease-out 4s forwards;
 }
