@@ -120,7 +120,7 @@ const observer = new IntersectionObserver((entries) => {
         // });
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: window.innerWidth < 768 ? 0.1 : 0.5 });
 
   // Theo dõi các thẻ cha
   document.querySelectorAll('.parent-box').forEach((box) => observer.observe(box));
