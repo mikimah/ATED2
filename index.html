@@ -2148,7 +2148,7 @@
         </div>
       </section>
       <!--go to top button -->
-      <button
+      <!-- <button
         id="goToTopBtn"
         onclick="scrollToSection('header')"
         class="btn btn-primary"
@@ -2172,7 +2172,101 @@
             transform: translate(-50%, -50%);
           "
         ></i>
-      </button>
+      </button> -->
+    
+    
+<div
+    class="d-flex align-items-center gap-2"
+    style="
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        z-index: 999;
+    "
+>
+    <!-- Abstract Template -->
+    <a
+        href="docs/AbstractTemplate.docx"
+        download
+        class="text-decoration-none shadow-sm d-flex align-items-center justify-content-center"
+        style="
+            width: 80px;
+            height: 50px;
+            border: 1px solid gray;
+            border-radius: 12px;
+            background: white;
+            color: red;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.1;
+            text-align: center;
+            padding: 0.2cm 0;
+        "
+    >
+        Abstract<br>Template
+    </a>
+
+    <!-- Information for conference via Zoom -->
+    <a
+        href="https://ated.stu.edu.vn/docs/Program.pdf"
+        target="_blank"
+        class="text-decoration-none shadow-sm d-flex align-items-center justify-content-center"
+        style="
+            width: 100px;
+            height: 50px;
+            border: 1px solid gray;
+            border-radius: 12px;
+            background: white;
+            color: red;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.1;
+            text-align: center;
+            padding: 0.2cm 0;
+        "
+    >
+        Information for<br>conference <br> via Zoom
+    </a>
+
+    <!-- Reserved -->
+    <a
+        href="docs/Reserved.docx"
+        class="text-decoration-none shadow-sm d-flex align-items-center justify-content-center"
+        style="
+           width: 60px;
+            height: 50px;
+            border: 1px solid gray;
+            border-radius: 12px;
+            background: white;
+            color: red;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.1;
+            text-align: center;
+            padding: 0.2cm 0;
+        "
+    >
+        Reserved
+    </a>
+
+    <!-- Go To Top -->
+    <button
+    id="goToTopBtn"
+    onclick="scrollToSection('header')"
+    class="btn btn-primary align-items-center justify-content-center"
+    style="
+        display: none;
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+        padding: 0;
+    "
+>
+    <i class="bi bi-arrow-up" style="font-size:20px;"></i>
+</button>
+</div>
+
+
     </main>
 
     <script

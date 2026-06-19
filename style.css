@@ -340,3 +340,19 @@ section.container {
 .appear-animation.no15.show {
   animation: appear1 0.5s ease-out 4s forwards;
 }
+#floatingButtons{
+    transform: scale(0.9);
+    transform-origin: bottom right;
+}
+
+@media (max-width: 768px){
+    #floatingButtons{
+        transform: scale(0.8);
+    }
+}
+
+@media (min-width: 1200px) {
+    #floatingButtons{
+        transform: scale(0.65);
+    }
+}
