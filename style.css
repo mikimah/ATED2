@@ -151,8 +151,8 @@ section.container {
   width: 100%;
 }
 
-#goToTopBtn {
-  scale: 0.6;
+.fixedBox {
+  transform: translateX(13%) translateY(30%) scale(0.7);
 }
 
 @media (min-width: 768px) {
@@ -166,8 +166,9 @@ section.container {
     width: 80%;
     font-size: 14px;
   }
-  #goToTopBtn {
-    scale: 1;
+
+  .fixedBox {
+    transform: translateX(-1%) translateY(0) scale(1);
   }
 }
 
