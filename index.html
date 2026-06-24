@@ -1,2367 +1,1787 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="images/logo.png" />
-    <title>International Congress - AI, Technology, Engineering & Design</title>
-  </head>
 
-  <body>
-    <!--Header-->
-    <header class="container-fluid px-0" id="header">
-      <nav
-        class="navbar navbar-expand-lg w-max"
-        style="width: 100%; background-color: #b5e3f9"
-      >
-        <div class="container">
-          <button
-            class="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#menu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="images/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <title>International Congress - AI, Technology, Engineering & Design</title>
+</head>
 
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="menu"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a
-                  class="nav-link fw-bold"
-                  style="color: black; cursor: pointer"
-                  onclick="scrollToSection('overview')"
-                  >INTRODUCTION</a
-                >
-              </li>
+<body>
+  <!--Header-->
+  <header class="container-fluid px-0" id="header">
+    <nav class="navbar navbar-expand-lg w-max" style="width: 100%; background-color: #b5e3f9">
+      <div class="container">
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-              <li class="nav-item">
-                <a
-                  class="nav-link fw-bold"
-                  style="color: black; cursor: pointer"
-                  onclick="scrollToSection('themes')"
-                  >THEMES & SPEAKER</a
-                >
-              </li>
+        <div class="collapse navbar-collapse justify-content-center" id="menu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" style="color: black; cursor: pointer"
+                onclick="scrollToSection('overview')">INTRODUCTION</a>
+            </li>
 
-              <li class="nav-item">
-                <a
-                  class="nav-link fw-bold"
-                  style="color: black; cursor: pointer"
-                  onclick="scrollToSection('committee')"
-                  >COMMITTEE</a
-                >
-              </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" style="color: black; cursor: pointer"
+                onclick="scrollToSection('themes')">THEMES & SPEAKER</a>
+            </li>
 
-              <li class="nav-item">
-                <a
-                  class="nav-link fw-bold"
-                  style="color: black; cursor: pointer"
-                  onclick="scrollToSection('registration')"
-                  >PUBLICATION AND REGISTRATION</a
-                >
-              </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" style="color: black; cursor: pointer"
+                onclick="scrollToSection('committee')">COMMITTEE</a>
+            </li>
 
-              <li class="nav-item">
-                <a
-                  class="nav-link fw-bold"
-                  style="color: black; cursor: pointer"
-                  onclick="scrollToSection('accommodation')"
-                  >TRAVELER INFORMATION
-                </a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" style="color: black; cursor: pointer"
+                onclick="scrollToSection('registration')">PUBLICATION AND REGISTRATION</a>
+            </li>
 
-              <li class="nav-item">
-                <a
-                  class="nav-link fw-bold"
-                  style="color: black; cursor: pointer"
-                  onclick="scrollToSection('abstract')"
-                  >ABSTRACT SUBMISSION</a
-                >
-              </li>
-            </ul>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" style="color: black; cursor: pointer"
+                onclick="scrollToSection('accommodation')">TRAVELER INFORMATION
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link fw-bold" style="color: black; cursor: pointer"
+                onclick="scrollToSection('abstract')">ABSTRACT SUBMISSION</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
-    <!-- Banner -->
-    <banner class="container-fluid px-0" style="position: relative">
-      <div
-        style="
+      </div>
+    </nav>
+  </header>
+  <!-- Banner -->
+  <banner class="container-fluid px-0" style="position: relative">
+    <div style="
           background-image: url(images/banner.jpg);
           height: 380px;
           background-size: cover;
           background-position: center;
-        "
-      >
-        <img
-          src="images/logo.png"
-          alt="logo"
-          class="position-absolute"
-          style="top: 5%; left: 5%; width: 70px; height: auto; z-index: 1"
-        />
-        <h2
-          class="text-white text-center mb-2 fs-md-5 fs-6 position-relative"
-          style="z-index: 2; padding-top: 2em"
-        >
-          SAIGON TECHNOLOGY UNIVERSITY (STU)
-        </h2>
-        <h1
-          class="text-white text-center position-relative py-0 my-0 fw-bold fs-5"
-          style="text-shadow: -1px -1px 4px blue; z-index: 2"
-        >
-          INTERNATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE,
-        </h1>
-        <h1
-          class="text-white text-center py-0 my-0 fw-bold fs-5 position-relative"
-          style="text-shadow: -1px -1px 4px blue; z-index: 2"
-        >
-          TECHNOLOGY, ENGINEERING AND DESIGN (ATED 2026)
-        </h1>
+        ">
+      <img src="images/logo.png" alt="logo" class="position-absolute"
+        style="top: 5%; left: 5%; width: 70px; height: auto; z-index: 1" />
+      <h2 class="text-white text-center mb-2 fs-md-5 fs-6 position-relative" style="z-index: 2; padding-top: 2em">
+        SAIGON TECHNOLOGY UNIVERSITY (STU)
+      </h2>
+      <h1 class="text-white text-center position-relative py-0 my-0 fw-bold fs-5"
+        style="text-shadow: -1px -1px 4px blue; z-index: 2">
+        INTERNATIONAL CONFERENCE ON ARTIFICIAL INTELLIGENCE,
+      </h1>
+      <h1 class="text-white text-center py-0 my-0 fw-bold fs-5 position-relative"
+        style="text-shadow: -1px -1px 4px blue; z-index: 2">
+        TECHNOLOGY, ENGINEERING AND DESIGN (ATED 2026)
+      </h1>
 
-        <!--Timer-->
-        <div
-          class="flip-clock-wrapper d-flex align-items-center position-absolute"
-          style="
+      <!--Timer-->
+      <div class="flip-clock-wrapper d-flex align-items-center position-absolute" style="
             gap: 8px;
             padding: 5px;
             bottom: -10%;
             left: 50%;
             background-color: rgba(255, 255, 255, 0.628);
             margin-bottom: 10px;
-          "
-        >
-          <div
-            class="flip-clock-group d-flex flex-column align-items-center position-relative"
-            style="gap: 10px"
-          >
-            <div class="flip-clock-cards d-flex" style="gap: 3px">
-              <div
-                class="flip-card position-relative fw-bold"
-                id="w-tens"
-                style="
+          ">
+        <div class="flip-clock-group d-flex flex-column align-items-center position-relative" style="gap: 10px">
+          <div class="flip-clock-cards d-flex" style="gap: 3px">
+            <div class="flip-card position-relative fw-bold" id="w-tens" style="
                   width: 45px;
                   height: 65px;
                   font-size: 45px;
                   color: var(--text-color);
                   perspective: 300px;
-                "
-              >
-                <div class="card-half top" data-num="0"></div>
-                <div class="card-half bottom" data-num="0"></div>
-              </div>
-              <div
-                class="flip-card position-relative fw-bold"
-                id="w-ones"
-                style="
-                  width: 45px;
-                  height: 65px;
-                  font-size: 45px;
-                  color: var(--text-color);
-                  perspective: 300px;
-                "
-              >
-                <div class="card-half top" data-num="0"></div>
-                <div class="card-half bottom" data-num="0"></div>
-              </div>
+                ">
+              <div class="card-half top" data-num="0"></div>
+              <div class="card-half bottom" data-num="0"></div>
             </div>
-            <span
-              class="flip-clock-label fw-bold text-uppercase position-absolute text-white"
-              style="
+            <div class="flip-card position-relative fw-bold" id="w-ones" style="
+                  width: 45px;
+                  height: 65px;
+                  font-size: 45px;
+                  color: var(--text-color);
+                  perspective: 300px;
+                ">
+              <div class="card-half top" data-num="0"></div>
+              <div class="card-half bottom" data-num="0"></div>
+            </div>
+          </div>
+          <span class="flip-clock-label fw-bold text-uppercase position-absolute text-white" style="
                 font-size: 10px;
                 letter-spacing: 0.05em;
                 top: -30%;
                 left: 95%;
                 transform: translateX(-90%);
-              "
-              >Weeks</span
-            >
-          </div>
+              ">Weeks</span>
+        </div>
 
-          <div
-            class="flip-clock-colon fw-bold"
-            style="font-size: 30px; color: #475569; margin-bottom: 10px"
-          >
-            :
-          </div>
+        <div class="flip-clock-colon fw-bold" style="font-size: 30px; color: #475569; margin-bottom: 10px">
+          :
+        </div>
 
-          <div
-            class="flip-clock-group d-flex flex-column align-items-center position-relative"
-            style="gap: 10px"
-          >
-            <div class="flip-clock-cards d-flex" style="gap: 3px">
-              <div
-                class="flip-card position-relative fw-bold"
-                id="d-tens"
-                style="
+        <div class="flip-clock-group d-flex flex-column align-items-center position-relative" style="gap: 10px">
+          <div class="flip-clock-cards d-flex" style="gap: 3px">
+            <div class="flip-card position-relative fw-bold" id="d-tens" style="
                   width: 45px;
                   height: 65px;
                   font-size: 45px;
                   color: var(--text-color);
                   perspective: 300px;
-                "
-              >
-                <div class="card-half top" data-num="0"></div>
-                <div class="card-half bottom" data-num="0"></div>
-              </div>
-              <div
-                class="flip-card position-relative fw-bold"
-                id="d-ones"
-                style="
-                  width: 45px;
-                  height: 65px;
-                  font-size: 45px;
-                  color: var(--text-color);
-                  perspective: 300px;
-                "
-              >
-                <div class="card-half top" data-num="0"></div>
-                <div class="card-half bottom" data-num="0"></div>
-              </div>
+                ">
+              <div class="card-half top" data-num="0"></div>
+              <div class="card-half bottom" data-num="0"></div>
             </div>
-            <span
-              class="flip-clock-label fw-bold text-uppercase position-absolute text-white"
-              style="
+            <div class="flip-card position-relative fw-bold" id="d-ones" style="
+                  width: 45px;
+                  height: 65px;
+                  font-size: 45px;
+                  color: var(--text-color);
+                  perspective: 300px;
+                ">
+              <div class="card-half top" data-num="0"></div>
+              <div class="card-half bottom" data-num="0"></div>
+            </div>
+          </div>
+          <span class="flip-clock-label fw-bold text-uppercase position-absolute text-white" style="
                 font-size: 10px;
                 letter-spacing: 0.05em;
                 top: -30%;
                 left: 95%;
                 transform: translateX(-90%);
-              "
-              >Days</span
-            >
-          </div>
+              ">Days</span>
+        </div>
 
-          <div
-            class="flip-clock-colon fw-bold"
-            style="font-size: 30px; color: #475569; margin-bottom: 10px"
-          >
-            :
-          </div>
+        <div class="flip-clock-colon fw-bold" style="font-size: 30px; color: #475569; margin-bottom: 10px">
+          :
+        </div>
 
-          <div
-            class="flip-clock-group d-flex flex-column align-items-center position-relative"
-            style="gap: 10px"
-          >
-            <div class="flip-clock-cards d-flex" style="gap: 3px">
-              <div
-                class="flip-card position-relative fw-bold"
-                id="h-tens"
-                style="
+        <div class="flip-clock-group d-flex flex-column align-items-center position-relative" style="gap: 10px">
+          <div class="flip-clock-cards d-flex" style="gap: 3px">
+            <div class="flip-card position-relative fw-bold" id="h-tens" style="
                   width: 45px;
                   height: 65px;
                   font-size: 45px;
                   color: var(--text-color);
                   perspective: 300px;
-                "
-              >
-                <div class="card-half top" data-num="0"></div>
-                <div class="card-half bottom" data-num="0"></div>
-              </div>
-              <div
-                class="flip-card position-relative fw-bold"
-                id="h-ones"
-                style="
-                  width: 45px;
-                  height: 65px;
-                  font-size: 45px;
-                  color: var(--text-color);
-                  perspective: 300px;
-                "
-              >
-                <div class="card-half top" data-num="0"></div>
-                <div class="card-half bottom" data-num="0"></div>
-              </div>
+                ">
+              <div class="card-half top" data-num="0"></div>
+              <div class="card-half bottom" data-num="0"></div>
             </div>
-            <span
-              class="flip-clock-label fw-bold text-uppercase position-absolute text-white"
-              style="
+            <div class="flip-card position-relative fw-bold" id="h-ones" style="
+                  width: 45px;
+                  height: 65px;
+                  font-size: 45px;
+                  color: var(--text-color);
+                  perspective: 300px;
+                ">
+              <div class="card-half top" data-num="0"></div>
+              <div class="card-half bottom" data-num="0"></div>
+            </div>
+          </div>
+          <span class="flip-clock-label fw-bold text-uppercase position-absolute text-white" style="
                 font-size: 10px;
                 letter-spacing: 0.05em;
                 top: -30%;
                 left: 95%;
                 transform: translateX(-90%);
-              "
-              >Hours</span
-            >
-          </div>
+              ">Hours</span>
+        </div>
 
-          <div
-            class="flip-clock-colon fw-bold"
-            style="font-size: 30px; color: #475569; margin-bottom: 10px"
-          >
-            :
-          </div>
+        <div class="flip-clock-colon fw-bold" style="font-size: 30px; color: #475569; margin-bottom: 10px">
+          :
+        </div>
 
-          <div
-            class="flip-clock-group d-flex flex-column align-items-center position-relative"
-            style="gap: 10px"
-          >
-            <div class="flip-clock-cards d-flex" style="gap: 3px">
-              <div
-                class="flip-card position-relative fw-bold"
-                id="m-tens"
-                style="
+        <div class="flip-clock-group d-flex flex-column align-items-center position-relative" style="gap: 10px">
+          <div class="flip-clock-cards d-flex" style="gap: 3px">
+            <div class="flip-card position-relative fw-bold" id="m-tens" style="
                   width: 45px;
                   height: 65px;
                   font-size: 45px;
                   color: var(--text-color);
                   perspective: 300px;
-                "
-              >
-                <div class="card-half top" data-num="0"></div>
-                <div class="card-half bottom" data-num="0"></div>
-              </div>
-              <div
-                class="flip-card position-relative fw-bold"
-                id="m-ones"
-                style="
-                  width: 45px;
-                  height: 65px;
-                  font-size: 45px;
-                  color: var(--text-color);
-                  perspective: 300px;
-                "
-              >
-                <div class="card-half top" data-num="0"></div>
-                <div class="card-half bottom" data-num="0"></div>
-              </div>
+                ">
+              <div class="card-half top" data-num="0"></div>
+              <div class="card-half bottom" data-num="0"></div>
             </div>
-            <span
-              class="flip-clock-label fw-bold text-uppercase position-absolute text-white"
-              style="
+            <div class="flip-card position-relative fw-bold" id="m-ones" style="
+                  width: 45px;
+                  height: 65px;
+                  font-size: 45px;
+                  color: var(--text-color);
+                  perspective: 300px;
+                ">
+              <div class="card-half top" data-num="0"></div>
+              <div class="card-half bottom" data-num="0"></div>
+            </div>
+          </div>
+          <span class="flip-clock-label fw-bold text-uppercase position-absolute text-white" style="
                 font-size: 10px;
                 letter-spacing: 0.05em;
                 top: -30%;
                 left: 95%;
                 transform: translateX(-90%);
-              "
-              >Minutes</span
-            >
-          </div>
+              ">Minutes</span>
+        </div>
 
-          <div
-            class="flip-clock-colon fw-bold"
-            style="font-size: 30px; color: #475569; margin-bottom: 10px"
-          >
-            :
-          </div>
+        <div class="flip-clock-colon fw-bold" style="font-size: 30px; color: #475569; margin-bottom: 10px">
+          :
+        </div>
 
-          <div
-            class="flip-clock-group d-flex flex-column align-items-center position-relative"
-            style="gap: 10px"
-          >
-            <div class="flip-clock-cards d-flex" style="gap: 3px">
-              <div
-                class="flip-card position-relative fw-bold"
-                id="s-tens"
-                style="
+        <div class="flip-clock-group d-flex flex-column align-items-center position-relative" style="gap: 10px">
+          <div class="flip-clock-cards d-flex" style="gap: 3px">
+            <div class="flip-card position-relative fw-bold" id="s-tens" style="
                   width: 45px;
                   height: 65px;
                   font-size: 45px;
                   color: var(--text-color);
                   perspective: 300px;
-                "
-              >
-                <div class="card-half top" data-num="0"></div>
-                <div class="card-half bottom" data-num="0"></div>
-              </div>
-              <div
-                class="flip-card position-relative fw-bold"
-                id="s-ones"
-                style="
-                  width: 45px;
-                  height: 65px;
-                  font-size: 45px;
-                  color: var(--text-color);
-                  perspective: 300px;
-                "
-              >
-                <div class="card-half top" data-num="0"></div>
-                <div class="card-half bottom" data-num="0"></div>
-              </div>
+                ">
+              <div class="card-half top" data-num="0"></div>
+              <div class="card-half bottom" data-num="0"></div>
             </div>
-            <span
-              class="flip-clock-label fw-bold text-uppercase position-absolute text-white"
-              style="
+            <div class="flip-card position-relative fw-bold" id="s-ones" style="
+                  width: 45px;
+                  height: 65px;
+                  font-size: 45px;
+                  color: var(--text-color);
+                  perspective: 300px;
+                ">
+              <div class="card-half top" data-num="0"></div>
+              <div class="card-half bottom" data-num="0"></div>
+            </div>
+          </div>
+          <span class="flip-clock-label fw-bold text-uppercase position-absolute text-white" style="
                 font-size: 10px;
                 letter-spacing: 0.05em;
                 top: -30%;
                 left: 95%;
                 transform: translateX(-90%);
-              "
-              >Seconds</span
-            >
-          </div>
+              ">Seconds</span>
         </div>
       </div>
-    </banner>
-    <!-- Main Content -->
-    <main class="mainContent mx-auto">
-      <!-- CONFERENCE OVERVIEW -->
-      <section
-        class="container-fluid w-100 p-4 mx-auto d-flex flex-md-row flex-column justify-content-center align-items-md-start align-items-center gap-md-5"
-        id="overview"
-        style="
+    </div>
+  </banner>
+  <!-- Main Content -->
+  <main class="mainContent mx-auto">
+    <!-- CONFERENCE OVERVIEW -->
+    <section
+      class="container-fluid w-100 p-4 mx-auto d-flex flex-md-row flex-column justify-content-center align-items-md-start align-items-center gap-md-5"
+      id="overview" style="
           font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
           color: black;
-        "
-      >
-        <!--Left-->
-        <div class="col-md-5">
-          <h1 class="mb-2 fs-4" style="font-weight: 900">
-            CONFERENCE OVERVIEW
-          </h1>
-          <p
-            class="fw-lighter"
-            style="line-height: 1.1; text-align: justify; font-size: 14px"
-          >
-            In the context of rapid advancements in Artificial Intelligence
-            (AI), which has become a core driver of global innovation, the
-            connection of knowledge, enhancement of interdisciplinary
-            collaboration, and promotion of AI applications in practice are
-            increasingly essential. Under the theme
-            <strong>
-              “Shaping the Future with AI: Innovation, Integration and Impact” </strong
-            >, the conference aims to establish an academic and practical forum
-            for sharing cutting-edge research, fostering technology transfer,
-            and generating positive societal impacts.
+        ">
+      <!--Left-->
+      <div class="col-md-5">
+        <h1 class="mb-2 fs-4" style="font-weight: 900">
+          CONFERENCE OVERVIEW
+        </h1>
+        <p class="fw-lighter" style="line-height: 1.1; text-align: justify; font-size: 14px">
+          In the context of rapid advancements in Artificial Intelligence
+          (AI), which has become a core driver of global innovation, the
+          connection of knowledge, enhancement of interdisciplinary
+          collaboration, and promotion of AI applications in practice are
+          increasingly essential. Under the theme
+          <strong>
+            “Shaping the Future with AI: Innovation, Integration and Impact” </strong>, the conference aims to establish
+          an academic and practical forum
+          for sharing cutting-edge research, fostering technology transfer,
+          and generating positive societal impacts.
 
-            <strong>Saigon Technology University (STU)</strong>, in
-            collaboration with domestic and international partners, is pleased
-            to organize the
+          <strong>Saigon Technology University (STU)</strong>, in
+          collaboration with domestic and international partners, is pleased
+          to organize the
 
-            <strong>
-              International Conference on Artificial Intelligence, Technology,
-              Engineering and Design,
-            </strong>
+          <strong>
+            International Conference on Artificial Intelligence, Technology,
+            Engineering and Design,
+          </strong>
 
-            scheduled to take place from
+          scheduled to take place from
 
-            <strong> October 29 to October 31, 2026. </strong>
+          <strong> October 29 to October 31, 2026. </strong>
 
-            The conference will bring together scientists, experts, and
-            practitioners to exchange academic knowledge, share practical
-            experiences, and promote collaboration in the fields of artificial
-            intelligence, technology, engineering, and design. We cordially
-            invite scholars, experts, and enterprises to submit papers and
-            participate in the conference, contributing to shaping the future
-            with AI towards sustainable development and meaningful societal
-            values.
+          The conference will bring together scientists, experts, and
+          practitioners to exchange academic knowledge, share practical
+          experiences, and promote collaboration in the fields of artificial
+          intelligence, technology, engineering, and design. We cordially
+          invite scholars, experts, and enterprises to submit papers and
+          participate in the conference, contributing to shaping the future
+          with AI towards sustainable development and meaningful societal
+          values.
+        </p>
+      </div>
+      <!--Right-->
+      <div class="col-md-5" style="font-size: 14px">
+        <div class="w-100 d-flex flex-column justify-content-center mb-3">
+          <img src="images/school.jpg" class="img-fluid d-block mb-1"
+            style="width: 100%; height: 210px; object-fit: cover" alt="" />
+          <p class="fw-lighter text-center m-0">Conference Venue</p>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-start gap-2 mt-3">
+          <i class="bi bi-geo-alt-fill fs-4"></i>
+          <p class="mb-0 fw-lighter" style="line-height: 1.1">
+            Saigon Technology University (STU), 180 Cao Lo street, Chanh Hung
+            Ward, Ho Chi Minh City, VietNam
           </p>
         </div>
-        <!--Right-->
-        <div class="col-md-5" style="font-size: 14px">
-          <div class="w-100 d-flex flex-column justify-content-center mb-3">
-            <img
-              src="images/school.jpg"
-              class="img-fluid d-block mb-1"
-              style="width: 100%; height: 210px; object-fit: cover"
-              alt=""
-            />
-            <p class="fw-lighter text-center m-0">Conference Venue</p>
-          </div>
-
-          <div
-            class="d-flex align-items-center justify-content-start gap-2 mt-3"
-          >
-            <i class="bi bi-geo-alt-fill fs-4"></i>
-            <p class="mb-0 fw-lighter" style="line-height: 1.1">
-              Saigon Technology University (STU), 180 Cao Lo street, Chanh Hung
-              Ward, Ho Chi Minh City, VietNam
-            </p>
-          </div>
-          <div
-            class="d-flex align-items-center justify-content-start gap-1 mt-3"
-          >
-            <i class="bi bi-calendar3 fs-4"></i>
-            <p class="mb-0 py-2 px-2 fw-lighter">29-30 October, 2026</p>
-          </div>
+        <div class="d-flex align-items-center justify-content-start gap-1 mt-3">
+          <i class="bi bi-calendar3 fs-4"></i>
+          <p class="mb-0 py-2 px-2 fw-lighter">29-31 October, 2026</p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--Themes-->
-      <section
-        class="container py-4 parent-box"
-        id="themes"
-        style="color: black"
-      >
-        <!--Tổng-->
-        <div class="rounded-4 p-4" style="background: #ededed">
-          <h1
-            class="mb-5 mt-3 text-center fs-3"
-            style="
+    <!--Themes-->
+    <section class="container py-4 parent-box" id="themes" style="color: black">
+      <!--Tổng-->
+      <div class="rounded-4 p-4" style="background: #ededed">
+        <h1 class="mb-5 mt-3 text-center fs-3" style="
               font-weight: 900;
               font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
-            "
-          >
-            THEMES
-          </h1>
-          <div
-            class="row gy-4"
-            style="font-family: Arial, Helvetica, sans-serif"
-          >
-            <!--AI-->
-            <div
-              class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center"
-            >
-              <div
-                class="rounded-circle mb-3 shadow-sm animation up-animation no1"
-                style="
-                  width: 150px;
-                  height: 150px;
-                  border: 6px solid #fff;
-                  overflow: hidden;
-                  opacity: 0;
-                "
-              >
-                <img
-                  src="images/AI.jpg"
-                  alt="Theme Icon"
-                  class="img-fluid"
-                  style="width: 100%; height: 100%; object-fit: cover"
-                />
+            ">
+          THEMES
+        </h1>
+
+        <div class="row gy-5" style="font-family: Arial, Helvetica, sans-serif">
+
+          <!-- AI -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="d-flex flex-column align-items-center">
+              <div class="rounded-circle mb-3 shadow-sm animation up-animation no1"
+                style="width:150px;height:150px;border:6px solid #fff;overflow:hidden;opacity:0;">
+                <img src="images/AI.jpg" class="img-fluid" style="width:100%;height:100%;object-fit:cover;">
               </div>
-              <h7
-                class="fw-bold mb-3 text-center animation slideLeft-animation no5"
-                style="opacity: 0"
-                >Artificial intelligence</h7
-              >
-              <ul
-                class="w-100 px-4 animation appear-animation no10"
-                style="line-height: 1.4; font-size: 13px; opacity: 0"
-              >
-                <li style="padding-left: 20px">Neural Network Applications</li>
-                <li style="padding-left: 20px">Machine Learning</li>
-                <li style="padding-left: 20px">Computer Vision</li>
-                <li style="padding-left: 20px">Chatbot</li>
-                <li style="padding-left: 20px">AI Applications</li>
-                <li style="padding-left: 20px">NLP</li>
+
+              <h6 class="fw-bold mb-3 text-center animation slideLeft-animation no5">
+                Artificial Intelligence
+              </h6>
+
+              <ul class="w-100 ps-4 ps-lg-5 animation appear-animation no10 theme-list"
+                style="font-size:14px;line-height:1.4;color:#666;">
+                <li>Neural Network Applications</li>
+                <li>Machine Learning</li>
+                <li>Computer Vision</li>
+                <li>Chatbot</li>
+                <li>AI Applications</li>
+                <li>NLP</li>
+
               </ul>
             </div>
-            <!--M-E-->
-            <div
-              class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center"
-            >
-              <div
-                class="rounded-circle mb-3 shadow-sm animation up-animation no2"
-                style="
-                  width: 150px;
-                  height: 150px;
-                  border: 6px solid #fff;
-                  overflow: hidden;
-                  opacity: 0;
-                "
-              >
-                <img
-                  src="images/ME.jpg"
-                  alt="Theme Icon"
-                  class="img-fluid"
-                  style="width: 100%; height: 100%; object-fit: cover"
-                />
+          </div>
+
+          <!-- Mechanical -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="d-flex flex-column align-items-center">
+              <div class="rounded-circle mb-3 shadow-sm animation up-animation no2"
+                style="width:150px;height:150px;border:6px solid #fff;overflow:hidden;opacity:0;">
+                <img src="images/ME.jpg" class="img-fluid" style="width:100%;height:100%;object-fit:cover;">
               </div>
-              <h7
-                class="fw-bold mb-3 text-center animation slideLeft-animation no6"
-                style="opacity: 0"
-                >Mechanical Engineering</h7
-              >
-              <ul
-                class="w-100 px-4 animation appear-animation no11"
-                style="line-height: 1.4; font-size: 13px; opacity: 0"
-              >
-                <li style="padding-left: 20px">Mechanical Manufacturing</li>
-                <li style="padding-left: 20px">
-                  AI & 3D Printer and Additive Engineering
+
+              <h6 class="fw-bold mb-3 text-center animation slideLeft-animation no6">
+                Mechanical Engineering
+              </h6>
+
+              <ul class="w-100 ps-4 ps-lg-5 animation appear-animation no11 theme-list"
+                style="font-size:14px;line-height:1.4;color:#666;">
+
+                <li>Mechanical Manufacturing</li>
+
+                <li>AI & 3D Printer and Additive Engineering</li>
+
+                <li>
+                  Mechatronics & Cybernetics in
+                  <br>
+                  Mechanical Engineering
                 </li>
-                <li style="padding-left: 20px">
-                  Mechatronics & Cybernetics in Mechanical Engineering
-                </li>
-                <li style="padding-left: 20px">
+
+                <li>
                   Applications of AI in Manufacture of Cycloid Gears
                 </li>
-                <li style="padding-left: 20px">
+
+                <li>
                   ISF Technology in Forming SUS304
                 </li>
               </ul>
             </div>
-            <!--Electrical-->
-            <div
-              class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center"
-            >
-              <div
-                class="rounded-circle mb-3 shadow-sm animation up-animation no3"
-                style="
-                  width: 150px;
-                  height: 150px;
-                  border: 6px solid #fff;
-                  overflow: hidden;
-                  opacity: 0;
-                "
-              >
-                <img
-                  src="images/EaE.jpg"
-                  alt="Theme Icon"
-                  class="img-fluid"
-                  style="width: 100%; height: 100%; object-fit: cover"
-                />
+          </div>
+
+          <!-- Electrical -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="d-flex flex-column align-items-center">
+              <div class="rounded-circle mb-3 shadow-sm animation up-animation no3"
+                style="width:150px;height:150px;border:6px solid #fff;overflow:hidden;opacity:0;">
+                <img src="images/EaE.jpg" class="img-fluid" style="width:100%;height:100%;object-fit:cover;">
               </div>
-              <h7
-                class="fw-bold mb-3 text-center animation slideLeft-animation no7"
-                style="opacity: 0"
-              >
-                Electrical and Electronics Engineering</h7
-              >
-              <ul
-                class="w-100 px-4 animation appear-animation no12"
-                style="line-height: 1.4; font-size: 13px; opacity: 0"
-              >
-                <li style="padding-left: 20px">Smart Grid</li>
-                <li style="padding-left: 20px">IOT, Communication</li>
-                <li style="padding-left: 20px">Robotics</li>
-                <li style="padding-left: 20px">Chatbots</li>
-                <li style="padding-left: 20px">IC Design, Embedded Systems</li>
-                <li style="padding-left: 20px">Power Systems</li>
-                <li style="padding-left: 20px">
-                  Signal Processing, Voice, Image Processing
-                </li>
+
+              <h6 class="fw-bold mb-3 text-center animation slideLeft-animation no7">
+                Electrical and Electronics Engineering
+              </h6>
+
+              <ul class="w-100 ps-4 ps-lg-5 animation appear-animation no12 theme-list"
+                style="font-size:14px;line-height:1.4;color:#666;">
+                <li>Smart Grid</li>
+                <li>IOT, Communication</li>
+                <li>Robotics</li>
+                <li>Chatbots</li>
+                <li>IC Design, Embedded Systems</li>
+                <li>Power Systems</li>
+                <li>Signal Processing, Voice, Image Processing</li>
               </ul>
             </div>
-            <!--Civil-E-->
-            <div
-              class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-center"
-            >
-              <div
-                class="rounded-circle mb-3 shadow-sm animation up-animation no4"
-                style="
-                  width: 150px;
-                  height: 150px;
-                  border: 6px solid #fff;
-                  overflow: hidden;
-                  opacity: 0;
-                "
-              >
-                <img
-                  src="images/CE.jpg"
-                  alt="Theme Icon"
-                  class="img-fluid"
-                  style="width: 100%; height: 100%; object-fit: cover"
-                />
+          </div>
+
+          <!-- Civil -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="d-flex flex-column align-items-center">
+              <div class="rounded-circle mb-3 shadow-sm animation up-animation no4"
+                style="width:150px;height:150px;border:6px solid #fff;overflow:hidden;opacity:0;">
+                <img src="images/CE.jpg" class="img-fluid" style="width:100%;height:100%;object-fit:cover;">
               </div>
-              <h7
-                class="fw-bold mb-3 text-center animation slideLeft-animation no8"
-                style="opacity: 0"
-                >Civil Engineering
-              </h7>
-              <ul
-                class="w-100 px-4 animation appear-animation no13"
-                style="line-height: 1.4; font-size: 13px; opacity: 0"
-              >
-                <li style="padding-left: 20px">
-                  Numerical Methods and Applications in Civil Engineering
+
+              <h6 class="fw-bold mb-3 text-center animation slideLeft-animation no8">
+                Civil Engineering
+              </h6>
+
+              <ul class="w-100 ps-4 ps-lg-5 animation appear-animation no13 theme-list"
+                style="font-size:14px;line-height:1.4;color:#666;">
+                <li>
+                  Numerical Methods and Applications in
+                  <br>
+                  Civil Engineering
                 </li>
-                <li style="padding-left: 20px">
-                  Mechanics of Structures and Materials
+
+                <li>Mechanics of Structures and Materials</li>
+
+                <li>Structural Reliability & Stability</li>
+
+                <li>Structural Health Monitoring</li>
+
+                <li>
+                  Sustainable Trends in Architecture and
+                  <br>
+                  Urban Planning
                 </li>
-                <li style="padding-left: 20px">
-                  Structural Reliability & Stability
+
+                <li>
+                  BIM in Engineering and Construction
+                  <br>
+                  Management
                 </li>
-                <li style="padding-left: 20px">Structural Health Monitoring</li>
-                <li style="padding-left: 20px">
-                  Sustainable Trends in Architecture and Urban Planning
-                </li>
-                <li style="padding-left: 20px">
-                  BIM in Engineering and Construction Management
-                </li>
-                <li style="padding-left: 20px">
-                  Applications of AI and Machine Learning in Civil Engineering
-                </li>
-              </ul>
-            </div>
-            <!--AI Design-->
-            <div
-              class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-center"
-            >
-              <div
-                class="rounded-circle mb-3 shadow-sm animation up-animation no5"
-                style="
-                  width: 150px;
-                  height: 150px;
-                  border: 6px solid #fff;
-                  overflow: hidden;
-                  opacity: 0;
-                "
-              >
-                <img
-                  src="images/AID.jpg"
-                  alt="Theme Icon"
-                  class="img-fluid"
-                  style="width: 100%; height: 100%; object-fit: cover"
-                />
-              </div>
-              <h7
-                class="fw-bold mb-3 text-center animation slideLeft-animation no9"
-                style="opacity: 0"
-                >AI Design</h7
-              >
-              <ul
-                class="w-100 px-2 animation appear-animation no14"
-                style="line-height: 1.4; font-size: 13px; opacity: 0"
-              >
-                <li style="padding-left: 20px">
-                  AI in Design Practice and Creative Innovation: Generative AI,
-                  AI-Assisted Ideation, Human-AI Collaboration
-                </li>
-                <li style="padding-left: 20px">
-                  Design Education and Future Creative Competencies:
-                  I-integrated Curricula, Studio Learning, Future Designer
-                  Skills
-                </li>
-                <li style="padding-left: 20px">
-                  Cultural Heritage, Identity and Digital Design: Heritage
-                  preservation, VR/AR Applications, Local Identity in Design
-                </li>
-                <li style="padding-left: 20px">
-                  Human-Centered, Ethical and Inclusive Design: Human-AI
-                  Interaction, Ethical AI, Socially Responsible Design
-                </li>
-                <li style="padding-left: 20px">
-                  Smart, Sustainable and Future Living Design: Smart
-                  architecture/ Interiors, Sustainable Materials,
-                  Energy-efficient Environments
-                </li>
-                <li style="padding-left: 20px">
-                  Digital Experience and Interactive Media Design: UX/UI,
-                  AR/VR/XR, immersive and interactive storytelling
+
+                <li>
+                  Applications of AI and Machine
+                  <br>
+                  Learning in Civil Engineering
                 </li>
               </ul>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- IMPORTANT DATES -->
-      <section
-        class="container py-4 parent-box"
-        style="padding-left: 5cm; padding-right: 5cm"
-      >
-        <h1
-          class="text-center fw-bold mb-4 fs-3"
-          style="
+          <!-- AI Design -->
+          <div class="col-12 col-md-6 col-lg-8">
+            <div class="d-flex flex-column align-items-center ai-design-block ">
+
+              <div class="rounded-circle mb-3 shadow-sm animation up-animation no5 ai-design-img"
+                style="width:150px;height:150px;border:6px solid #fff;overflow:hidden;opacity:0;">
+                <img src="images/AID.jpg" class="img-fluid" style="width:100%;height:100%;object-fit:cover;">
+              </div>
+
+              <h6 class="fw-bold mb-3 text-center animation slideLeft-animation no9">
+                AI Design
+              </h6>
+
+              <ul class="w-100 ps-4 ps-lg-5 animation appear-animation no14 theme-list"
+                style="font-size:14px;line-height:1.4;color:#666;">
+
+                <li>
+                  AI in Design Practice and Creative Innovation: Generative AI, AI-Assisted
+                  <br>
+                  Ideation, Human-AI Collaboration
+                </li>
+
+                <li>
+                  Design Education and Future Creative Competencies:I-integrated
+                  <br>
+                  Curricula, Studio Learning,Future Designer Skills
+                </li>
+
+                <li>
+                  Cultural Heritage, Identity and Digital Design:
+                  Heritage Preservation,
+                  <br>
+                  VR/AR Applications,
+                  Local Identity in Design
+                </li>
+
+                <li>
+                  Human-Centered, Ethical and Inclusive Design:
+                  Human-AI Interaction,
+                  <br>
+                  Ethical AI,
+                  Socially Responsible Design
+                </li>
+
+                <li>
+                  Smart, Sustainable and Future Living Design:
+                  Smart architecture/Interiors,
+                  <br>
+                  Sustainable Materials,
+                  Energy-Efficient Environments
+                </li>
+
+                <li>
+                  Digital Experience and Interactive Media Design:
+                  UX/UI, AR/VR/XR,
+                  <br>
+                  Immersive and Interactive Storytelling
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- IMPORTANT DATES -->
+    <section class="container py-4 parent-box" style="padding-left: 5cm; padding-right: 5cm">
+      <h1 class="text-center fw-bold mb-4 fs-3" style="
             color: black;
             font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
             font-weight: 900;
-          "
-        >
-          IMPORTANT DATES
-        </h1>
+          ">
+        IMPORTANT DATES
+      </h1>
 
-        <div class="row text-center">
-          <div
-            class="col-12 col-sm-6 col-md-3 mb-3 animation up-animation no1"
-            style="opacity: 0"
-          >
-            <h5 class="fw-semibold mb-1" style="font-size: 16px">
-              July 31, 2026
-            </h5>
-            <p class="mb-0" style="font-size: 14px; color: #666">
-              Dealine for Abstract submission
-            </p>
-          </div>
-
-          <div
-            class="col-12 col-sm-6 col-md-3 mb-3 animation up-animation no2"
-            style="opacity: 0"
-          >
-            <h5 class="fw-semibold mb-1" style="font-size: 16px">
-              August 15, 2026
-            </h5>
-            <p class="mb-0" style="font-size: 14px; color: #666">
-              Notification of Abstract acceptance
-            </p>
-          </div>
-
-          <div
-            class="col-12 col-sm-6 col-md-3 mb-3 animation up-animation no3"
-            style="opacity: 0"
-          >
-            <h5 class="fw-semibold mb-1" style="font-size: 16px">
-              September 01, 2026
-            </h5>
-            <p class="mb-0" style="font-size: 14px; color: #666">
-              Registration online
-            </p>
-          </div>
-
-          <div
-            class="col-12 col-sm-6 col-md-3 mb-3 animation up-animation no4"
-            style="opacity: 0"
-          >
-            <h5 class="fw-semibold mb-1" style="font-size: 16px">
-              September 30, 2026
-            </h5>
-            <p class="mb-0" style="font-size: 14px; color: #666">
-              Deadline for Full paper submission
-            </p>
-          </div>
-
-          <div
-            class="col-12 col-sm-6 col-md-3 mb-3 animation up-animation no5"
-            style="opacity: 0"
-          >
-            <h5 class="fw-semibold mb-1" style="font-size: 16px">
-              October 29, 2026
-            </h5>
-            <p class="mb-0" style="font-size: 14px; color: #666">
-              Welcome reception
-            </p>
-          </div>
-
-          <div
-            class="col-12 col-sm-6 col-md-3 mb-3 animation up-animation no6"
-            style="opacity: 0"
-          >
-            <h5 class="fw-semibold mb-1" style="font-size: 16px">
-              October 29 - 30, 2026
-            </h5>
-            <p class="mb-0" style="font-size: 14px; color: #666">
-              ATED 2026 Conference
-            </p>
-          </div>
-
-          <div
-            class="col-12 col-sm-6 col-md-3 mb-3 animation up-animation no7"
-            style="opacity: 0"
-          >
-            <h5 class="fw-semibold mb-1" style="font-size: 16px">
-              October 30, 2026
-            </h5>
-            <p class="mb-0" style="font-size: 14px; color: #666">Gala Dinner</p>
-          </div>
-
-          <div
-            class="col-12 col-sm-6 col-md-3 mb-3 animation up-animation no8"
-            style="opacity: 0"
-          >
-            <h5 class="fw-semibold mb-1" style="font-size: 16px">
-              October 31, 2026
-            </h5>
-            <p class="mb-0" style="font-size: 14px; color: #666">
-              Technical and Social tour
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="d-flex flex-md-row flex-column align-items-center justify-content-around animation slideLeft-animation no9"
-          style="opacity: 0"
-        >
-          <p class="text-primary col-md-5 text-end">Further Information:</p>
-          <p class="text-primary col-md-5">
-            <a href="mailto:ATED@stu.edu.vn" style="text-decoration: none"
-              >ATED@stu.edu.vn</a
-            >
-            &nbsp;/&nbsp;
-            <a href="mailto:htqt@stu.edu.vn" style="text-decoration: none"
-              >htqt@stu.edu.vn</a
-            >
+      <div class="row text-center">
+        <div class="col-12 col-sm-6 col-md-3 mb-3 animation up-animation no1" style="opacity: 0">
+          <h5 class="fw-semibold mb-1" style="font-size: 16px">
+            August 15, 2026
+          </h5>
+          <p class="mb-0" style="font-size: 14px; color: #666">
+            Abstract Submission Dealine
           </p>
         </div>
-      </section>
 
-      <!-- KEYNOTE SPEAKERS -->
-      <section
-        class="container py-4 parent-box"
-        style="padding-left: 5cm; padding-right: 5cm"
-      >
-        <h1
-          class="text-center mb-4 fs-3"
-          style="
-            color: black;
-            font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
-            font-weight: 900;
-          "
-        >
-          KEYNOTE SPEAKERS
-        </h1>
-
-        <div class="row justify-content-center g-4">
-          <!-- Speaker 1 -->
-          <div class="col-12 col-sm-6 col-lg-3 text-center">
-            <img
-              src="images/avt.png"
-              class="rounded-circle animation appear-animation no1"
-              style="
-                width: 130px;
-                height: 130px;
-                opacity: 0;
-                object-fit: cover;
-                object-position: center top;
-              "
-              alt=""
-            />
-
-            <div
-              class="mx-auto mt-3 text-center animation up-animation no7"
-              style="
-                max-width: 250px;
-                opacity: 0;
-                width: 100%;
-                background: #f2f2f2;
-                padding-bottom: 6px;
-              "
-            >
-              <div
-                class="position-relative pt-2"
-                data-bs-toggle="collapse"
-                data-bs-target="#speaker1"
-                style="cursor: pointer"
-              >
-                <span class="fw-semibold" style="font-size: 12px">
-                  &nbsp;
-                </span>
-
-                <i
-                  class="bi bi-chevron-down position-absolute"
-                  style="
-                    right: 10px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    color: #0a78a7;
-                    font-size: 12px;
-                  "
-                >
-                </i>
-              </div>
-
-              <div id="speaker1" class="collapse">
-                <div class="pb-1" style="font-size: 12px; color: #707070">
-                  Vice Chancellor,<br />
-                  Aditya University, India
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Speaker 2 -->
-          <div class="col-12 col-sm-6 col-lg-3 text-center">
-            <img
-              src="images/Dr. Daniel.jpg"
-              class="rounded-circle animation appear-animation no2"
-              style="
-                width: 130px;
-                opacity: 0;
-                height: 130px;
-                object-fit: cover;
-                object-position: center top;
-              "
-              alt="Dr. Daniel Koh Kian Wei"
-            />
-
-            <div
-              class="mx-auto mt-3 text-center animation up-animation no8"
-              style="
-                max-width: 250px;
-                opacity: 0;
-                width: 100%;
-                background: #f2f2f2;
-                padding-bottom: 6px;
-              "
-            >
-              <div
-                class="position-relative pt-2"
-                data-bs-toggle="collapse"
-                data-bs-target="#speaker2"
-                style="cursor: pointer"
-              >
-                <span class="fw-semibold" style="font-size: 12px">
-                  Dr. Daniel Koh Kian Wei
-                </span>
-                <i
-                  class="bi bi-chevron-down position-absolute"
-                  style="
-                    right: 10px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    color: #0a78a7;
-                    font-size: 12px;
-                  "
-                >
-                </i>
-              </div>
-
-              <div id="speaker2" class="collapse">
-                <div class="pb-1" style="font-size: 12px; color: #707070">
-                  AI Scientist, Managing Director<br />
-                  Data Crafters (Singapore)
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Speaker 3 -->
-          <div class="col-12 col-sm-6 col-lg-3 text-center">
-            <img
-              src="images/Dr. Zul.jpg"
-              class="rounded-circle animation appear-animation no3"
-              style="
-                width: 130px;
-                opacity: 0;
-                height: 130px;
-                object-fit: cover;
-                object-position: center top;
-              "
-              alt="Dr. Zulkifli Jalil"
-            />
-
-            <div
-              class="mx-auto mt-3 text-center animation up-animation no9"
-              style="
-                max-width: 250px;
-                width: 100%;
-                opacity: 0;
-                background: #f2f2f2;
-                padding-bottom: 6px;
-              "
-            >
-              <div
-                class="position-relative pt-2"
-                data-bs-toggle="collapse"
-                data-bs-target="#speaker3"
-                style="cursor: pointer"
-              >
-                <span class="fw-semibold" style="font-size: 12px">
-                  Dr. Zulkifli Jalil
-                </span>
-
-                <i
-                  class="bi bi-chevron-down position-absolute"
-                  style="
-                    right: 10px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    color: #0a78a7;
-                    font-size: 12px;
-                  "
-                >
-                </i>
-              </div>
-
-              <div id="speaker3" class="collapse">
-                <div class="pb-1" style="font-size: 12px; color: #707070">
-                  Cybersecurity Lecturer, Industry <br />
-                  Practitioner (Singapore)
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Speaker 4 -->
-          <div class="col-12 col-sm-6 col-lg-3 text-center">
-            <img
-              src="images/dr_parulmozhivarman.jpg"
-              class="rounded-circle animation appear-animation no4"
-              style="
-                width: 130px;
-                opacity: 0;
-                height: 130px;
-                object-fit: cover;
-                object-position: center top;
-              "
-              alt="Dr. P. Arulmozhivarman"
-            />
-
-            <div
-              class="mx-auto mt-3 text-center animation up-animation no10"
-              style="
-                max-width: 250px;
-                opacity: 0;
-                width: 100%;
-                background: #f2f2f2;
-                padding-bottom: 6px;
-              "
-            >
-              <div
-                class="position-relative pt-2"
-                data-bs-toggle="collapse"
-                data-bs-target="#speaker4"
-                style="cursor: pointer"
-              >
-                <span class="fw-semibold" style="font-size: 12px">
-                  Dr. P.Arulmozhivarman
-                </span>
-
-                <i
-                  class="bi bi-chevron-down position-absolute"
-                  style="
-                    right: 10px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    color: #0a78a7;
-                    font-size: 12px;
-                  "
-                >
-                </i>
-              </div>
-
-              <div id="speaker4" class="collapse">
-                <div class="pb-1" style="font-size: 12px; color: #707070">
-                  Vice Chancellor <br />
-                  VIT-AP, India
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Speaker 5 -->
-          <div class="col-12 col-sm-6 col-lg-3 text-center">
-            <img
-              src="images/dr_venkata.jpg"
-              class="rounded-circle animation appear-animation no5"
-              style="
-                width: 130px;
-                opacity: 0;
-                height: 130px;
-                object-fit: cover;
-                object-position: center top;
-              "
-              alt="Dr. Venkata Rajanikanth Machavaram"
-            />
-
-            <div
-              class="mx-auto mt-3 text-center animation up-animation no11"
-              style="
-                max-width: 250px;
-                width: 100%;
-                opacity: 0;
-                background: #f2f2f2;
-                padding-bottom: 6px;
-              "
-            >
-              <div
-                class="position-relative pt-2"
-                data-bs-toggle="collapse"
-                data-bs-target="#speaker5"
-                style="cursor: pointer"
-              >
-                <span class="fw-semibold" style="font-size: 11px">
-                  Dr. Venkata Rajanikanth Machavaram
-                </span>
-
-                <i
-                  class="bi bi-chevron-down position-absolute"
-                  style="
-                    right: 10px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    color: #0a78a7;
-                    font-size: 12px;
-                  "
-                >
-                </i>
-              </div>
-              <div id="speaker5" class="collapse">
-                <div class="pb-1" style="font-size: 12px; color: #707070">
-                  Dean, Academic Research <br />
-                  VIT-AP, India
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Speaker 6 -->
-          <div class="col-12 col-sm-6 col-lg-3 text-center">
-            <img
-              src="images/dr_sudhakar.jpg"
-              class="rounded-circle animation appear-animation no6"
-              style="
-                width: 130px;
-                height: 130px;
-                opacity: 0;
-                object-fit: cover;
-                object-position: center top;
-              "
-              alt="Dr. Sudhakar Illango"
-            />
-
-            <div
-              class="mx-auto mt-3 text-center animation up-animation no12"
-              style="
-                max-width: 250px;
-                width: 100%;
-                opacity: 0;
-                background: #f2f2f2;
-                padding-bottom: 6px;
-              "
-            >
-              <div
-                class="position-relative pt-2"
-                data-bs-toggle="collapse"
-                data-bs-target="#speaker6"
-                style="cursor: pointer"
-              >
-                <span class="fw-semibold" style="font-size: 12px">
-                  Dr. Sudhakar Illango
-                </span>
-
-                <i
-                  class="bi bi-chevron-down position-absolute"
-                  style="
-                    right: 10px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    color: #0a78a7;
-                    font-size: 12px;
-                  "
-                >
-                </i>
-              </div>
-
-              <div id="speaker6" class="collapse">
-                <div class="pb-1" style="font-size: 12px; color: #707070">
-                  Dean, School of Computer<br />
-                  Science and Engineering <br />
-                  VIT-AP, India
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Speaker 7 -->
-          <div class="col-12 col-sm-6 col-lg-3 text-center">
-            <img
-              src="images/dr_sibi.jpg"
-              class="rounded-circle animation appear-animation no7"
-              style="
-                width: 130px;
-                height: 130px;
-                opacity: 0;
-                object-fit: cover;
-                object-position: center top;
-              "
-              alt="Dr. Sibi Chakkaravarthy"
-            />
-
-            <div
-              class="mx-auto mt-3 text-center animation up-animation no13"
-              style="
-                max-width: 250px;
-                width: 100%;
-                opacity: 0;
-                background: #f2f2f2;
-                padding-bottom: 6px;
-              "
-            >
-              <div
-                class="position-relative pt-2"
-                data-bs-toggle="collapse"
-                data-bs-target="#speaker7"
-                style="cursor: pointer"
-              >
-                <span class="fw-semibold" style="font-size: 12px">
-                  Dr. Sibi Chakkaravarthy
-                </span>
-
-                <i
-                  class="bi bi-chevron-down position-absolute"
-                  style="
-                    right: 10px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    color: #0a78a7;
-                    font-size: 12px;
-                  "
-                >
-                </i>
-              </div>
-
-              <div id="speaker7" class="collapse">
-                <div class="pb-1" style="font-size: 12px; color: #707070">
-                  Director Centre of Excellence <br />
-                  VIT-AP, India
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Speaker 8 -->
-          <div class="col-12 col-sm-6 col-lg-3 text-center">
-            <img
-              src="images/DepartmentofCivilEngineering.png"
-              class="rounded-circle animation appear-animation no8"
-              style="
-                width: 130px;
-                height: 130px;
-                opacity: 0;
-                object-fit: cover;
-                object-position: center top;
-              "
-              alt="Department of Civil Engineering"
-            />
-
-            <div
-              class="mx-auto mt-3 text-center animation up-animation no14"
-              style="
-                max-width: 250px;
-                width: 100%;
-                opacity: 0;
-                background: #f2f2f2;
-                padding-bottom: 6px;
-              "
-            >
-              <div
-                class="position-relative pt-2"
-                data-bs-toggle="collapse"
-                data-bs-target="#speaker8"
-                style="cursor: pointer"
-              >
-                <span class="fw-semibold" style="font-size: 12px">
-                  Dr. Yoshikazu Kobayashi
-                </span>
-
-                <i
-                  class="bi bi-chevron-down position-absolute"
-                  style="
-                    right: 10px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    color: #0a78a7;
-                    font-size: 12px;
-                  "
-                >
-                </i>
-              </div>
-
-              <div id="speaker8" class="collapse">
-                <div class="pb-1" style="font-size: 12px; color: #707070">
-                  Department of Civil Engineering <br />
-                  College of Science <br />
-                  and Technology <br />
-                  Nihon University, Japan
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-3 animation up-animation no2" style="opacity: 0">
+          <h5 class="fw-semibold mb-1" style="font-size: 16px">
+            August 31, 2026
+          </h5>
+          <p class="mb-0" style="font-size: 14px; color: #666">
+            Notification of Abstract Acceptance
+          </p>
         </div>
-      </section>
 
-      <!-- COMMITTEE -->
-      <section
-        class="container py-4 parent-box"
-        id="committee"
-        style="padding-left: 5cm; padding-right: 5cm"
-      >
-        <h1
-          class="text-center mb-4 fs-3"
-          style="
-            color: black;
-            font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
-            font-weight: 900;
-          "
-        >
-          COMMITTEE
-        </h1>
-
-        <div
-          class="row gx-4 gy-1 animation slideLeft-animation no1"
-          style="opacity: 0"
-        >
-          <!-- INTERNATIONAL CO-ORGANIZERS -->
-          <div class="col-12 col-md-6 order-4 order-md-1">
-            <div class="border border-secondary-subtle">
-              <div
-                class="d-flex justify-content-between align-items-center px-3 py-3"
-                data-bs-toggle="collapse"
-                data-bs-target="#coorganizer"
-                style="cursor: pointer"
-              >
-                <span class="fw-bold" style="font-size: 14px; color: #444">
-                  INTERNATIONAL CO-ORGANIZERS
-                </span>
-
-                <i class="bi bi-chevron-down text-info"></i>
-              </div>
-
-              <div id="coorganizer" class="collapse">
-                <div
-                  class="px-3 pb-3"
-                  style="font-size: 14px; line-height: 1.3; color: #666"
-                >
-                  <p class="mb-1">
-                    Singapore Management University - SMU, Singapore
-                  </p>
-
-                  <p class="mb-1">Hong Kong University - HKU, China</p>
-
-                  <p class="mb-1">
-                    Singapore University of Social Science - SUSS, Singapore
-                  </p>
-
-                  <p class="mb-1">Ngee Ann Polytechnic - NP, Singapore</p>
-
-                  <p class="mb-1">
-                    Vellore Institute of Technology - Andhra Pradesh, VIT-AP
-                    University, India
-                  </p>
-
-                  <p class="mb-1">Aditya University, India</p>
-
-                  <p class="mb-1">SR University - SRU, India</p>
-
-                  <p class="mb-1">Thomson River University - TRU, Canada</p>
-
-                  <p class="mb-1">Troy University, USA</p>
-
-                  <p class="mb-1">
-                    Soegijapranata Catholic University - SCU, Indonesia
-                  </p>
-
-                  <p class="mb-0">
-                    Swiss School of Business and Management - SSBM
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- CHAIR OF THE CONFERENCE -->
-          <div class="col-12 col-md-6 order-1 order-md-2">
-            <div class="border border-secondary-subtle">
-              <div
-                class="d-flex justify-content-between align-items-center px-3 py-3"
-                data-bs-toggle="collapse"
-                data-bs-target="#chair"
-                style="cursor: pointer"
-              >
-                <span class="fw-bold" style="font-size: 14px; color: #444">
-                  CHAIR OF THE CONFERENCE
-                </span>
-
-                <i class="bi bi-chevron-down text-info"></i>
-              </div>
-
-              <div id="chair" class="collapse">
-                <div
-                  class="px-3 pb-3"
-                  style="font-size: 14px; line-height: 1.3; color: #666"
-                >
-                  <p class="mb-0">
-                    Assoc. Prof. Dr. Cao Hao Thi - President of Saigon
-                    Technology University (STU)
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ORGANIZING COMMITTEE -->
-          <div class="col-12 col-md-6 order-2 order-md-3">
-            <div class="border border-secondary-subtle">
-              <div
-                class="d-flex justify-content-between align-items-center px-3 py-3"
-                data-bs-toggle="collapse"
-                data-bs-target="#organizing"
-                style="cursor: pointer"
-              >
-                <span class="fw-bold" style="font-size: 14px; color: #444">
-                  ORGANIZING COMMITTEE
-                </span>
-
-                <i class="bi bi-chevron-down text-info"></i>
-              </div>
-
-              <div id="organizing" class="collapse">
-                <div
-                  class="px-3 pb-3"
-                  style="font-size: 14px; line-height: 1.5; color: #666"
-                >
-                  <ol class="mb-2">
-                    <li>
-                      Assoc. Prof. Dr. Hoang Kim Anh - Vice President of Saigon
-                      Technology University, Chair of the Organizing Committee
-                    </li>
-
-                    <li>
-                      Dr. Hoang Trung Tien - Head of the Department of
-                      Scientific Management and Postgraduates Affairs, STU,
-                      Vietnam
-                    </li>
-
-                    <li>
-                      MA. Phung Ba Dong - Vice Dean, Faculty of Design, STU,
-                      Vietnam
-                    </li>
-
-                    <li>
-                      MA. Nguyen Kieu Oanh, Vice Dean, Faculty of Design, STU,
-                      Vietnam
-                    </li>
-
-                    <li>
-                      MA. Vu Dinh Hai - Vice Dean, Faculty of Mechanical
-                      Engineering, STU, Vietnam
-                    </li>
-
-                    <li>
-                      MA. Le Phuoc Lam - Vice Dean, Faculty of Electrical &
-                      Electronics Engineering, STU, Vietnam
-                    </li>
-
-                    <li>
-                      MA. Ngo Thanh Duc - Vice Dean, Faculty of Civil
-                      Engineering, STU, Vietnam
-                    </li>
-
-                    <li>
-                      Dr. Dilip Mohanty, Dean, School of Mechanical Engineering,
-                      VIT-AP
-                    </li>
-
-                    <li>
-                      Dr. Sibi Chakkaravarthy, Director, Centre of Excellence,
-                      VIT-AP
-                    </li>
-
-                    <li>
-                      Dr. Prabha Selvaraj, Professor, School of Computer Science
-                      and Engineering, VIT-AP
-                    </li>
-
-                    <li>Representatives of the Co-organizers:</li>
-                  </ol>
-
-                  <div
-                    class="ms-4"
-                    style="color: #bdbdbd; font-style: italic; line-height: 1.3"
-                  >
-                    <p class="mb-1">
-                      Singapore Management University - SMU, Singapore
-                    </p>
-
-                    <p class="mb-1">Hong Kong University - HKU, China</p>
-
-                    <p class="mb-1">
-                      Singapore University of Social Science - SUSS, Singapore
-                    </p>
-
-                    <p class="mb-1">Ngee Ann Polytechnic - NP, Singapore</p>
-
-                    <p class="mb-1">
-                      Vellore Institute of Technology - Andhra Pradesh, VIT-AP
-                      University, India
-                    </p>
-
-                    <p class="mb-1">Aditya University, India</p>
-
-                    <p class="mb-1">SR University - SRU, India</p>
-
-                    <p class="mb-1">Thomson River University - TRU, Canada</p>
-
-                    <p class="mb-1">Troy University, USA</p>
-
-                    <p class="mb-1">
-                      Soegijapranata Catholic University - SCU, Indonesia
-                    </p>
-
-                    <p class="mb-0">
-                      Swiss School of Business and Management - SSBM
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- SCIENTIFIC COMMITTEE -->
-          <div class="col-12 col-md-6 order-3 order-md-4">
-            <div class="border border-secondary-subtle">
-              <div
-                class="d-flex justify-content-between align-items-center px-3 py-3"
-                data-bs-toggle="collapse"
-                data-bs-target="#scientific"
-                style="cursor: pointer"
-              >
-                <span class="fw-bold" style="font-size: 14px; color: #444">
-                  SCIENTIFIC COMMITTEE
-                </span>
-
-                <i class="bi bi-chevron-down text-info"></i>
-              </div>
-
-              <div id="scientific" class="collapse">
-                <div
-                  class="px-3 pb-3"
-                  style="font-size: 14px; line-height: 1.5; color: #666"
-                >
-                  <ol class="mb-2">
-                    <li>
-                      Assoc. Prof. Dr. Cao Hao Thi - President of Saigon
-                      Technology University (STU), Chair of the Scientific
-                      Committee
-                    </li>
-
-                    <li>
-                      Assoc. Prof. Dr. Le Khanh Dien - Dean, Faculty of
-                      Mechanical Engineering, STU, Vietnam
-                    </li>
-
-                    <li>
-                      Dr. Nguyen Tung Lam - Director of International Training
-                      Program Center (ITPC), STU, Vietnam
-                    </li>
-
-                    <li>
-                      Dr. Luong An Vinh - Dean, Faculty of Information
-                      Technology, STU, Vietnam
-                    </li>
-
-                    <li>
-                      Dr. Tang Van To - Dean, Faculty of Electrical &
-                      Electronics Engineering, STU, Vietnam
-                    </li>
-
-                    <li>
-                      Dr. Le Duc Tuan - Dean, Faculty of Civil Engineering, STU,
-                      Vietnam
-                    </li>
-
-                    <li>
-                      Assoc. Prof. Dr. Do Lenh Hung Tu - Dean, Faculty of
-                      Design, STU, Vietnam
-                    </li>
-
-                    <li>
-                      Dr. Daniel Koh Kian Wei - AI Scientist, Managing Director,
-                      Data Chord (Singapore)
-                    </li>
-
-                    <li>
-                      Dr. Zulkifli Jalil - Cybersecurity Lecturer, Industry
-                      Practitioner (Singapore)
-                    </li>
-
-                    <li>
-                      Dr. P. Arulmozhivarman - Vice Chancellor
-                      <!-- <span class="d-none d-md-block">VIT-AP</span>
-                    <span class="d-md-none">, VIT-AP</span> -->
-                    </li>
-
-                    <li>
-                      Dr. Venkata Rajanikanth Machavaram - Dean, Academic
-                      Research
-                    </li>
-
-                    <li>
-                      Dr. Sudhakar Ilango - Dean, School of Computer Science and
-                      Engineering
-                    </li>
-
-                    <li>
-                      Dr. Sibi Chakkaravarthy - Director, Center of Excellence
-                    </li>
-
-                    <li>
-                      Department of Civil Engineering - College of Science and
-                      Technology, Nihon University
-                    </li>
-
-                    <li>Representatives of Co-organizers:</li>
-                  </ol>
-
-                  <div
-                    class="ms-4"
-                    style="color: #bdbdbd; font-style: italic; line-height: 1.3"
-                  >
-                    <p class="mb-1">
-                      Singapore Management University - SMU, Singapore
-                    </p>
-
-                    <p class="mb-1">Hong Kong University - HKU, China</p>
-
-                    <p class="mb-1">
-                      Singapore University of Social Science - SUSS, Singapore
-                    </p>
-
-                    <p class="mb-1">Ngee Ann Polytechnic - NP, Singapore</p>
-
-                    <p class="mb-1">
-                      Vellore Institute of Technology - Andhra Pradesh, VIT-AP
-                      University, India
-                    </p>
-
-                    <p class="mb-1">Aditya University, India</p>
-
-                    <p class="mb-1">SR University - SRU, India</p>
-
-                    <p class="mb-1">Thomson River University - TRU, Canada</p>
-
-                    <p class="mb-1">Troy University, USA</p>
-
-                    <p class="mb-1">
-                      Soegijapranata Catholic University - SCU, Indonesia
-                    </p>
-
-                    <p class="mb-0">
-                      Swiss School of Business and Management - SSBM
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-3 animation up-animation no3" style="opacity: 0">
+          <h5 class="fw-semibold mb-1" style="font-size: 16px">
+            October 01, 2026
+          </h5>
+          <p class="mb-0" style="font-size: 14px; color: #666">
+            Online Registration Dealine
         </div>
-      </section>
 
-      <!-- REGISTRATION -->
-      <section class="container py-4 parent-box" id="registration">
-        <h1
-          class="text-center fs-3"
-          style="
+        <div class="col-12 col-sm-6 col-md-3 mb-3 animation up-animation no4" style="opacity: 0">
+          <h5 class="fw-semibold mb-1" style="font-size: 16px">
+            October 15, 2026
+          </h5>
+          <p class="mb-0" style="font-size: 14px; color: #666">
+            Full Paper Submission Deadline
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- CONFERENCE PROGRAM -->
+    <section class="container py-4 parent-box" style="padding-left: 5cm; padding-right: 5cm">
+      <h1 class="text-center fw-bold mb-4 fs-3" style="
             color: black;
             font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
             font-weight: 900;
-          "
-        >
-          PUBLICATION AND REGISTRATION
-        </h1>
-        <p class="fw-lighter text-center mb-5" style="font-size: 13px">
-          All full papers presented at ATED 2026 will be published in the
-          peer-reviewed conference proceedings, subject to relevance of the
-          topics and the quality of the papers.
+          ">
+        CONFERENCE PROGRAM
+      </h1>
+
+      <div class="row text-center">
+
+        <div class="col-12 col-sm-6 col-md-3 mb-3 animation up-animation no5" style="opacity:0">
+          <h5 class="fw-semibold mb-1" style="font-size:16px">
+            October 29, 2026
+          </h5>
+          <p class="mb-0" style="font-size:14px;color:#666">
+            Welcome Reception
+          </p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 mb-3 animation up-animation no6" style="opacity:0">
+          <h5 class="fw-semibold mb-1" style="font-size:16px">
+            October 29 - 30, 2026
+          </h5>
+          <p class="mb-0" style="font-size:14px;color:#666">
+            ATED 2026 Conference
+          </p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 mb-3 animation up-animation no7" style="opacity:0">
+          <h5 class="fw-semibold mb-1" style="font-size:16px">
+            October 30, 2026
+          </h5>
+          <p class="mb-0" style="font-size:14px;color:#666">
+            Gala Dinner
+          </p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 mb-3 animation up-animation no8" style="opacity:0">
+          <h5 class="fw-semibold mb-1" style="font-size:16px">
+            October 31, 2026
+          </h5>
+          <p class="mb-0" style="font-size:14px;color:#666">
+            Technical and Social Tour
+          </p>
+        </div>
+
+      </div>
+
+      <div class="d-flex flex-column align-items-center animation slideLeft-animation no9"
+        style="opacity:0; line-height:1.3;font-size:14px;">
+
+        <p class="text-primary mb-0">
+          Further Information:
+          <a href="mailto:ATED@stu.edu.vn" style="text-decoration:none">
+            ATED@stu.edu.vn
+          </a>
+          /
+          <a href="mailto:htqt@stu.edu.vn" style="text-decoration:none">
+            htqt@stu.edu.vn
+          </a>
         </p>
-        <h6
-          class="text-center fw-bold"
-          style="
-            font-size: 15px;
-            color: #666;
+
+        <p class="fw-semibold mb-0" style="margin-top:0.5cm;">
+          Detailed program:
+        </p>
+
+        <p class="mb-0" style="color:#666">
+          LINK HERE:
+          <a href="https://ated.stu.edu.vn/Conference-Program.pdf" target="_blank" style="text-decoration:none">
+            https://ated.stu.edu.vn/Conference-Program.pdf
+          </a>
+        </p>
+
+      </div>
+    </section>
+
+    <!-- KEYNOTE SPEAKERS -->
+    <section class="container py-4 parent-box" style="padding-left: 5cm; padding-right: 5cm">
+      <h1 class="text-center mb-4 fs-3" style="
+            color: black;
             font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
-          "
-        >
-          INTERNATIONAL DELEGATES
-        </h6>
-        <!--table International delegates-->
-        <div
-          class="table-responsive animation up-animation no1"
-          style="opacity: 0"
-        >
-          <table
-            class="table table-bordered text-center align-middle m-auto cusTable"
-            style="
-              border-color: #000;
-              font-family: &quot;Times New Roman&quot;, Times, serif;
-              table-layout: fixed;
-            "
-          >
-            <thead>
-              <tr>
-                <th scope="col">Full registration (two days)</th>
-                <td scope="col">Early bird before 01 October 2026 (USD)</td>
-                <td scope="col">Full rate from 01 October 2026 (USD)</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style="text-align: left">Academic/ Researcher</td>
-                <td>150</td>
-                <td>200</td>
-              </tr>
-              <tr>
-                <td style="text-align: left">Industry Professional</td>
-                <td>200</td>
-                <td>250</td>
-              </tr>
-              <tr>
-                <td style="text-align: left">*Student</td>
-                <td>50</td>
-                <td>75</td>
-              </tr>
-              <tr>
-                <td style="text-align: left">**Company/Group registration</td>
-                <td>10% discount</td>
-                <td>10% discount</td>
-              </tr>
-              <tr>
-                <td style="text-align: left">Technical and Social tour</td>
-                <td>50-100</td>
-                <td>50-100</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <!--table Local Delegates-->
-        <h6
-          class="text-center fw-bold mt-4"
-          style="
-            font-size: 15px;
-            color: #666;
-            font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
-          "
-        >
-          LOCAL DELEGATES
-        </h6>
-        <div
-          class="table-responsive mb-4 animation up-animation no2"
-          style="opacity: 0"
-        >
-          <table
-            class="table table-bordered text-center align-middle cusTable m-auto"
-            style="
-              border-color: #000;
-              font-family: &quot;Times New Roman&quot;, Times, serif;
-              table-layout: fixed;
-            "
-          >
-            <thead>
-              <tr>
-                <th scope="col">Full registration (two days)</th>
-                <td scope="col">Early bird before 01 October 2026 (VND)</td>
-                <td scope="col">Full rate from 01 October 2026 (VND)</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style="text-align: left">Academic/ Researcher</td>
-                <td>1.000.000</td>
-                <td>1.500.000</td>
-              </tr>
-              <tr>
-                <td style="text-align: left">Industry Professional</td>
-                <td>1.500.000</td>
-                <td>2.000.000</td>
-              </tr>
-              <tr>
-                <td style="text-align: left">*Student</td>
-                <td>500.000</td>
-                <td>750.000</td>
-              </tr>
-              <tr>
-                <td style="text-align: left">**Company/Group registration</td>
-                <td>10% discount</td>
-                <td>10% discount</td>
-              </tr>
-              <tr>
-                <td style="text-align: left">Technical and Social tour</td>
-                <td>500.000 - 1.500.000</td>
-                <td>500.000 - 1.500.000</td>
-              </tr>
-            </tbody>
-          </table>
+            font-weight: 900;
+          ">
+        KEYNOTE SPEAKERS
+      </h1>
+
+      <div class="row justify-content-center g-4">
+        <!-- Speaker 1 -->
+        <div class="col-12 col-sm-6 col-lg-3 text-center">
+          <img src="images/avt.png" class="rounded-circle animation appear-animation no1" style="
+                width: 130px;
+                height: 130px;
+                opacity: 0;
+                object-fit: cover;
+                object-position: center top;
+              " alt="" />
+
+          <div class="mx-auto mt-3 text-center animation up-animation no7" style="
+                max-width: 250px;
+                opacity: 0;
+                width: 100%;
+                background: #f2f2f2;
+                padding-bottom: 6px;
+              ">
+            <div class="position-relative pt-2" data-bs-toggle="collapse" data-bs-target="#speaker1"
+              style="cursor: pointer">
+              <span class="fw-semibold" style="font-size: 12px">
+                &nbsp;
+              </span>
+
+              <i class="bi bi-chevron-down position-absolute" style="
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #0a78a7;
+                    font-size: 12px;
+                  ">
+              </i>
+            </div>
+
+            <div id="speaker1" class="collapse">
+              <div class="pb-1" style="font-size: 12px; color: #707070">
+                Vice Chancellor,<br />
+                Aditya University, India
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!--Note-->
-        <div
-          class="mb-4 mx-auto pt-4 w-50 animation slideLeft-animation no3"
-          style="
-            font-size: 12px;
+        <!-- Speaker 2 -->
+        <div class="col-12 col-sm-6 col-lg-3 text-center">
+          <img src="images/Dr. Daniel.jpg" class="rounded-circle animation appear-animation no2" style="
+                width: 130px;
+                opacity: 0;
+                height: 130px;
+                object-fit: cover;
+                object-position: center top;
+              " alt="Dr. Daniel Koh Kian Wei" />
+
+          <div class="mx-auto mt-3 text-center animation up-animation no8" style="
+                max-width: 250px;
+                opacity: 0;
+                width: 100%;
+                background: #f2f2f2;
+                padding-bottom: 6px;
+              ">
+            <div class="position-relative pt-2" data-bs-toggle="collapse" data-bs-target="#speaker2"
+              style="cursor: pointer">
+              <span class="fw-semibold" style="font-size: 12px">
+                Dr. Daniel Koh Kian Wei
+              </span>
+              <i class="bi bi-chevron-down position-absolute" style="
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #0a78a7;
+                    font-size: 12px;
+                  ">
+              </i>
+            </div>
+
+            <div id="speaker2" class="collapse">
+              <div class="pb-1" style="font-size: 12px; color: #707070">
+                AI Scientist, Managing Director<br />
+                Data Crafters (Singapore)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Speaker 3 -->
+        <div class="col-12 col-sm-6 col-lg-3 text-center">
+          <img src="images/Dr. Zul.jpg" class="rounded-circle animation appear-animation no3" style="
+                width: 130px;
+                opacity: 0;
+                height: 130px;
+                object-fit: cover;
+                object-position: center top;
+              " alt="Dr. Zulkifli Jalil" />
+
+          <div class="mx-auto mt-3 text-center animation up-animation no9" style="
+                max-width: 250px;
+                width: 100%;
+                opacity: 0;
+                background: #f2f2f2;
+                padding-bottom: 6px;
+              ">
+            <div class="position-relative pt-2" data-bs-toggle="collapse" data-bs-target="#speaker3"
+              style="cursor: pointer">
+              <span class="fw-semibold" style="font-size: 12px">
+                Dr. Zulkifli Jalil
+              </span>
+
+              <i class="bi bi-chevron-down position-absolute" style="
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #0a78a7;
+                    font-size: 12px;
+                  ">
+              </i>
+            </div>
+
+            <div id="speaker3" class="collapse">
+              <div class="pb-1" style="font-size: 12px; color: #707070">
+                Cybersecurity Lecturer, Industry <br />
+                Practitioner (Singapore)
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Speaker 4 -->
+        <div class="col-12 col-sm-6 col-lg-3 text-center">
+          <img src="images/dr_parulmozhivarman.jpg" class="rounded-circle animation appear-animation no4" style="
+                width: 130px;
+                opacity: 0;
+                height: 130px;
+                object-fit: cover;
+                object-position: center top;
+              " alt="Dr. P. Arulmozhivarman" />
+
+          <div class="mx-auto mt-3 text-center animation up-animation no10" style="
+                max-width: 250px;
+                opacity: 0;
+                width: 100%;
+                background: #f2f2f2;
+                padding-bottom: 6px;
+              ">
+            <div class="position-relative pt-2" data-bs-toggle="collapse" data-bs-target="#speaker4"
+              style="cursor: pointer">
+              <span class="fw-semibold" style="font-size: 12px">
+                Prof. Dr.P.Arulmozhivarman
+              </span>
+
+              <i class="bi bi-chevron-down position-absolute" style="
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #0a78a7;
+                    font-size: 12px;
+                  ">
+              </i>
+            </div>
+
+            <div id="speaker4" class="collapse">
+              <div class="pb-1" style="font-size: 12px; color: #707070">
+                Vice Chancellor <br />
+                VIT-AP, India
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Speaker 5 -->
+        <div class="col-12 col-sm-6 col-lg-3 text-center">
+          <img src="images/dr_venkata.jpg" class="rounded-circle animation appear-animation no5" style="
+                width: 130px;
+                opacity: 0;
+                height: 130px;
+                object-fit: cover;
+                object-position: center top;
+              " alt="Dr. Venkata Rajanikanth Machavaram" />
+
+          <div class="mx-auto mt-3 text-center animation up-animation no11" style="
+                max-width: 250px;
+                width: 100%;
+                opacity: 0;
+                background: #f2f2f2;
+                padding-bottom: 6px;
+              ">
+            <div class="position-relative pt-2" data-bs-toggle="collapse" data-bs-target="#speaker5"
+              style="cursor: pointer">
+              <span class="fw-semibold" style="font-size: 12px">
+                Prof. Dr. Venkata Rajanikanth <br /> Machavaram
+              </span>
+
+              <i class="bi bi-chevron-down position-absolute" style="
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #0a78a7;
+                    font-size: 12px;
+                  ">
+              </i>
+            </div>
+            <div id="speaker5" class="collapse">
+              <div class="pb-1" style="font-size: 12px; color: #707070">
+                Dean, Academic Research <br />
+                VIT-AP, India
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Speaker 6 -->
+        <div class="col-12 col-sm-6 col-lg-3 text-center">
+          <img src="images/dr_sudhakar.jpg" class="rounded-circle animation appear-animation no6" style="
+                width: 130px;
+                height: 130px;
+                opacity: 0;
+                object-fit: cover;
+                object-position: center top;
+              " alt="Dr. Sudhakar Illango" />
+
+          <div class="mx-auto mt-3 text-center animation up-animation no12" style="
+                max-width: 250px;
+                width: 100%;
+                opacity: 0;
+                background: #f2f2f2;
+                padding-bottom: 6px;
+              ">
+            <div class="position-relative pt-2" data-bs-toggle="collapse" data-bs-target="#speaker6"
+              style="cursor: pointer">
+              <span class="fw-semibold" style="font-size: 12px">
+                Prof. Dr. Sudhakar Illango
+              </span>
+
+              <i class="bi bi-chevron-down position-absolute" style="
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #0a78a7;
+                    font-size: 12px;
+                  ">
+              </i>
+            </div>
+
+            <div id="speaker6" class="collapse">
+              <div class="pb-1" style="font-size: 12px; color: #707070">
+                Dean, School of Computer
+                Science<br /> and Engineering <br />
+                VIT-AP, India
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Speaker 7 -->
+        <div class="col-12 col-sm-6 col-lg-3 text-center">
+          <img src="images/dr_sibi.jpg" class="rounded-circle animation appear-animation no7" style="
+                width: 130px;
+                height: 130px;
+                opacity: 0;
+                object-fit: cover;
+                object-position: center top;
+              " alt="Dr. Sibi Chakkaravarthy" />
+
+          <div class="mx-auto mt-3 text-center animation up-animation no13" style="
+                max-width: 250px;
+                width: 100%;
+                opacity: 0;
+                background: #f2f2f2;
+                padding-bottom: 6px;
+              ">
+            <div class="position-relative pt-2" data-bs-toggle="collapse" data-bs-target="#speaker7"
+              style="cursor: pointer">
+              <span class="fw-semibold" style="font-size: 12px">
+                Prof. Dr. Sibi Chakkaravarthy
+              </span>
+
+              <i class="bi bi-chevron-down position-absolute" style="
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #0a78a7;
+                    font-size: 12px;
+                  ">
+              </i>
+            </div>
+
+            <div id="speaker7" class="collapse">
+              <div class="pb-1" style="font-size: 12px; color: #707070">
+                Director, Centre of Excellence <br />
+                VIT-AP, India
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Speaker 8 -->
+        <div class="col-12 col-sm-6 col-lg-3 text-center">
+          <img src="images/DepartmentofCivilEngineering.png" class="rounded-circle animation appear-animation no8"
+            style="
+                width: 130px;
+                height: 130px;
+                opacity: 0;
+                object-fit: cover;
+                object-position: center top;
+              " alt="Department of Civil Engineering" />
+
+          <div class="mx-auto mt-3 text-center animation up-animation no14" style="
+                max-width: 250px;
+                width: 100%;
+                opacity: 0;
+                background: #f2f2f2;
+                padding-bottom: 6px;
+              ">
+            <div class="position-relative pt-2" data-bs-toggle="collapse" data-bs-target="#speaker8"
+              style="cursor: pointer">
+              <span class="fw-semibold" style="font-size: 12px">
+                Prof. Dr. Yoshikazu Kobayashi
+              </span>
+
+              <i class="bi bi-chevron-down position-absolute" style="
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #0a78a7;
+                    font-size: 12px;
+                  ">
+              </i>
+            </div>
+
+            <div id="speaker8" class="collapse">
+              <div class="pb-1" style="font-size: 12px; color: #707070">
+                Department of Civil Engineering College of <br />
+                Science and Technology Nihon University ,<br />
+                Japan
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMITTEE -->
+    <section class="container py-4 parent-box" id="committee" style="padding-left: 5cm; padding-right: 5cm">
+      <h1 class="text-center mb-4 fs-3" style="
+            color: black;
+            font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
+            font-weight: 900;
+          ">
+        COMMITTEE
+      </h1>
+
+      <div class="row gx-4 gy-1 animation slideLeft-animation no1" style="opacity: 0">
+        <!-- INTERNATIONAL CO-ORGANIZERS -->
+        <div class="col-12 col-md-6 order-4 order-md-1">
+          <div class="border border-secondary-subtle">
+            <div class="d-flex justify-content-between align-items-center px-3 py-3" data-bs-toggle="collapse"
+              data-bs-target="#coorganizer" style="cursor: pointer">
+              <span class="fw-bold" style="font-size: 14px; color: #444">
+                INTERNATIONAL CO-ORGANIZERS
+              </span>
+
+              <i class="bi bi-chevron-down text-info"></i>
+            </div>
+
+            <div id="coorganizer" class="collapse">
+              <div class="px-3 pb-3" style="font-size:14px; line-height:1.3; color:#666;">
+
+                <p class="mb-1">
+                  Vellore Institute of Technology – Andhra Pradesh,
+                  VIT-AP University, India
+                </p>
+
+                <p class="mb-1">
+                  Aditya University, India
+                </p>
+
+                <p class="mb-1">
+                  SR University - SRU, India
+                </p>
+
+                <p class="mb-1">
+                  Singapore Management University - SMU, Singapore
+                </p>
+
+                <p class="mb-1">
+                  Hong Kong University - HKU, China
+                </p>
+
+                <p class="mb-1">
+                  Singapore University of Social Science - SUSS, Singapore
+                </p>
+
+                <p class="mb-1">
+                  Ngee Ann Polytechnic - NP, Singapore
+                </p>
+
+                <p class="mb-1">
+                  Thomson River University - TRU, Canada
+                </p>
+
+                <p class="mb-1">
+                  Troy University, USA
+                </p>
+
+                <p class="mb-1">
+                  Soegijapranata Catholic University - SCU, Indonesia
+                </p>
+
+                <p class="mb-0">
+                  Swiss School of Business and Management - SSBM
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHAIR OF THE CONFERENCE -->
+        <div class="col-12 col-md-6 order-1 order-md-2">
+          <div class="border border-secondary-subtle">
+            <div class="d-flex justify-content-between align-items-center px-3 py-3" data-bs-toggle="collapse"
+              data-bs-target="#chair" style="cursor: pointer">
+              <span class="fw-bold" style="font-size: 14px; color: #444">
+                CHAIR OF THE CONFERENCE
+              </span>
+
+              <i class="bi bi-chevron-down text-info"></i>
+            </div>
+
+            <div id="chair" class="collapse">
+              <div class="px-3 pb-3" style="font-size: 14px; line-height: 1.3; color: #666">
+                <p class="mb-0">
+                  Assoc. Prof. Dr. Cao Hao Thi - President of Saigon
+                  Technology University (STU)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ORGANIZING COMMITTEE -->
+        <div class="col-12 col-md-6 order-2 order-md-3">
+          <div class="border border-secondary-subtle">
+            <div class="d-flex justify-content-between align-items-center px-3 py-3" data-bs-toggle="collapse"
+              data-bs-target="#organizing" style="cursor: pointer">
+              <span class="fw-bold" style="font-size: 14px; color: #444">
+                ORGANIZING COMMITTEE
+              </span>
+
+              <i class="bi bi-chevron-down text-info"></i>
+            </div>
+
+            <div id="organizing" class="collapse">
+              <div class="px-3 pb-3" style="font-size: 14px; line-height: 1.5; color: #666">
+                <ol class="mb-2">
+                  <li>
+                    Assoc. Prof. Dr. Hoang Kim Anh - Vice President of Saigon Technology University,
+                    Chair of the Organizing Committee
+                  </li>
+
+                  <li>
+                    Dr. Hoang Trung Tien - Head of the Department of Scientific Management
+                    and Postgraduates Affairs, STU, Vietnam
+                  </li>
+
+                  <li>
+                    Prof. Dr. Dilip Mohanty, Dean, School of Mechanical Engineering,
+                    VIT-AP, India
+                  </li>
+
+                  <li>
+                    Prof. Dr. Sibi Chakkaravarthy, Director, Centre of Excellence,
+                    VIT-AP, India
+                  </li>
+
+                  <li>
+                    Prof. Dr. Prabha Selvaraj, Professor, School of Computer Science
+                    and Engineering, VIT-AP, India
+                  </li>
+
+                  <li>
+                    MA. Phung Ba Dong - Vice Dean, Faculty of Design, STU, Vietnam
+                  </li>
+
+                  <li>
+                    MA. Nguyen Kieu Oanh - Vice Dean, Faculty of Design, STU, Vietnam
+                  </li>
+
+                  <li>
+                    MA. Vu Dinh Hai - Vice Dean, Faculty of Mechanical Engineering,
+                    STU, Vietnam
+                  </li>
+
+                  <li>
+                    MA. Le Phuoc Lam - Vice Dean, Faculty of Electrical & Electronics Engineering,
+                    STU, Vietnam
+                  </li>
+
+                  <li>
+                    MA. Ngo Thanh Duc - Vice Dean, Faculty of Civil Engineering,
+                    STU, Vietnam
+                  </li>
+
+                  <li>
+                    Representatives of the Co-organizers:
+                    <div style=" font-size:14px;  ">
+                      <div>Singapore Management University - SMU, Singapore</div>
+                      <div>Hong Kong University - HKU, China</div>
+                      <div>Singapore University of Social Science - SUSS, Singapore</div>
+                      <div>Ngee Ann Polytechnic - NP, Singapore</div>
+
+                      <div>Aditya University, India</div>
+                      <div>SR University - SRU, India</div>
+                      <div>Thomson River University - TRU, Canada</div>
+                      <div>Troy University, USA</div>
+                      <div>Soegijapranata Catholic University - SCU, Indonesia</div>
+                      <div>Swiss School of Business and Management - SSBM</div>
+                    </div>
+                  </li>
+                </ol>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SCIENTIFIC COMMITTEE -->
+        <div class="col-12 col-md-6 order-3 order-md-4">
+          <div class="border border-secondary-subtle">
+            <div class="d-flex justify-content-between align-items-center px-3 py-3" data-bs-toggle="collapse"
+              data-bs-target="#scientific" style="cursor: pointer">
+              <span class="fw-bold" style="font-size: 14px; color: #444">
+                SCIENTIFIC COMMITTEE
+              </span>
+
+              <i class="bi bi-chevron-down text-info"></i>
+            </div>
+
+            <div id="scientific" class="collapse">
+              <div class="px-3 pb-3" style="font-size: 14px; line-height: 1.5; color: #666">
+                <ol class="mb-2">
+                  <li>
+                    Assoc. Prof. Dr. Cao Hao Thi - President of Saigon Technology University
+                    (STU), Chair of the Scientific Committee
+                  </li>
+
+                  <li>
+                    Prof. Dr. P. Arulmozhivarman - Vice Chancellor, VIT-AP, India
+                  </li>
+
+                  <li>
+                    Prof. Dr. Venkata Rajanikanth Machavaram - Dean, Academic Research,
+                    VIT-AP, India
+                  </li>
+
+                  <li>
+                    Prof. Dr. Sudhakar Illango - Dean, School of Computer Science and
+                    Engineering, VIT-AP, India
+                  </li>
+
+                  <li>
+                    Prof. Dr. Sibi Chakkaravarthy - Director, Centre of Excellence,
+                    VIT-AP, India
+                  </li>
+
+                  <li>
+                    Prof. Dr. Yoshikazu Kobayashi - Department of Civil Engineering,
+                    College of Science and Technology, Nihon University, Japan
+                  </li>
+
+                  <li>
+                    Dr. Daniel Koh Kian Wei - AI Scientist, Managing Director,
+                    Data Chord (Singapore)
+                  </li>
+
+                  <li>
+                    Dr. Zulhilmi Ismail - Cybersecurity Lecturer,
+                    Industry Practitioner (Singapore)
+                  </li>
+
+                  <li>
+                    Assoc. Prof. Dr. Le Khanh Dien - Dean, Faculty of Mechanical Engineering,
+                    STU, Vietnam
+                  </li>
+
+                  <li>
+                    Dr. Nguyen Tung Lam - Director of International Training Program Center
+                    (ITPC), STU, Vietnam
+                  </li>
+
+                  <li>
+                    Dr. Luong An Vinh - Dean, Faculty of Information Technology,
+                    STU, Vietnam
+                  </li>
+
+                  <li>
+                    Dr. Tang Van To - Dean, Faculty of Electrical & Electronics Engineering,
+                    STU, Vietnam
+                  </li>
+
+                  <li>
+                    Dr. Le Duc Tuan - Dean, Faculty of Civil Engineering,
+                    STU, Vietnam
+                  </li>
+
+                  <li>
+                    Assoc. Prof. Dr. Do Lenh Hung Tu - Dean, Faculty of Design,
+                    STU, Vietnam
+                  </li>
+
+                  <li>
+                    Representatives of the Co-organizers:
+                    <div style=" font-size:14px;  ">
+                      <div>Singapore Management University - SMU, Singapore</div>
+                      <div>Hong Kong University - HKU, China</div>
+                      <div>Singapore University of Social Science - SUSS, Singapore</div>
+                      <div>Ngee Ann Polytechnic - NP, Singapore</div>
+
+                      <div>Aditya University, India</div>
+                      <div>SR University - SRU, India</div>
+                      <div>Thomson River University - TRU, Canada</div>
+                      <div>Troy University, USA</div>
+                      <div>Soegijapranata Catholic University - SCU, Indonesia</div>
+                      <div>Swiss School of Business and Management - SSBM</div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTRATION -->
+    <section class="container py-4 parent-box" id="registration">
+      <h1 class="text-center fs-3" style="
+            color: black;
+            font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
+            font-weight: 900;
+          ">
+        PUBLICATION AND REGISTRATION
+      </h1>
+      <p class="fw-lighter text-center mb-5" style="font-size: 14px">
+        All full papers presented at ATED 2026 will be published in the
+        peer-reviewed conference proceedings with an ISBN, subject to the
+        relevance of the topics and the quality of the papers.
+      </p>
+      <h6 class="text-center fw-bold" style="
+            font-size: 15px;
+            color: #666;
+            font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
+          ">
+        INTERNATIONAL DELEGATES
+      </h6>
+      <!--table International delegates-->
+      <div class="table-responsive animation up-animation no1" style="opacity: 0">
+        <table class="table table-bordered text-center align-middle m-auto cusTable" style="
+              border-color: #000;
+              font-family: &quot;Times New Roman&quot;, Times, serif;
+              table-layout: fixed;
+            ">
+          <thead>
+            <tr>
+              <th scope="col">Full registration (two days)</th>
+              <td scope="col">Early bird before 01 October 2026 (USD)</td>
+              <td scope="col">Full rate from 01 October 2026 (USD)</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align: left">Academic/ Researcher</td>
+              <td>150</td>
+              <td>200</td>
+            </tr>
+            <tr>
+              <td style="text-align: left">Industry Professional</td>
+              <td>200</td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td style="text-align: left">*Student</td>
+              <td>50</td>
+              <td>75</td>
+            </tr>
+            <tr>
+              <td style="text-align: left">**Company/Group registration</td>
+              <td>10% discount</td>
+              <td>10% discount</td>
+            </tr>
+            <tr>
+              <td style="text-align: left">Technical and Social tour</td>
+              <td>50-100</td>
+              <td>50-100</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--table Local Delegates-->
+      <h6 class="text-center fw-bold mt-4" style="
+            font-size: 15px;
+            color: #666;
+            font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
+          ">
+        LOCAL DELEGATES
+      </h6>
+      <div class="table-responsive mb-4 animation up-animation no2" style="opacity: 0">
+        <table class="table table-bordered text-center align-middle cusTable m-auto" style="
+              border-color: #000;
+              font-family: &quot;Times New Roman&quot;, Times, serif;
+              table-layout: fixed;
+            ">
+          <thead>
+            <tr>
+              <th scope="col">Full registration (two days)</th>
+              <td scope="col">Early bird before 01 October 2026 (VND)</td>
+              <td scope="col">Full rate from 01 October 2026 (VND)</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align: left">Academic/ Researcher</td>
+              <td>1.000.000</td>
+              <td>1.500.000</td>
+            </tr>
+            <tr>
+              <td style="text-align: left">Industry Professional</td>
+              <td>1.500.000</td>
+              <td>2.000.000</td>
+            </tr>
+            <tr>
+              <td style="text-align: left">*Student</td>
+              <td>500.000</td>
+              <td>750.000</td>
+            </tr>
+            <tr>
+              <td style="text-align: left">**Company/Group registration</td>
+              <td>10% discount</td>
+              <td>10% discount</td>
+            </tr>
+            <tr>
+              <td style="text-align: left">Technical and Social tour</td>
+              <td>500.000 - 1.500.000</td>
+              <td>500.000 - 1.500.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!--Note-->
+      <div class="mb-4 mx-auto pt-4 w-50 animation slideLeft-animation no3" style="
+            font-size: 14px;
             opacity: 0;
             color: #333;
             font-family: &quot;Times New Roman&quot;, Times, serif;
-          "
-        >
-          <p class="mb-2 fst-italic">
-            For the authors who have difficulty to pay in US Dollars, VND
-            currency is accepted.
-          </p>
+            line-height: 1.2;
+          ">
+        <p class="mb-2 ">
+          For the authors who have difficulty to pay in US Dollars, VND
+          currency is accepted.
+        </p>
 
-          <p class="mb-2 fst-italic" style="color: red">
-            Registration fees will be waived for all participants from Saigon
-            Technology University (STU) and the co-organizing universities.
-          </p>
+        <p class="mb-2 ">
+          Registration fees will be waived for all participants from Saigon
+          Technology University (STU) <br> and the co-organizing universities.
+        </p>
 
-          <p class="mb-2 fst-italic">
-            (*) Students must provide a certificate issued by their
-            institutions.
-          </p>
+        <p class="mb-2 ">
+          (*) Students must provide a certificate issued by their
+          institutions.
+        </p>
 
-          <p class="mb-0 fst-italic">
-            (**) Company/Group Registration: Applicable for groups of three or
-            more participants
-          </p>
-        </div>
+        <p class="mb-0 ">
+          (**) Company/Group Registration: Applicable for groups of three or
+          more participants
+        </p>
+      </div>
 
-        <!--Registration and Banking transfer-->
-        <div
-          class="text-center animation slideLeft-animation no4"
-          style="opacity: 0"
-        >
-          <h6 class="fw-bold mb-0 text-primary" style="font-size: 10px">
-            Registration and Banking transfer:
+      <!--Registration and Banking transfer-->
+      <div class="text-center animation slideLeft-animation no4" style="opacity: 0">
+        <h6 class="fw-bold mb-0y" style="font-size: 10px;color:#1b3e71;;">
+          Registration and Banking transfer:
+        </h6>
+        <p style="font-size: 13px" class="text-primary">
+          following link:
+          <a href="" class="text-decoration-none"> LINK HERE</a>
+        </p>
+      </div>
+    </section>
+    <!-- REGISTRATION INCLUDES -->
+    <section class="container py-4 parent-box" style="padding-left: 5cm; padding-right: 5cm">
+      <div class="row gx-4 gy-4" style="color: #777171">
+
+        <div class="col-12 col-lg-4 animation up-animation no1" style="opacity: 0">
+          <h6 class="text-center mb-2 fw-bold" style="color:#000;">
+            THE FULL REGISTRATION FEE INCLUDES:
           </h6>
-          <p style="font-size: 13px" class="text-primary">
-            following link:
-            <a href="" class="text-decoration-none"> LINK HERE</a>
-          </p>
-        </div>
-      </section>
-      <!-- REGISTRATION INCLUDES -->
-      <section
-        class="container py-4 parent-box"
-        style="padding-left: 5cm; padding-right: 5cm"
-      >
-        <div class="row gx-4 gy-4" style="color: #777171">
-          <div
-            class="col-12 col-lg-4 animation up-animation no1"
-            style="opacity: 0"
-          >
-            <h6 class="text-center mb-2">
-              THE FULL REGISTRATION FEE INCLUDES:
-            </h6>
-            <ul
-              class="list-unstyled text-justify px-5"
-              style="line-height: 1.5; font-size: 13.5px; color: #777171"
-            >
-              <li>Participation in the technical program</li>
-              <li>2 Lunches</li>
-              <li>1 Welcome party</li>
-              <li>1 Dinner Banquet</li>
-              <li>4 Coffee breaks</li>
-              <li>Conference bag or conference accessories</li>
-              <li>Special gift</li>
-            </ul>
-          </div>
 
-          <div
-            class="col-12 col-lg-4 animation up-animation no2"
-            style="opacity: 0"
-          >
-            <h6 class="text-center mb-2">TECHNICAL TOUR:</h6>
-            <ul
-              class="list-unstyled text-center px-3"
-              style="line-height: 1.5; font-size: 13.5px; color: #777171"
-            >
-              <li>
-                Company visits in IT, Mechanical, Electrical & Electronics,
-                Civil Engineering, Design, and Architecture.
-              </li>
-            </ul>
-          </div>
-
-          <div
-            class="col-12 col-lg-4 animation up-animation no3"
-            style="opacity: 0"
-          >
-            <h6 class="text-center mb-2">SOCIAL TOUR:</h6>
-            <ul
-              class="list-unstyled text-center px-3"
-              style="line-height: 1.5; font-size: 13.5px; color: #777171"
-            >
-              <li>
-                Optional tours include Cu Chi Tunnels, Ho Chi Minh City Tour,
-                Saigon River Cruise, or Mekong Delta Tour (tour fee depends on
-                the selected tour).
-              </li>
-            </ul>
-          </div>
+          <ul class="list-unstyled text-justify px-5" style="line-height:1.5;font-size:13px;color:#777171;">
+            <li>Participation in the technical program</li>
+            <li>2 Lunches</li>
+            <li>1 Welcome party</li>
+            <li>1 Dinner Banquet</li>
+            <li>4 Coffee breaks</li>
+            <li>Conference bag or conference accessories</li>
+            <li>Special gift</li>
+          </ul>
         </div>
-      </section>
-      <!--ABSTRACT SUBMISSION-->
-      <section class="container py-4 parent-box" id="abstract">
-        <h1
-          class="text-center fs-3 mb-2"
-          style="
+
+        <div class="col-12 col-lg-4 animation up-animation no2" style="opacity: 0">
+          <h6 class="text-center mb-2 fw-bold" style="color:#000;">
+            TECHNICAL TOUR:
+          </h6>
+
+          <ul class="list-unstyled text-center px-3" style="line-height:1.5;font-size:13px;color:#777171;">
+            <li>
+              Company visits in IT, Mechanical, Electrical & Electronics,
+              Civil Engineering, Design, and Architecture.
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-lg-4 animation up-animation no3" style="opacity: 0">
+          <h6 class="text-center mb-2 fw-bold" style="color:#000;">
+            SOCIAL TOUR:
+          </h6>
+
+          <ul class="list-unstyled text-center px-3" style="line-height:1.5;font-size:13px;color:#777171;">
+            <li>
+              Optional tours include Cu Chi Tunnels, Ho Chi Minh City Tour,
+              Saigon River Cruise, or Mekong Delta Tour (tour fee depends on
+              the selected tour).
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+    <!--ABSTRACT SUBMISSION-->
+    <section class="container py-4 parent-box" id="abstract">
+      <h1 class="text-center fs-3 mb-2" style="
             color: black;
             font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
             font-weight: 900;
-          "
-        >
-          ABSTRACT SUBMISSION
-        </h1>
-        <div
-          class="text-center animation slideLeft-animation no1"
-          style="opacity: 0"
-        >
-          <p style="font-size: 13px" class="text-primary">
-            following link:
-            <a
-              href="https://forms.gle/BhzhQ6s4PnhWL57R8"
-              class="text-decoration-none"
-            >
-              LINK HERE
-            </a>
-          </p>
-        </div>
-      </section>
+          ">
+        ABSTRACT SUBMISSION
+      </h1>
+      <div class="text-center animation slideLeft-animation no1" style="opacity: 0">
+        <p style="font-size: 13px" class="text-primary">
+          following link:
+          <a href="https://forms.gle/BhzhQ6s4PnhWL57R8" class="text-decoration-none">
+            LINK HERE
+          </a>
+        </p>
+      </div>
+    </section>
 
-      <!--ACCOMMODATION-->
-      <section
-        class="container py-4 parent-box"
-        id="accommodation"
-        style="padding-left: 5cm; padding-right: 5cm"
-      >
-        <h1
-          class="text-center fs-3 mb-4"
-          style="
+    <!--ACCOMMODATION-->
+    <section class="container py-4 parent-box" id="accommodation" style="padding-left: 5cm; padding-right: 5cm">
+      <h1 class="text-center fs-3 mb-4" style="
             color: black;
             font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
             font-weight: 900;
-          "
-        >
-          TRAVELER INFORMATION
-        </h1>
-        <h2
-          class="text-center fs-5 animation slideLeft-animation no1"
-          style="
-            color: #777171;
-            font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
-            font-weight: 900;
-            opacity: 0;
-          "
-        >
-          ABOUT HO CHI MINH CITY
-        </h2>
-        <div class="text-center mb-4" style="color: #777171; font-size: 15px">
-          <p class="animation up-animation no2" style="opacity: 0">
-            Ho Chi Minh City, formerly known as Saigon, is the largest city and
-            the economic, cultural, and technological center of Vietnam. Home to
-            more than nine million residents, the city is renowned for its
-            vibrant energy, diverse culture, and unique blend of historical
-            heritage and modern development.
-          </p>
-          <p class="animation up-animation no3" style="opacity: 0">
-            Visitors to Ho Chi Minh City can explore a variety of iconic
-            landmarks that reflect the city's rich history and rapid
-            transformation. Among the most recognizable is Landmark 81, the
-            tallest building in Vietnam and one of the tallest skyscrapers in
-            Southeast Asia, offering breathtaking panoramic views of the city.
-            Another famous symbol is the Bitexco Financial Tower, whose
-            distinctive design was inspired by Vietnam's national flower, the
-            lotus. The tower features the Saigon Skydeck, a popular observation
-            deck overlooking the city skyline.
-          </p>
-          <p class="animation up-animation no4" style="opacity: 0">
-            Other notable attractions include Ben Thanh Market, one of the
-            oldest and most famous markets in Vietnam; the Independence Palace,
-            a historic site associated with significant events in Vietnamese
-            history; Notre-Dame Cathedral of Saigon, a remarkable example of
-            French colonial architecture; and Nguyen Hue Walking Street, a
-            lively pedestrian boulevard surrounded by modern buildings, cafés,
-            restaurants, and entertainment venues.
-          </p>
-          <p class="animation up-animation no5" style="opacity: 0">
-            In addition to its landmarks, Ho Chi Minh City is celebrated for its
-            world-famous cuisine, welcoming atmosphere, and dynamic urban
-            lifestyle. The city offers visitors an unforgettable experience
-            where tradition and modernity coexist, making it one of the most
-            attractive destinations in Southeast Asia for business travelers,
-            tourists, and international conference participants.
-          </p>
-        </div>
-        <div class="row gx-4 gy-4">
-          <!--LANDMARK 81 -->
-          <div class="col-12 col-lg-4 text-center mx-auto">
-            <img
-              src="images/landmark.jpeg"
-              alt="Hilton Ho Chi Minh City"
-              class="animation appear-animation no6"
-              style="
+          ">
+        TRAVELER INFORMATION
+      </h1>
+      <h2 class="text-center animation slideLeft-animation no1" style="
+      color:#777171;
+      font-family:'Bricolage Grotesque', sans-serif;
+      font-weight:900;
+      font-size:25px;
+      opacity:0;
+    ">
+        ABOUT HO CHI MINH CITY
+      </h2>
+      <div class="text-center mb-4" style="color: #777171; font-size: 15px">
+        <p class="animation up-animation no2" style="opacity: 0">
+          Ho Chi Minh City, formerly known as Saigon, is the largest city and
+          the economic, cultural, and technological center of Vietnam. Home to
+          more than nine million residents, the city is renowned for its
+          vibrant energy, diverse culture, and unique blend of historical
+          heritage and modern development.
+        </p>
+        <p class="animation up-animation no3" style="opacity: 0">
+          Visitors to Ho Chi Minh City can explore a variety of iconic
+          landmarks that reflect the city's rich history and rapid
+          transformation. Among the most recognizable is Landmark 81, the
+          tallest building in Vietnam and one of the tallest skyscrapers in
+          Southeast Asia, offering breathtaking panoramic views of the city.
+          Another famous symbol is the Bitexco Financial Tower, whose
+          distinctive design was inspired by Vietnam's national flower, the
+          lotus. The tower features the Saigon Skydeck, a popular observation
+          deck overlooking the city skyline.
+        </p>
+        <p class="animation up-animation no4" style="opacity: 0">
+          Other notable attractions include Ben Thanh Market, one of the
+          oldest and most famous markets in Vietnam; the Independence Palace,
+          a historic site associated with significant events in Vietnamese
+          history; Notre-Dame Cathedral of Saigon, a remarkable example of
+          French colonial architecture; and Nguyen Hue Walking Street, a
+          lively pedestrian boulevard surrounded by modern buildings, cafés,
+          restaurants, and entertainment venues.
+        </p>
+        <p class="animation up-animation no5" style="opacity: 0">
+          In addition to its landmarks, Ho Chi Minh City is celebrated for its
+          world-famous cuisine, welcoming atmosphere, and dynamic urban
+          lifestyle. The city offers visitors an unforgettable experience
+          where tradition and modernity coexist, making it one of the most
+          attractive destinations in Southeast Asia for business travelers,
+          tourists, and international conference participants.
+        </p>
+      </div>
+      <div class="row gx-4 gy-4">
+        <!--LANDMARK 81 -->
+        <div class="col-12 col-lg-4 text-center mx-auto">
+          <img src="images/landmark.jpeg" alt="Hilton Ho Chi Minh City" class="animation appear-animation no6" style="
                 width: 65%;
                 opacity: 0;
                 height: 300px;
                 object-fit: fill;
                 margin-bottom: 15px;
-              "
-            />
-            <h6
-              class="text-center mb-2 animation slideLeft-animation no7"
-              style="font-size: 15px; opacity: 0"
-            >
-              Landmark 81
-            </h6>
-          </div>
-          <!--BITEXCO-->
-          <div class="col-12 col-lg-4 text-center">
-            <img
-              src="images/bitexco.jpg"
-              alt="Hilton Ho Chi Minh City"
-              class="animation appear-animation no7"
-              style="
+              " />
+          <h6 class="text-center mb-2 animation slideLeft-animation no7" style="font-size: 15px; opacity: 0">
+            Landmark 81
+          </h6>
+        </div>
+        <!--BITEXCO-->
+        <div class="col-12 col-lg-4 text-center">
+          <img src="images/bitexco.jpg" alt="Hilton Ho Chi Minh City" class="animation appear-animation no7" style="
                 width: 65%;
                 opacity: 0;
                 height: 300px;
                 object-fit: fill;
                 margin-bottom: 15px;
-              "
-            />
-            <h6
-              class="text-center mb-2 animation slideLeft-animation no7"
-              style="font-size: 15px; opacity: 0"
-            >
-              Bitexco (Bitexco Financial Tower)
-            </h6>
-          </div>
-          <!--HILTON-->
-          <div class="col-12 col-lg-4 text-center">
-            <img
-              src="images/benthanh.webp"
-              alt="Ben Thanh Market"
-              class="animation appear-animation no7"
-              style="
+              " />
+          <h6 class="text-center mb-2 animation slideLeft-animation no7" style="font-size: 15px; opacity: 0">
+            Bitexco (Bitexco Financial Tower)
+          </h6>
+        </div>
+        <!--HILTON-->
+        <div class="col-12 col-lg-4 text-center">
+          <img src="images/benthanh.webp" alt="Ben Thanh Market" class="animation appear-animation no7" style="
                 width: 65%;
                 opacity: 0;
                 height: 300px;
                 object-fit: fill;
                 margin-bottom: 15px;
-              "
-            />
-            <h6
-              class="text-center mb-2 animation slideLeft-animation no8"
-              style="font-size: 15px; opacity: 0"
-            >
-              Ben Thanh Market
-            </h6>
-          </div>
+              " />
+          <h6 class="text-center mb-2 animation slideLeft-animation no8" style="font-size: 15px; opacity: 0">
+            Ben Thanh Market
+          </h6>
         </div>
-        <h2
-          class="text-center fs-5 my-4 animation slideLeft-animation no8"
-          style="
-            color: #777171;
-            opacity: 0;
-            font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
-            font-weight: 900;
-          "
-        >
-          ACCOMMODATION NEAR STU
-        </h2>
-        <div class="row gx-4 gy-4">
-          <!--HILTON-->
-          <div class="col-12 col-lg-4 text-center">
-            <img
-              src="images/accom1.webp"
-              alt="accommodation 1"
-              class="animation appear-animation no9"
-              style="
+      </div>
+      <h2 class="text-center my-4 animation slideLeft-animation no8" style="
+      color:#777171;
+      opacity:0;
+      font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
+      font-weight:900;
+      font-size:25px;
+    ">
+        ACCOMMODATION NEAR STU
+      </h2>
+
+      <div class="row gx-4 gy-4">
+        <!--HILTON-->
+        <div class="col-12 col-lg-4 text-center">
+          <img src="images/accom1.webp" alt="accommodation 1" class="animation appear-animation no9" style="
                 width: 65%;
                 height: 300px;
                 opacity: 0;
                 object-fit: fill;
                 margin-bottom: 20px;
-              "
-            />
-            <h6
-              class="text-center mb-2 animation slideLeft-animation no10"
-              style="font-size: 15px; opacity: 0"
-            >
-              La Doma en Amour Hotel
-            </h6>
-            <p
-              class="mb-0 px-4 animation slideLeft-animation no10"
-              style="font-size: 14px; color: #777171; opacity: 0"
-            >
-              570-572 Tran Hung Dao Street, Cho Quan Ward, Ho Chi Minh City,
-              Vietnam
-            </p>
-            <a
-              href="#"
-              class="animation slideLeft-animation no10"
-              style="text-decoration: none; opacity: 0"
-              >Booking Link</a
-            >
-          </div>
-          <!--LANDMARK 81 -->
-          <div class="col-12 col-lg-4 text-center mx-auto">
-            <img
-              src="images/accom2.jpg"
-              alt="Accommodation 2"
-              class="animation appear-animation no10"
-              style="
-                width: 65%;
-                opacity: 0;
-                height: 300px;
-                object-fit: fill;
-                margin-bottom: 20px;
-              "
-            />
-            <h6
-              class="text-center mb-2 animation slideLeft-animation no11"
-              style="font-size: 15px; opacity: 0"
-            >
-              Babylon Serviced Apartment
-            </h6>
-            <p
-              class="mb-0 px-4 animation slideLeft-animation no11"
-              style="font-size: 14px; color: #777171; opacity: 0"
-            >
-              161C Tran Hung Dao Street, Cau Ong Lanh Ward, Ho Chi Minh City,
-              Vietnam
-            </p>
-            <a
-              href="#"
-              class="animation slideLeft-animation no11"
-              style="text-decoration: none; opacity: 0"
-              >Booking Link</a
-            >
-          </div>
-          <!--BITEXCO-->
-          <div class="col-12 col-lg-4 text-center">
-            <img
-              src="images/accom3.jpg"
-              alt="Accommodation 3"
-              class="animation appear-animation no12"
-              style="
-                width: 65%;
-                height: 300px;
-                opacity: 0;
-                object-fit: fill;
-                margin-bottom: 20px;
-              "
-            />
-            <h6
-              class="text-center mb-2 animation slideLeft-animation no13"
-              style="font-size: 15px; opacity: 0"
-            >
-              Happy Life Green Hotel
-            </h6>
-            <p
-              class="mb-0 px-4 animation slideLeft-animation no13"
-              style="font-size: 14px; color: #777171; opacity: 0"
-            >
-              549 Tran Hung Dao Street, Cau Ong Lanh Ward, Ho Chi Minh City,
-              Vietnam
-            </p>
-            <a
-              href="#"
-              class="animation slideLeft-animation no13"
-              style="text-decoration: none; opacity: 0"
-              >Booking Link</a
-            >
-          </div>
+              " />
+          <h6 class="text-center mb-2 animation slideLeft-animation no10" style="font-size: 15px; opacity: 0">
+            La Doma en Amour Hotel
+          </h6>
+          <p class="mb-0 px-4 animation slideLeft-animation no10" style="font-size: 14px; color: #777171; opacity: 0">
+            570-572 Tran Hung Dao Street, Cho Quan Ward, Ho Chi Minh City,
+            Vietnam
+          </p>
+          <a href="https://www.booking.com/hotel/vn/la-doma-en-amour.vi.html" class="animation slideLeft-animation no10"
+            style="text-decoration: none; opacity: 0">Booking
+            Link</a>
         </div>
-      </section>
-
-      <section
-        class="container py-4 parent-box"
-        style="padding-left: 5cm; padding-right: 5cm"
-      >
-        <h1
-          class="text-center fs-3 mb-4"
-          style="
-            color: black;
-            font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
-            font-weight: 900;
-          "
-        >
-          CONTACT
-        </h1>
-
-        <div class="mx-auto" style="max-width: 600px">
-          <div
-            class="mb-4 shadow-sm animation up-animation no1"
+        <!--LANDMARK 81 -->
+        <div class="col-12 col-lg-4 text-center mx-auto">
+          <img src="images/Huong Sen Annex Hotel.jpg" alt="Accommodation 2" class="animation appear-animation no10"
             style="
+                width: 65%;
+                opacity: 0;
+                height: 300px;
+                object-fit: fill;
+                margin-bottom: 20px;
+              " />
+          <h6 class="text-center mb-2 animation slideLeft-animation no11" style="font-size: 15px; opacity: 0">
+            Huong Sen Annex Hotel
+          </h6>
+          <p class="mb-0 px-4 animation slideLeft-animation no11" style="font-size: 14px; color: #777171; opacity: 0">
+            4-6-8 Mac Thi Buoi Street, Ben Nghe Ward, Ho Chi Minh City
+          </p>
+          <a href="https://www.booking.com/hotel/vn/huong-sen-annex.vi.html" class="animation slideLeft-animation no11"
+            style="text-decoration: none; opacity: 0">Booking
+            Link</a>
+        </div>
+        <!--BITEXCO-->
+        <div class="col-12 col-lg-4 text-center">
+          <img src="images/Huong Sen Hotel.jpg" alt="Accommodation 3" class="animation appear-animation no12" style="
+                width: 65%;
+                height: 300px;
+                opacity: 0;
+                object-fit: fill;
+                margin-bottom: 20px;
+              " />
+          <h6 class="text-center mb-2 animation slideLeft-animation no13" style="font-size: 15px; opacity: 0">
+            Huong Sen Hotel
+          </h6>
+          <p class="mb-0 px-4 animation slideLeft-animation no13" style="font-size: 14px; color: #777171; opacity: 0">
+            66-68-70 Dong Khoi, Ben Nghe Ward, Ho Chi Minh City
+          </p>
+          <a href="https://www.booking.com/hotel/vn/huong-sen.en-gb.html" class="animation slideLeft-animation no13"
+            style="text-decoration: none; opacity: 0">Booking
+            Link</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-4 parent-box" style="padding-left: 5cm; padding-right: 5cm">
+      <h1 class="text-center fs-3 mb-4" style="
+            color: black;
+            font-family: &quot;Bricolage Grotesque&quot;, sans-serif;
+            font-weight: 900;
+          ">
+        CONTACT
+      </h1>
+
+      <div class="mx-auto" style="max-width: 600px">
+        <div class="mb-4 shadow-sm animation up-animation no1" style="
               border-radius: 12px;
               opacity: 0;
               overflow: hidden;
               border: 1px solid #dee2e6;
-            "
-          >
-            <img
-              src="images/map.jpg"
-              alt="STU Map"
-              style="
+            ">
+          <img src="images/map.jpg" alt="STU Map" style="
                 border-radius: 12px;
                 border: 1px solid #90b3d5;
                 object-fit: fill;
                 height: 350px;
                 width: 90%;
-              "
-              class="d-block mx-auto"
-            />
-          </div>
+              " class="d-block mx-auto" />
+        </div>
 
-          <ul
-            class="list-unstyled mx-5 my-5"
-            style="font-size: 15px; color: #4b7bb2; line-height: 1.4"
-          >
-            <li
-              class="d-flex align-items-start mb-2 animation slideLeft-animation no2"
-              style="opacity: 0"
-            >
-              <i
-                class="bi bi-envelope-fill me-3 mt-1 text-dark"
-                style="font-size: 16px"
-              ></i>
-              <span
-                >E-mail:
-                <a
-                  href="mailto:ATED@stu.edu.vn"
-                  class="text-decoration-none"
-                  style="color: inherit"
-                  >ATED@stu.edu.vn</a
-                ></span
-              >
-            </li>
-            <li
-              class="d-flex align-items-start mb-2 animation slideLeft-animation no3"
-              style="opacity: 0"
-            >
-              <i
-                class="bi bi-telephone-fill me-3 mt-1 text-dark"
-                style="font-size: 16px"
-              ></i>
-              <span>Phone Number: +84(0) 367 857 557 </span>
-            </li>
-            <li
-              class="d-flex align-items-start mb-2 animation slideLeft-animation no4"
-              style="opacity: 0"
-            >
-              <i
-                class="bi bi-geo-alt-fill me-3 mt-1 text-dark"
-                style="font-size: 16px"
-              ></i>
-              <span
-                >Address: Saigon Technology University (STU), 180 Cao Lo street,
-                Chanh Hung Ward, Ho Chi Minh City, Vietnam.</span
-              >
-            </li>
-          </ul>
+        <ul class="list-unstyled mx-5 my-5" style="font-size: 15px; color: #4b7bb2; line-height: 1.4">
+          <li class="d-flex align-items-start mb-2 animation slideLeft-animation no2" style="opacity: 0">
+            <i class="bi bi-envelope-fill me-3 mt-1 text-dark" style="font-size: 16px"></i>
+            <span>E-mail:
+              <a href="mailto:ATED@stu.edu.vn" class="text-decoration-none"
+                style="color: inherit">ATED@stu.edu.vn</a></span>
+          </li>
+          <li class="d-flex align-items-start mb-2 animation slideLeft-animation no3" style="opacity: 0">
+            <i class="bi bi-telephone-fill me-3 mt-1 text-dark" style="font-size: 16px"></i>
+            <span>Phone Number: +84(0) 367 857 557 </span>
+          </li>
+          <li class="d-flex align-items-start mb-2 animation slideLeft-animation no4" style="opacity: 0">
+            <i class="bi bi-geo-alt-fill me-3 mt-1 text-dark" style="font-size: 16px"></i>
+            <span>Address: Saigon Technology University (STU), 180 Cao Lo street,
+              Chanh Hung Ward, Ho Chi Minh City, Vietnam.</span>
+          </li>
+        </ul>
 
-          <div
-            class="d-flex flex-md-row flex-column justify-content-center align-items-center gap-4 animation slideLeft-animation no5"
-            style="opacity: 0"
-          >
-            <img
-              src="images/VIT-AP.jpg"
-              alt="Logo 1"
-              style="height: 50px; object-fit: fill; width: 120px"
-            />
-            <img
-              src="images/LOGOADITYA.jpg"
-              alt="Aditya University"
-              style="height: 50px; object-fit: fill; width: 120px"
-            />
-            <!-- <img
+        <div
+          class="d-flex flex-md-row flex-column justify-content-center align-items-center gap-4 animation slideLeft-animation no5"
+          style="opacity: 0">
+          <img src="images/VIT-AP.jpg" alt="Logo 1" style="height: 50px; object-fit: fill; width: 120px" />
+          <img src="images/LOGOADITYA.jpg" alt="Aditya University"
+            style="height: 50px; object-fit: fill; width: 120px" />
+          <!-- <img
               src="images/VIT-AP.jpg"
               alt="Logo 2"
               style="height: 50px; object-fit: fill; width: 120px"
             /> -->
-          </div>
         </div>
-      </section>
-      <!--go to top button -->
-      <div
-        class="d-flex align-items-center gap-2 fixedBox"
-        style="position: fixed; bottom: 15px; right: 0.5%; z-index: 999"
-      >
-        <!-- Abstract Template -->
-        <a
-          href="https://ated.stu.edu.vn/docs/AbstractTemplate.docx"
-          class="text-decoration-none urlBtn shadow-sm d-flex align-items-center justify-content-center"
-          style="
+      </div>
+    </section>
+    <!--go to top button -->
+    <div class="d-flex align-items-center gap-2 fixedBox"
+      style="position: fixed; bottom: 15px; right: 0.5%; z-index: 999">
+      <!-- Abstract Template -->
+      <a href="https://ated.stu.edu.vn/docs/AbstractTemplate.docx"
+        class="text-decoration-none urlBtn shadow-sm d-flex align-items-center justify-content-center" style="
             width: 80px;
             height: 50px;
             border: 1px solid gray;
@@ -2373,17 +1793,13 @@
             line-height: 1.1;
             text-align: center;
             padding: 0.2cm 0;
-          "
-        >
-          Abstract<br />Template
-        </a>
+          ">
+        Abstract<br />Template
+      </a>
 
-        <!-- Information for conference via Zoom -->
-        <a
-          href="https://ated.stu.edu.vn/docs/Program.pdf"
-          target="_blank"
-          class="text-decoration-none urlBtn shadow-sm d-flex align-items-center justify-content-center"
-          style="
+      <!-- Information for conference via Zoom -->
+      <a href="https://ated.stu.edu.vn/docs/Program.pdf" target="_blank"
+        class="text-decoration-none urlBtn shadow-sm d-flex align-items-center justify-content-center" style="
             width: 100px;
             height: 50px;
             border: 1px solid gray;
@@ -2395,17 +1811,14 @@
             line-height: 1.1;
             text-align: center;
             padding: 0.2cm 0;
-          "
-        >
-          Information for<br />conference <br />
-          via Zoom
-        </a>
+          ">
+        Information for<br />conference <br />
+        via Zoom
+      </a>
 
-        <!-- Reserved -->
-        <a
-          href="https://ated.stu.edu.vn/docs/Reserved.docx"
-          class="text-decoration-none urlBtn shadow-sm d-flex align-items-center justify-content-center"
-          style="
+      <!-- Reserved -->
+      <a href="https://ated.stu.edu.vn/docs/Reserved.docx"
+        class="text-decoration-none urlBtn shadow-sm d-flex align-items-center justify-content-center" style="
             width: 60px;
             height: 50px;
             border: 1px solid gray;
@@ -2417,34 +1830,28 @@
             line-height: 1.1;
             text-align: center;
             padding: 0.2cm 0;
-          "
-        >
-          Reserved
-        </a>
+          ">
+        Reserved
+      </a>
 
-        <!-- Go To Top -->
-        <button
-          id="goToTopBtn"
-          onclick="scrollToSection('header')"
-          class="btn btn-primary align-items-center justify-content-center"
-          style="
+      <!-- Go To Top -->
+      <button id="goToTopBtn" onclick="scrollToSection('header')"
+        class="btn btn-primary align-items-center justify-content-center" style="
             display: none;
             width: 35px;
             height: 35px;
             border-radius: 10px;
             padding: 0;
-          "
-        >
-          <i class="bi bi-arrow-up" style="font-size: 20px"></i>
-        </button>
-      </div>
-    </main>
+          ">
+        <i class="bi bi-arrow-up" style="font-size: 20px"></i>
+      </button>
+    </div>
+  </main>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
