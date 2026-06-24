@@ -6,7 +6,8 @@ body {
   background-color: white;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family:'Inter',sans-serif;
+  font-family: 'Inter', 'Noto Sans', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Arial, sans-serif;
 }
 
 /**********************************************************/
@@ -147,17 +148,19 @@ section.container {
   transform: translateX(13%) translateY(30%) scale(0.7);
 }
 
-#themes li{
-    padding-left: 10px;
+#themes li {
+  padding-left: 10px;
 }
 
 @media (min-width: 768px) {
   .flip-clock-wrapper {
     transform: translate(-50%, -50%) scale(0.9);
   }
+
   .mainContent {
     width: 70%;
   }
+
   .cusTable {
     width: 80%;
     font-size: 14px;
@@ -174,6 +177,7 @@ section.container {
     transform: translateY(30px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0px);
     opacity: 1;
@@ -185,6 +189,7 @@ section.container {
     transform: translateX(-30px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0px);
     opacity: 1;
@@ -195,6 +200,7 @@ section.container {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -203,45 +209,59 @@ section.container {
 .up-animation.no1.show {
   animation: moveUp1 0.5s ease-out 0.5s forwards;
 }
+
 .up-animation.no2.show {
   animation: moveUp1 0.5s ease-out 0.75s forwards;
 }
+
 .up-animation.no3.show {
   animation: moveUp1 0.5s ease-out 1s forwards;
 }
+
 .up-animation.no4.show {
   animation: moveUp1 0.5s ease-out 1.25s forwards;
 }
+
 .up-animation.no5.show {
   animation: moveUp1 0.5s ease-out 1.5s forwards;
 }
+
 .up-animation.no6.show {
   animation: moveUp1 0.5s ease-out 1.75s forwards;
 }
+
 .up-animation.no7.show {
   animation: moveUp1 0.5s ease-out 2s forwards;
 }
+
 .up-animation.no8.show {
   animation: moveUp1 0.5s ease-out 2.25s forwards;
 }
+
 .up-animation.no9.show {
   animation: moveUp1 0.5s ease-out 2.5s forwards;
 }
+
 .up-animation.no10.show {
   animation: moveUp1 0.5s ease-out 2.75s forwards;
 }
+
 .up-animation.no11.show {
   animation: moveUp1 0.5s ease-out 3s forwards;
 }
+
 .up-animation.no12.show {
   animation: moveUp1 0.5s ease-out 3.25s forwards;
 }
+
 .up-animation.no13.show {
   animation: moveUp1 0.5s ease-out 3.5s forwards;
 }
+
 .up-animation.no14.show {
   animation: moveUp1 0.5s ease-out 3.75s forwards;
 }
+
 .up-animation.no15.show {
   animation: moveUp1 0.5s ease-out 4s forwards;
 }
@@ -249,45 +269,59 @@ section.container {
 .slideLeft-animation.no1.show {
   animation: slideInLeft1 0.5s ease-out 0.5s forwards;
 }
+
 .slideLeft-animation.no2.show {
   animation: slideInLeft1 0.5s ease-out 0.75s forwards;
 }
+
 .slideLeft-animation.no3.show {
   animation: slideInLeft1 0.5s ease-out 1s forwards;
 }
+
 .slideLeft-animation.no4.show {
   animation: slideInLeft1 0.5s ease-out 1.25s forwards;
 }
+
 .slideLeft-animation.no5.show {
   animation: slideInLeft1 0.5s ease-out 1.5s forwards;
 }
+
 .slideLeft-animation.no6.show {
   animation: slideInLeft1 0.5s ease-out 1.75s forwards;
 }
+
 .slideLeft-animation.no7.show {
   animation: slideInLeft1 0.5s ease-out 2s forwards;
 }
+
 .slideLeft-animation.no8.show {
   animation: slideInLeft1 0.5s ease-out 2.25s forwards;
 }
+
 .slideLeft-animation.no9.show {
   animation: slideInLeft1 0.5s ease-out 2.5s forwards;
 }
+
 .slideLeft-animation.no10.show {
   animation: slideInLeft1 0.5s ease-out 2.75s forwards;
 }
+
 .slideLeft-animation.no11.show {
   animation: slideInLeft1 0.5s ease-out 3s forwards;
 }
+
 .slideLeft-animation.no12.show {
   animation: slideInLeft1 0.5s ease-out 3.25s forwards;
 }
+
 .slideLeft-animation.no13.show {
   animation: slideInLeft1 0.5s ease-out 3.5s forwards;
 }
+
 .slideLeft-animation.no14.show {
   animation: slideInLeft1 0.5s ease-out 3.75s forwards;
 }
+
 .slideLeft-animation.no15.show {
   animation: slideInLeft1 0.5s ease-out 4s forwards;
 }
@@ -295,71 +329,88 @@ section.container {
 .appear-animation.no1.show {
   animation: appear1 0.5s ease-out 0.5s forwards;
 }
+
 .appear-animation.no2.show {
   animation: appear1 0.5s ease-out 0.75s forwards;
 }
+
 .appear-animation.no3.show {
   animation: appear1 0.5s ease-out 1s forwards;
 }
+
 .appear-animation.no4.show {
   animation: appear1 0.5s ease-out 1.25s forwards;
 }
+
 .appear-animation.no5.show {
   animation: appear1 0.5s ease-out 1.5s forwards;
 }
+
 .appear-animation.no6.show {
   animation: appear1 0.5s ease-out 1.75s forwards;
 }
+
 .appear-animation.no7.show {
   animation: appear1 0.5s ease-out 2s forwards;
 }
+
 .appear-animation.no8.show {
   animation: appear1 0.5s ease-out 2.25s forwards;
 }
+
 .appear-animation.no9.show {
   animation: appear1 0.5s ease-out 2.5s forwards;
 }
+
 .appear-animation.no10.show {
   animation: appear1 0.5s ease-out 2.75s forwards;
 }
+
 .appear-animation.no11.show {
   animation: appear1 0.5s ease-out 3s forwards;
 }
+
 .appear-animation.no12.show {
   animation: appear1 0.5s ease-out 3.25s forwards;
 }
+
 .appear-animation.no13.show {
   animation: appear1 0.5s ease-out 3.5s forwards;
 }
+
 .appear-animation.no14.show {
   animation: appear1 0.5s ease-out 3.75s forwards;
 }
+
 .appear-animation.no15.show {
   animation: appear1 0.5s ease-out 4s forwards;
 }
-#floatingButtons{
-    transform: scale(0.9);
-    transform-origin: bottom right;
+
+#floatingButtons {
+  transform: scale(0.9);
+  transform-origin: bottom right;
 }
 
-@media (max-width: 768px){
-    #floatingButtons{
-        transform: scale(0.8);
-    }
+@media (max-width: 768px) {
+  #floatingButtons {
+    transform: scale(0.8);
+  }
 }
 
 @media (min-width: 1200px) {
-    #floatingButtons{
-        transform: scale(0.65);
-    }   
+  #floatingButtons {
+    transform: scale(0.65);
+  }
 }
+
 @media (min-width: 992px) {
+
   .ai-design-img,
   .ai-design-title {
     transform: translateX(-150px);
   }
-  .ai-design-block{
-        margin-right: 160px;
-    }
-}
 
+  .ai-design-block {
+    margin-right: 160px;
+  }
+}
