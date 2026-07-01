@@ -122,7 +122,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: window.innerWidth < 768 ? 0.1 : 0.45 },
+  { threshold: window.innerWidth < 768 ? 0.1 : 0.4 },
 );
 
 // Theo dõi các thẻ cha
