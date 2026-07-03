@@ -484,3 +484,17 @@ section.container {
     margin-right: 160px;
   }
 }
+
+/* hiển thị hộp Chi tiết hồ sơ của Keynote */
+@media (hover: hover) {
+
+    .position-relative:hover img{
+        transform: scale(1.05);
+        transition: .3s;
+    }
+
+    .position-relative:hover .overlay-speaker{
+        opacity: 1 !important;
+    }
+
+}

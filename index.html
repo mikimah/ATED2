@@ -737,14 +737,42 @@
 
         <!-- Speaker 2 -->
         <div class="col-12 col-sm-6 col-lg-3 text-center">
-          <img src="images/Dr. Daniel.jpg" class="rounded-circle animation appear-animation no2" style="
+          <!-- <img src="images/Dr. Daniel.jpg" class="rounded-circle animation appear-animation no2" style="
                 width: 130px;
                 opacity: 0;
                 height: 130px;
                 object-fit: cover;
                 object-position: center top;
                 transform: rotate(5deg);
-              " alt="Dr. Daniel Koh Kian Wei" />
+              " alt="Dr. Daniel Koh Kian Wei" /> -->
+
+          <div class="position-relative d-inline-block">
+
+            <img src="images/Dr. Daniel.jpg" class="rounded-circle animation appear-animation no2" style="
+            width:130px;
+            height:130px;
+            object-fit:cover;
+            object-position:center top;
+            opacity:0;
+            transform:rotate(5deg);
+        " alt="Dr. Daniel Koh Kian Wei">
+
+            <!-- Overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 rounded-circle
+        d-flex justify-content-center align-items-center overlay-speaker" style="
+            background:rgba(0,0,0,.45);
+            opacity:0;
+            transition:.3s;
+            cursor:pointer;
+        " data-bs-toggle="modal" data-bs-target="#speakerModal">
+
+              <button class="btn btn-light btn-sm rounded-pill fw-semibold">
+                View Profile
+              </button>
+
+            </div>
+
+          </div>
 
           <div class="mx-auto mt-3 text-center animation up-animation no8" style="
                 max-width: 250px;
@@ -773,6 +801,22 @@
                 AI Scientist, Managing Director<br />
                 Data Chord (Singapore)
               </div>
+
+              <!-- Mobile -->
+              <div class="d-block d-lg-none mt-1">
+
+                <a href="#" data-bs-toggle="modal" data-bs-target="#speakerModal" style="
+                font-size:12px;
+                font-weight:600;
+                color:#0d6efd;
+                text-decoration:none;
+           ">
+                  View Profile →
+                </a>
+
+              </div>
+
+
             </div>
           </div>
         </div>
@@ -1513,6 +1557,151 @@
       </div>
     </section>
 
+    <!-- SPEAKER MODAL  -->
+    <div class="modal fade" id="speakerModal" tabindex="-1" aria-labelledby="speakerModalLabel" aria-hidden="true">
+
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+
+        <div class="modal-content" style="border-radius:16px;">
+
+          <!-- Header -->
+          <div class="modal-header px-4 py-3">
+
+            <h4 class="modal-title fw-bold" id="speakerModalLabel"
+              style="font-family:'Acumin Variable Concept',sans-serif;font-size:22px;">
+              Dr. Daniel Koh Kian Wei
+            </h4>
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal">
+            </button>
+
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body px-4 py-3">
+
+            <div class="row g-3">
+
+              <!-- Left -->
+              <div class="col-lg-4 text-center">
+
+                <img src="images/Dr. Daniel.jpg" class="rounded-circle shadow" alt="Dr. Daniel Koh Kian Wei" style="
+        width:180px;
+        height:180px;
+        object-fit:contain;
+        object-position:center;
+        background:#fff;
+     ">
+
+                <h5 class="fw-bold mt-3 mb-1" style="font-family:'Acumin Variable Concept',sans-serif;">
+                  Dr. Daniel Koh Kian Wei
+                </h5>
+
+                <p class="text-secondary mb-1" style="font-size:14px;">
+                  AI Scientist, Managing Director
+
+                </p>
+
+                <p class="text-secondary mb-2" style="font-size:14px;">
+                  Data Chord (Singapore)
+                </p>
+
+                <!-- <span class="badge bg-primary px-3 py-2">
+                  Data Chord (Singapore)
+                </span> -->
+
+              </div>
+
+              <!-- Right -->
+              <div class="col-lg-8">
+
+                <h5 class="fw-bold mb-2" style="font-family:'Acumin Variable Concept',sans-serif;">
+                  Biography
+                </h5>
+
+                <p class="text-secondary mb-2" style="font-size:14px;line-height:1.35;text-align:justify;">
+
+                  Dr. Daniel Koh is a data scientist, educator, and entrepreneur
+                  with over <strong>18 years of experience</strong>
+                  turning complex data into actionable insights.
+
+                </p>
+
+                <p class="text-secondary mb-2" style="font-size:14px;line-height:1.35;text-align:justify;">
+
+                  He leads <strong>Data Chord Pte Ltd</strong> in Singapore,
+                  focusing on data science consulting,
+                  digital transformation, and cross-border business growth.
+
+                </p>
+
+                <hr style="margin:14px 0;">
+
+                <h5 class="fw-bold mb-2" style="font-family:'Acumin Variable Concept',sans-serif;">
+                  Professional Contributions
+                </h5>
+
+                <p class="text-secondary mb-2" style="font-size:14px;line-height:1.35;">
+
+                  He designed and leads the internationally accredited
+                  <strong>Professional Certificate in Data Science (PCiDS™)</strong>.
+
+                </p>
+
+                <p class="text-secondary mb-1" style="font-size:14px;">
+                  Delivering training in:
+                </p>
+
+                <ul class="text-secondary mb-2" style="font-size:14px;line-height:1.6;padding-left:20px;">
+
+                  <li>Artificial Intelligence (AI)</li>
+                  <li>Machine Learning</li>
+                  <li>Cybersecurity</li>
+                  <li>Marketing Analytics</li>
+
+                </ul>
+
+                <hr style="margin:14px 0;">
+
+                <h5 class="fw-bold mb-2" style="font-family:'Acumin Variable Concept',sans-serif;">
+                  Research & Innovation
+                </h5>
+
+                <p class="text-secondary mb-2" style="font-size:14px;line-height:1.35;text-align:justify;">
+
+                  His work includes the
+                  <strong>Loss Aversion Distribution model</strong>.
+
+                </p>
+
+                <hr style="margin:14px 0;">
+
+                <h5 class="fw-bold mb-2" style="font-family:'Acumin Variable Concept',sans-serif;">
+                  Awards & Recognition
+                </h5>
+
+                <p class="text-secondary mb-0" style="font-size:14px;line-height:1.35;text-align:justify;">
+
+                  For his COVID-19 contributions, he received the
+                  <strong>COVID-19 Resilience Medal</strong>
+                  from the
+                  <strong>Government of Singapore</strong>.
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
     <!-- COMMITTEE -->
     <section class="container py-4 parent-box" id="committee" style="padding-left: 5cm; padding-right: 5cm">
       <h1 class="text-center mb-4 fs-3" style="
@@ -2249,7 +2438,8 @@
           <img src="images/VIT-AP.jpg" alt="Logo 1" style="height: 50px; object-fit: fill; width: 120px" />
           <img src="images/LOGOADITYA.jpg" alt="Aditya University"
             style="height: 45px; object-fit: fill; width: 120px" />
-          <img src="images/Unika_Soegijapranata_Talenta_Propatria_et_Humaniora.png" alt="Unika Soegijapranata Talenta Propatria et Humaniora"
+          <img src="images/Unika_Soegijapranata_Talenta_Propatria_et_Humaniora.png"
+            alt="Unika Soegijapranata Talenta Propatria et Humaniora"
             style="height: 55px; object-fit: fill; width: 120px" />
         </div>
       </div>
