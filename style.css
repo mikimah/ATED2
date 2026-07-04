@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Acumin Variable Concept';
-  src: url(fonts/Acumin\ Variable\ Concept.ttf) format('truetype');
+  font-family: "Acumin Variable Concept";
+  src: url(fonts/Acumin\ Variable\ Concept.ttf) format("truetype");
 }
 
 body {
@@ -11,7 +11,7 @@ body {
   background-color: white;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: 'Acumin Variable Concept', sans-serif;
+  font-family: "Acumin Variable Concept", sans-serif;
 }
 
 /**********************************************************/
@@ -210,12 +210,11 @@ section.container {
   }
 }
 .up-animation.no1.show {
-    animation: moveUp1 0.5s ease-out 0.15s forwards;
+  animation: moveUp1 0.5s ease-out 0.15s forwards;
 }
 
-
 .up-animation.no2.show {
-  animation: moveUp1 0.5s ease-out 0.30s forwards;
+  animation: moveUp1 0.5s ease-out 0.3s forwards;
 }
 
 .up-animation.no3.show {
@@ -223,7 +222,7 @@ section.container {
 }
 
 .up-animation.no4.show {
-  animation: moveUp1 0.5s ease-out 0.60s forwards;
+  animation: moveUp1 0.5s ease-out 0.6s forwards;
 }
 
 .up-animation.no5.show {
@@ -231,7 +230,7 @@ section.container {
 }
 
 .up-animation.no6.show {
-  animation: moveUp1 0.5s ease-out 0.90s forwards;
+  animation: moveUp1 0.5s ease-out 0.9s forwards;
 }
 
 .up-animation.no7.show {
@@ -239,7 +238,7 @@ section.container {
 }
 
 .up-animation.no8.show {
-  animation: moveUp1 0.5s ease-out 1.20s forwards;
+  animation: moveUp1 0.5s ease-out 1.2s forwards;
 }
 
 .up-animation.no9.show {
@@ -247,7 +246,7 @@ section.container {
 }
 
 .up-animation.no10.show {
-  animation: moveUp1 0.5s ease-out 1.50s forwards;
+  animation: moveUp1 0.5s ease-out 1.5s forwards;
 }
 
 .up-animation.no11.show {
@@ -255,7 +254,7 @@ section.container {
 }
 
 .up-animation.no12.show {
-  animation: moveUp1 0.5s ease-out 1.80s forwards;
+  animation: moveUp1 0.5s ease-out 1.8s forwards;
 }
 
 .up-animation.no13.show {
@@ -263,7 +262,7 @@ section.container {
 }
 
 .up-animation.no14.show {
-  animation: moveUp1 0.5s ease-out 2.10s forwards;
+  animation: moveUp1 0.5s ease-out 2.1s forwards;
 }
 
 .up-animation.no15.show {
@@ -271,7 +270,7 @@ section.container {
 }
 
 .up-animation.no16.show {
-  animation: moveUp1 0.5s ease-out 2.40s forwards;
+  animation: moveUp1 0.5s ease-out 2.4s forwards;
 }
 
 .up-animation.no17.show {
@@ -279,7 +278,7 @@ section.container {
 }
 
 .up-animation.no18.show {
-  animation: moveUp1 0.5s ease-out 2.70s forwards;
+  animation: moveUp1 0.5s ease-out 2.7s forwards;
 }
 
 .up-animation.no19.show {
@@ -287,7 +286,7 @@ section.container {
 }
 
 .up-animation.no20.show {
-  animation: moveUp1 0.5s ease-out 3.00s forwards;
+  animation: moveUp1 0.5s ease-out 3s forwards;
 }
 
 .up-animation.no21.show {
@@ -295,7 +294,7 @@ section.container {
 }
 
 .up-animation.no22.show {
-  animation: moveUp1 0.5s ease-out 3.30s forwards;
+  animation: moveUp1 0.5s ease-out 3.3s forwards;
 }
 
 .up-animation.no23.show {
@@ -303,7 +302,7 @@ section.container {
 }
 
 .up-animation.no24.show {
-  animation: moveUp1 0.5s ease-out 3.60s forwards;
+  animation: moveUp1 0.5s ease-out 3.6s forwards;
 }
 
 .up-animation.no25.show {
@@ -311,11 +310,11 @@ section.container {
 }
 
 .up-animation.no26.show {
-  animation: moveUp1 0.5s ease-out 3.90s forwards;
+  animation: moveUp1 0.5s ease-out 3.9s forwards;
 }
 
 .up-animation.no27.show {
-    animation: moveUp1 0.5s ease-out 4.05s forwards;
+  animation: moveUp1 0.5s ease-out 4.05s forwards;
 }
 
 .slideLeft-animation.no1.show {
@@ -378,13 +377,12 @@ section.container {
   animation: slideInLeft1 0.5s ease-out 4s forwards;
 }
 
-
 .appear-animation.no1.show {
   animation: appear1 0.5s ease-out 0.15s forwards;
 }
 
 .appear-animation.no2.show {
-  animation: appear1 0.5s ease-out 0.30s forwards;
+  animation: appear1 0.5s ease-out 0.3s forwards;
 }
 
 .appear-animation.no3.show {
@@ -392,7 +390,7 @@ section.container {
 }
 
 .appear-animation.no4.show {
-  animation: appear1 0.5s ease-out 0.60s forwards;
+  animation: appear1 0.5s ease-out 0.6s forwards;
 }
 
 .appear-animation.no5.show {
@@ -400,7 +398,7 @@ section.container {
 }
 
 .appear-animation.no6.show {
-  animation: appear1 0.5s ease-out 0.90s forwards;
+  animation: appear1 0.5s ease-out 0.9s forwards;
 }
 
 .appear-animation.no7.show {
@@ -408,7 +406,7 @@ section.container {
 }
 
 .appear-animation.no8.show {
-  animation: appear1 0.5s ease-out 1.20s forwards;
+  animation: appear1 0.5s ease-out 1.2s forwards;
 }
 
 .appear-animation.no9.show {
@@ -416,7 +414,7 @@ section.container {
 }
 
 .appear-animation.no10.show {
-  animation: appear1 0.5s ease-out 1.50s forwards;
+  animation: appear1 0.5s ease-out 1.5s forwards;
 }
 
 .appear-animation.no11.show {
@@ -424,7 +422,7 @@ section.container {
 }
 
 .appear-animation.no12.show {
-  animation: appear1 0.5s ease-out 1.80s forwards;
+  animation: appear1 0.5s ease-out 1.8s forwards;
 }
 
 .appear-animation.no13.show {
@@ -432,7 +430,7 @@ section.container {
 }
 
 .appear-animation.no14.show {
-  animation: appear1 0.5s ease-out 2.10s forwards;
+  animation: appear1 0.5s ease-out 2.1s forwards;
 }
 
 .appear-animation.no15.show {
@@ -440,7 +438,7 @@ section.container {
 }
 
 .appear-animation.no16.show {
-  animation: appear1 0.5s ease-out 2.40s forwards;
+  animation: appear1 0.5s ease-out 2.4s forwards;
 }
 
 .appear-animation.no17.show {
@@ -448,7 +446,7 @@ section.container {
 }
 
 .appear-animation.no18.show {
-  animation: appear1 0.5s ease-out 2.70s forwards;
+  animation: appear1 0.5s ease-out 2.7s forwards;
 }
 
 .appear-animation.no19.show {
@@ -456,14 +454,12 @@ section.container {
 }
 
 .appear-animation.no20.show {
-  animation: appear1 0.5s ease-out 3.00s forwards;
+  animation: appear1 0.5s ease-out 3s forwards;
 }
 
 .appear-animation.no21.show {
-    animation: appear1 0.5s ease-out 3.15s forwards;
+  animation: appear1 0.5s ease-out 3.15s forwards;
 }
-
-
 
 #floatingButtons {
   transform: scale(0.9);
@@ -483,7 +479,6 @@ section.container {
 }
 
 @media (min-width: 992px) {
-
   .ai-design-img,
   .ai-design-title {
     transform: translateX(-150px);
@@ -494,35 +489,30 @@ section.container {
   }
 }
 
-
 /* ===========================
    KEYNOTE SPEAKER
    =========================== */
 
 /* Hover chỉ áp dụng cho thiết bị có chuột */
-@media (hover:hover){
+@media (hover: hover) {
+  .position-relative:hover img {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
 
-    .position-relative:hover img{
-        transform:scale(1.05);
-        transition:.3s;
-    }
-
-    .position-relative:hover .overlay-speaker{
-        opacity:1 !important;
-    }
-
+  .position-relative:hover .overlay-speaker {
+    opacity: 1 !important;
+  }
 }
 
 /* Mặc định ẩn link View Profile */
-.mobile-profile-link{
-    display:none;
+.mobile-profile-link {
+  display: none;
 }
 
 /* Thiết bị cảm ứng (điện thoại, iPad...) */
-@media (hover:none), (pointer:coarse){
-
-    .mobile-profile-link{
-        display:block;
-    }
-
+@media (hover: none), (pointer: coarse) {
+  .mobile-profile-link {
+    display: block;
+  }
 }
