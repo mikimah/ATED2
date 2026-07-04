@@ -209,10 +209,10 @@ section.container {
     opacity: 1;
   }
 }
-
 .up-animation.no1.show {
-  animation: moveUp1 0.5s ease-out 0.15s forwards;
+    animation: moveUp1 0.5s ease-out 0.15s forwards;
 }
+
 
 .up-animation.no2.show {
   animation: moveUp1 0.5s ease-out 0.30s forwards;
@@ -314,6 +314,10 @@ section.container {
   animation: moveUp1 0.5s ease-out 3.90s forwards;
 }
 
+.up-animation.no27.show {
+    animation: moveUp1 0.5s ease-out 4.05s forwards;
+}
+
 .slideLeft-animation.no1.show {
   animation: slideInLeft1 0.5s ease-out 0.5s forwards;
 }
@@ -373,6 +377,7 @@ section.container {
 .slideLeft-animation.no15.show {
   animation: slideInLeft1 0.5s ease-out 4s forwards;
 }
+
 
 .appear-animation.no1.show {
   animation: appear1 0.5s ease-out 0.15s forwards;
@@ -452,6 +457,10 @@ section.container {
 
 .appear-animation.no20.show {
   animation: appear1 0.5s ease-out 3.00s forwards;
+}
+
+.appear-animation.no21.show {
+    animation: appear1 0.5s ease-out 3.15s forwards;
 }
 
 
