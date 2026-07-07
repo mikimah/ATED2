@@ -516,3 +516,86 @@ section.container {
     display: block;
   }
 }
+
+/* ===========================
+   Speaker Modal - Mobile
+=========================== */
+@media (max-width:767.98px){
+
+    #speakerModal .modal-dialog{
+        margin:10px;
+        max-width:calc(100% - 20px);
+    }
+
+    #speakerModal .modal-content{
+        height:90vh !important;
+    }
+
+    #speakerModal #speakerContent{
+        height:calc(90vh - 70px) !important;
+        overflow-y:auto !important;
+        overflow-x:hidden;
+        padding:20px !important;
+    }
+
+    #speakerModal .speaker-left{
+        text-align:center;
+        margin-bottom:20px;
+    }
+
+    #speakerModal .speaker-left img{
+        width:160px !important;
+        height:160px !important;
+        display:block;
+        margin:auto;
+    }
+
+    #speakerModal .speaker-left h5{
+        margin-top:15px;
+        font-size:24px;
+    }
+
+    #speakerModal .speaker-right{
+        margin-top:10px;
+    }
+
+    #speakerModal .speaker-right h5{
+        font-size:22px;
+    }
+
+    #speakerModal .speaker-right p,
+    #speakerModal .speaker-right li{
+        font-size:15px !important;
+        line-height:1.6 !important;
+    }
+
+    #speakerModal hr{
+        margin:16px 0 !important;
+    }
+}
+
+/* ===========================
+   Speaker Modal - Desktop
+=========================== */
+@media (min-width:992px){
+
+    #speakerModal #speakerContent{
+        overflow:hidden;
+        height:100%;
+    }
+
+    #speakerModal .speaker-left{
+        position:sticky;
+        top:0;
+        align-self:flex-start;
+        padding-top:10px;
+    }
+
+    #speakerModal .speaker-right{
+        height:100%;
+        overflow-y:auto;
+        overflow-x:hidden;
+        padding-right:12px;
+    }
+
+}

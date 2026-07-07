@@ -875,7 +875,7 @@
                   opacity: 0;
                   transition: 0.3s;
                   cursor: pointer;
-                " data-bs-toggle="modal" data-bs-target="#speakerModal2">
+                " data-bs-toggle="modal" data-bs-target="#speakerModal" data-profile="profiles/Zulkifli.html">
               <button class="btn btn-light rounded-pill fw-semibold" style="
                     font-size: 12px;
                     padding: 6px 16px;
@@ -918,7 +918,8 @@
 
               <!-- Mobile -->
               <div class="mobile-profile-link mt-1">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#speakerModal2" style="
+                <a href="#" data-bs-toggle="modal" data-bs-target="#speakerModal" data-profile="profiles/Zulkifli.html"
+                  style="
                       font-size: 12px;
                       font-weight: 600;
                       color: #0d6efd;
@@ -2193,320 +2194,36 @@
       </div>
     </section>
 
-    <!-- SPEAKER MODAL  -->
+    <!-- Shared Speaker Modal -->
+    <div class="modal fade" id="speakerModal" tabindex="-1" aria-hidden="true">
 
-    <!-- combobox Dr. Daniel Koh Kian Wei -->
+      <div class="modal-dialog modal-dialog-centered" style="max-width:800px">
 
-    <div class="modal fade" id="speakerModal" tabindex="-1" aria-labelledby="speakerModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width: 800px">
-        <div class="modal-content" style="border-radius: 16px; height: 600px">
-          <!-- Header -->
-          <div class="modal-header px-4 py-3">
-            <h4 class="modal-title fw-bold" id="speakerModalLabel" style="
-                  font-family: &quot;Acumin Variable Concept&quot;, sans-serif;
-                  font-size: 22px;
-                ">
-              Dr. Daniel Koh Kian Wei
+        <div class="modal-content" style="border-radius:16px;height:600px">
+
+          <div class="modal-header">
+            <h4 class="modal-title fw-bold" id="speakerModalLabel"
+              style="font-family:'Acumin Variable Concept',sans-serif;font-size:22px;">
             </h4>
 
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal">
+            </button>
           </div>
 
-          <!-- Body -->
-          <div class="modal-body px-4 py-3" style="overflow-y: auto">
-            <div class="row g-3">
-              <!-- Left -->
-              <div class="col-lg-4 text-center">
-                <img src="images/Dr. Daniel.jpg" class="rounded-circle shadow" alt="Dr. Daniel Koh Kian Wei" style="
-                      width: 180px;
-                      height: 180px;
-                      object-fit: contain;
-                      object-position: center;
-                      background: #fff;
-                    " />
 
-                <h5 class="fw-bold mt-3 mb-1" style="
-                      font-family:
-                        &quot;Acumin Variable Concept&quot;, sans-serif;
-                    ">
-                  Dr. Daniel Koh Kian Wei
-                </h5>
+          <div class="modal-body" id="speakerContent" 
+          style="height:530px;overflow-y:auto;overflow-x:hidden;padding:24px;">
 
-                <p class="text-secondary mb-1" style="font-size: 14px">
-                  AI Scientist, Managing Director
-                </p>
-
-                <p class="text-secondary mb-2" style="font-size: 14px">
-                  Data Chord (Singapore)
-                </p>
-              </div>
-
-              <!-- Right -->
-              <div class="col-lg-8">
-                <h5 class="fw-bold mb-2" style="
-                      font-family:
-                        &quot;Acumin Variable Concept&quot;, sans-serif;
-                    ">
-                  Biography
-                </h5>
-
-                <p class="text-secondary mb-2" style="
-                      font-size: 14px;
-                      line-height: 1.35;
-                      text-align: justify;
-                    ">
-                  Dr. Daniel Koh is a data scientist, educator, and
-                  entrepreneur with over
-                  <strong>18 years of experience</strong>
-                  turning complex data into actionable insights.
-                </p>
-
-                <p class="text-secondary mb-2" style="
-                      font-size: 14px;
-                      line-height: 1.35;
-                      text-align: justify;
-                    ">
-                  He leads <strong>Data Chord Pte Ltd</strong> in Singapore,
-                  focusing on data science consulting, digital transformation,
-                  and cross-border business growth.
-                </p>
-
-                <hr style="margin: 14px 0" />
-
-                <h5 class="fw-bold mb-2" style="
-                      font-family:
-                        &quot;Acumin Variable Concept&quot;, sans-serif;
-                    ">
-                  Professional Contributions
-                </h5>
-
-                <p class="text-secondary mb-2" style="font-size: 14px; line-height: 1.35">
-                  He designed and leads the internationally accredited
-                  <strong>Professional Certificate in Data Science (PCiDS™)</strong>.
-                </p>
-
-                <p class="text-secondary mb-1" style="font-size: 14px">
-                  Delivering training in:
-                </p>
-
-                <ul class="text-secondary mb-2" style="
-                      font-size: 14px;
-                      line-height: 1.6;
-                      padding-left: 20px;
-                    ">
-                  <li>Artificial Intelligence (AI)</li>
-                  <li>Machine Learning</li>
-                  <li>Cybersecurity</li>
-                  <li>Marketing Analytics</li>
-                </ul>
-
-                <hr style="margin: 14px 0" />
-
-                <h5 class="fw-bold mb-2" style="
-                      font-family:
-                        &quot;Acumin Variable Concept&quot;, sans-serif;
-                    ">
-                  Research & Innovation
-                </h5>
-
-                <p class="text-secondary mb-2" style="
-                      font-size: 14px;
-                      line-height: 1.35;
-                      text-align: justify;
-                    ">
-                  His work includes the
-                  <strong>Loss Aversion Distribution model</strong>.
-                </p>
-
-                <hr style="margin: 14px 0" />
-
-                <h5 class="fw-bold mb-2" style="
-                      font-family:
-                        &quot;Acumin Variable Concept&quot;, sans-serif;
-                    ">
-                  Awards & Recognition
-                </h5>
-
-                <p class="text-secondary mb-0" style="
-                      font-size: 14px;
-                      line-height: 1.35;
-                      text-align: justify;
-                    ">
-                  For his COVID-19 contributions, he received the
-                  <strong>COVID-19 Resilience Medal</strong>
-                  from the
-                  <strong>Government of Singapore</strong>.
-                </p>
-              </div>
+            <div class="text-center py-5">
+              Loading...
             </div>
+
           </div>
+
         </div>
+
       </div>
-    </div>
 
-    <!-- combobox Dr. Zulkifli Jalil -->
-
-    <div class="modal fade" id="speakerModal2" tabindex="-1" aria-labelledby="speakerModalLabel2" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width: 800px">
-        <div class="modal-content" style="border-radius: 16px; height: 600px">
-          <!-- Header -->
-          <div class="modal-header px-4 py-3">
-            <h4 class="modal-title fw-bold" id="speakerModalLabel2" style="
-                  font-family: &quot;Acumin Variable Concept&quot;, sans-serif;
-                  font-size: 22px;
-                ">
-              Dr. Zulkifli Jalil
-            </h4>
-
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-
-          <!-- Body -->
-          <div class="modal-body px-4 py-3" style="overflow-y: auto">
-            <div class="row g-3">
-              <!-- Left -->
-              <div class="col-lg-4 text-center">
-                <img src="images/Dr. Zul.jpg" class="rounded-circle shadow" alt="Dr. Zulkifli Jalil" style="
-                      width: 180px;
-                      height: 180px;
-                      object-fit: contain;
-                      object-position: center;
-                      background: #fff;
-                    " />
-
-                <h5 class="fw-bold mt-3 mb-1" style="
-                      font-family:
-                        &quot;Acumin Variable Concept&quot;, sans-serif;
-                    ">
-                  Dr. Zulkifli Jalil
-                </h5>
-
-                <p class="text-secondary mb-1" style="font-size: 14px">
-                  Cybersecurity Educator,
-                </p>
-
-                <p class="text-secondary mb-2" style="font-size: 14px">
-                  Industry Practitioner (Singapore)
-                </p>
-              </div>
-
-              <!-- Right -->
-              <div class="col-lg-8">
-                <h5 class="fw-bold mb-2" style="
-                      font-family:
-                        &quot;Acumin Variable Concept&quot;, sans-serif;
-                    ">
-                  Biography
-                </h5>
-
-                <p class="text-secondary mb-2" style="
-                      font-size: 14px;
-                      line-height: 1.35;
-                      text-align: justify;
-                    ">
-                  Dr. Zulkifli Jalil is a cybersecurity educator and industry
-                  practitioner with over
-                  <strong>30 years of IT experience</strong>, including more
-                  than
-                  <strong>20 years specialising in cybersecurity</strong>.
-                </p>
-
-                <p class="text-secondary mb-2" style="
-                      font-size: 14px;
-                      line-height: 1.35;
-                      text-align: justify;
-                    ">
-                  He holds a
-                  <strong>Doctor of Business Administration (DBA)</strong>
-                  from
-                  <strong>Teesside University (United Kingdom)</strong>
-                  and a
-                  <strong>Master of Science in Information Technology</strong>.
-                </p>
-
-                <hr style="margin: 14px 0" />
-
-                <h5 class="fw-bold mb-2" style="
-                      font-family:
-                        &quot;Acumin Variable Concept&quot;, sans-serif;
-                    ">
-                  Professional Qualifications
-                </h5>
-
-                <p class="text-secondary mb-1" style="font-size: 14px; line-height: 1.35">
-                  He holds internationally recognised certifications
-                  including:
-                </p>
-
-                <ul class="text-secondary mb-2" style="
-                      font-size: 14px;
-                      line-height: 1.6;
-                      padding-left: 20px;
-                    ">
-                  <li>PMP</li>
-                  <li>CEH Master</li>
-                  <li>OSCP</li>
-                  <li>CISM</li>
-                  <li>CISA</li>
-                  <li>CRISC</li>
-                </ul>
-
-                <hr style="margin: 14px 0" />
-
-                <h5 class="fw-bold mb-2" style="
-                      font-family:
-                        &quot;Acumin Variable Concept&quot;, sans-serif;
-                    ">
-                  Professional Contributions
-                </h5>
-
-                <p class="text-secondary mb-1" style="font-size: 14px; line-height: 1.35">
-                  Dr. Zulkifli teaches:
-                </p>
-
-                <ul class="text-secondary mb-2" style="
-                      font-size: 14px;
-                      line-height: 1.6;
-                      padding-left: 20px;
-                    ">
-                  <li>Cybersecurity</li>
-                  <li>Artificial Intelligence</li>
-                  <li>Networking</li>
-                  <li>Project Management</li>
-                </ul>
-
-                <p class="text-secondary mb-2" style="
-                      font-size: 14px;
-                      line-height: 1.35;
-                      text-align: justify;
-                    ">
-                  across undergraduate, postgraduate, and professional
-                  programmes.
-                </p>
-
-                <hr style="margin: 14px 0" />
-
-                <h5 class="fw-bold mb-2" style="
-                      font-family:
-                        &quot;Acumin Variable Concept&quot;, sans-serif;
-                    ">
-                  Commitment
-                </h5>
-
-                <p class="text-secondary mb-0" style="
-                      font-size: 14px;
-                      line-height: 1.35;
-                      text-align: justify;
-                    ">
-                  He is committed to preparing future-ready professionals by
-                  combining academic excellence with extensive real-world
-                  industry experience.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <!-- COMMITTEE -->

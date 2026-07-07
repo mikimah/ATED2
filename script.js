@@ -129,3 +129,63 @@ const observer = new IntersectionObserver(
 document
   .querySelectorAll(".parent-box")
   .forEach((box) => observer.observe(box));
+
+/* ======================================================
+   KEYNOTE SPEAKERS
+====================================================== */
+
+const speakerModal = document.getElementById("speakerModal");
+
+if (speakerModal) {
+  speakerModal.addEventListener("show.bs.modal", function (event) {
+
+    const button = event.relatedTarget;
+
+    if (!button) return;
+
+    const profile = button.getAttribute("data-profile");
+    const content = document.getElementById("speakerContent");
+    const modalTitle = document.getElementById("speakerModalLabel");
+
+    // Reset trước khi load
+    modalTitle.textContent = "Speaker Profile";
+
+    content.innerHTML = `
+      <div class="text-center py-5">
+        Loading...
+      </div>
+    `;
+
+    fetch(profile)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Load failed");
+        }
+
+        return response.text();
+      })
+      .then((html) => {
+        // Đưa HTML vào modal
+        content.innerHTML = html;
+
+        // Đổi tiêu đề modal theo tên speaker
+        const profileName = content.querySelector("#profile-name");
+
+        if (profileName) {
+          modalTitle.textContent = profileName.textContent.trim();
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+
+        modalTitle.textContent = "Speaker Profile";
+
+        content.innerHTML = `
+          <div class="text-danger text-center py-5">
+            Cannot load profile.
+          </div>
+        `;
+      });
+
+  });
+}
