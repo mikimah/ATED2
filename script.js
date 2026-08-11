@@ -182,7 +182,7 @@ if (speakerModal) {
 
         content.innerHTML = `
           <div class="text-danger text-center py-5">
-            Cannot load profile.
+           
           </div>
         `;
       });
