@@ -103,26 +103,28 @@ window.addEventListener("scroll", function () {
 const timerInterval = setInterval(runTimer, 1000);
 runTimer(); // Chạy ngay lập tức lần đầu khi load trang
 
+
 const observer = new IntersectionObserver(
-  (entries) => {
+  (entries, obs) => {
     entries.forEach((entry) => {
-      // 🛠️ Dùng querySelectorAll để lấy TẤT CẢ thẻ con có class .animation
       const children = entry.target.querySelectorAll(".animation");
 
       if (entry.isIntersecting) {
-        // Duyệt qua từng thẻ con để vứt class "show" vào
         children.forEach((child) => {
           child.classList.add("show");
         });
-      } else {
-        // Cuộn lên thì ẩn đi (Tùy chọn)
-        // children.forEach((child) => {
-        //   child.classList.remove('show');
-        // });
+
+        // Đã hiển thị rồi thì ngắt theo dõi luôn, không lo bị ẩn/lỗi khi zoom lại
+        obs.unobserve(entry.target);
       }
     });
   },
-  { threshold: window.innerWidth < 768 ? 0.1 : 0.4 },
+  {
+    // 0.05: Chỉ cần lọt vào 5% diện tích là kích hoạt ngay (kể cả khi zoom 200%)
+    threshold: 0.1,
+    // rootMargin mở rộng vùng quét thêm 50px phía dưới
+    rootMargin: "0px 0px -50px 0px",
+  }
 );
 
 // Theo dõi các thẻ cha
