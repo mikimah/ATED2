@@ -209,6 +209,7 @@ section.container {
     opacity: 1;
   }
 }
+
 .up-animation.no1.show {
   animation: moveUp1 0.5s ease-out 0.15s forwards;
 }
@@ -461,6 +462,18 @@ section.container {
   animation: appear1 0.5s ease-out 3.15s forwards;
 }
 
+.appear-animation.no22.show {
+  animation: appear1 0.5s ease-out 3.30s forwards;
+}
+
+.appear-animation.no23.show {
+  animation: appear1 0.5s ease-out 3.45s forwards;
+}
+
+.appear-animation.no24.show {
+  animation: appear1 0.5s ease-out 3.60s forwards;
+}
+
 #floatingButtons {
   transform: scale(0.9);
   transform-origin: bottom right;
@@ -479,6 +492,7 @@ section.container {
 }
 
 @media (min-width: 992px) {
+
   .ai-design-img,
   .ai-design-title {
     transform: translateX(-150px);
@@ -511,7 +525,8 @@ section.container {
 }
 
 /* Thiết bị cảm ứng (điện thoại, iPad...) */
-@media (hover: none), (pointer: coarse) {
+@media (hover: none),
+(pointer: coarse) {
   .mobile-profile-link {
     display: block;
   }
@@ -520,82 +535,82 @@ section.container {
 /* ===========================
    Speaker Modal - Mobile
 =========================== */
-@media (max-width:767.98px){
+@media (max-width:767.98px) {
 
-    #speakerModal .modal-dialog{
-        margin:10px;
-        max-width:calc(100% - 20px);
-    }
+  #speakerModal .modal-dialog {
+    margin: 10px;
+    max-width: calc(100% - 20px);
+  }
 
-    #speakerModal .modal-content{
-        height:90vh !important;
-    }
+  #speakerModal .modal-content {
+    height: 90vh !important;
+  }
 
-    #speakerModal #speakerContent{
-        height:calc(90vh - 70px) !important;
-        overflow-y:auto !important;
-        overflow-x:hidden;
-        padding:20px !important;
-    }
+  #speakerModal #speakerContent {
+    height: calc(90vh - 70px) !important;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    padding: 20px !important;
+  }
 
-    #speakerModal .speaker-left{
-        text-align:center;
-        margin-bottom:20px;
-    }
+  #speakerModal .speaker-left {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-    #speakerModal .speaker-left img{
-        width:160px !important;
-        height:160px !important;
-        display:block;
-        margin:auto;
-    }
+  #speakerModal .speaker-left img {
+    width: 160px !important;
+    height: 160px !important;
+    display: block;
+    margin: auto;
+  }
 
-    #speakerModal .speaker-left h5{
-        margin-top:15px;
-        font-size:24px;
-    }
+  #speakerModal .speaker-left h5 {
+    margin-top: 15px;
+    font-size: 24px;
+  }
 
-    #speakerModal .speaker-right{
-        margin-top:10px;
-    }
+  #speakerModal .speaker-right {
+    margin-top: 10px;
+  }
 
-    #speakerModal .speaker-right h5{
-        font-size:22px;
-    }
+  #speakerModal .speaker-right h5 {
+    font-size: 22px;
+  }
 
-    #speakerModal .speaker-right p,
-    #speakerModal .speaker-right li{
-        font-size:15px !important;
-        line-height:1.6 !important;
-    }
+  #speakerModal .speaker-right p,
+  #speakerModal .speaker-right li {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+  }
 
-    #speakerModal hr{
-        margin:16px 0 !important;
-    }
+  #speakerModal hr {
+    margin: 16px 0 !important;
+  }
 }
 
 /* ===========================
    Speaker Modal - Desktop
 =========================== */
-@media (min-width:992px){
+@media (min-width:992px) {
 
-    #speakerModal #speakerContent{
-        overflow:hidden;
-        height:100%;
-    }
+  #speakerModal #speakerContent {
+    overflow: hidden;
+    height: 100%;
+  }
 
-    #speakerModal .speaker-left{
-        position:sticky;
-        top:0;
-        align-self:flex-start;
-        padding-top:10px;
-    }
+  #speakerModal .speaker-left {
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    padding-top: 10px;
+  }
 
-    #speakerModal .speaker-right{
-        height:100%;
-        overflow-y:auto;
-        overflow-x:hidden;
-        padding-right:12px;
-    }
+  #speakerModal .speaker-right {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 12px;
+  }
 
 }
