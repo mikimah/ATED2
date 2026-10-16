@@ -166,7 +166,7 @@ section.container {
 
 @media (min-width: 768px) {
   .bannerImg {
-    height: 500px;
+    height: 650px;
     background-size: cover;
     background-position: center;
   }
